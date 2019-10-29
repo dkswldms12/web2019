@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>11문서 제목11</title>
+</head>
+<body>
+	
+	<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quae laborum numquam molestiae mollitia, obcaecati est magnam eius. -->
+
+	<!-- div>lorem3 -->
+	<div>Lorem ipsum dolor.</div>
+	<div>an ji eun</div>
+	<br>
+
+	<span>Lorem ipsum dolor.</span>
+	<span>Lorem ipsum dolor.</span>
+<br>
+	<span>Lorem ipsum dolor.</span>
+	<span>Aut, minima, at.</span>
+	<span>Fugit, alias, facilis!</span>
+<br>
+	<!-- span*3>lroem -->
+	<div>
+		<div>test</div>
+		<div>test</div>
+		<div>test</div>
+	</div>
+			
+	<h1>하나 2em</h1>
+	<h2>둘 1.5em</h2>
+	<h3>셋 1.17em</h3>
+	<h4>넷 1em</h4>
+	<h5>다섯</h5>
+
+	<!-- h$*6>{menu$} -->
+	<h1 title="안녕하세요">menu1</h1>
+	<h2>menu2</h2>
+	<h3>menu3</h3>
+	<h4>menu4</h4>
+	<h5>menu5</h5>
+	<h6>menu6</h6>
+
+	<p id="aa"></p>
+		<script>document.getElementById("aa").innerHTML = Math.floor(Math.random()*10); </script>
+
+	<h3>Lorem ipsum dolor.</h3>
+	<!-- p*2>lorem10 -->
+	<p>Lorem ipsum dolor sit amet, consectetur <span style="font-weight: bold; color: blue">an ji eun</span> adipisicing elit. Veniam, neque.</p>
+	<p>Neque quibusdam maiores ipsum mollitia assumenda esse, consectetur, tempore quas!</p>
+
+
+
+<h1>
+	<p id="bb"></p>
+	<script>var car = ["바다","민들레","꽃"];
+	document.getElementById("bb").innerHTML = car;
+	</script>
+</h1>
+
+
+
+<p id="cc">히힛</p>
+<button type="button" onclick="document.getElementById('cc').innerHTML='뿅!'">눌러봥</button>
+
+
+
+<p id="dd"></p>
+<script>
+	function gugu(p1,p2){
+	return p1 * p2;
+}
+	document.getElementById("dd").innerHTML=gugu(4,3);
+</script>
+
+
+<img src="image/img.jpg" alt="펭귄"><br>
+
+
+
+<script type="text/javascript">
+	function gugudan(dan){
+		var str="";
+		for(var i=1;i<10;i++){
+			str += dan+"*"+i+"="+dan*i+"<br>";
+		}
+		document.getElementById("ee").innerHTML=str;
+	}
+</script>
+<button onclick="gugudan(2)"/>2단</button>
+<button onclick="gugudan(3)"/>3단</button>
+<button onclick="gugudan(4)"/>4단</button>
+<button onclick="gugudan(5)"/>5단</button>
+<button onclick="gugudan(6)"/>6단</button>
+<button onclick="gugudan(7)"/>7단</button>
+<button onclick="gugudan(8)"/>8단</button>
+<button onclick="gugudan(9)"/>9단</button>
+
+<div id="ee">단을 선택 하세요.</div>
+
+
+<p id="jj"></p>
+<script type="text/javascript">
+	var text="";
+	for(var i=0;i<5;i++){
+		text += "숫자를 보여줄게"+i+"<br>";
+	}
+document.getElementById("jj").innerHTML=text;
+</script>
+
+<p id="kk"></p>
+<script type="text/javascript">
+	var text="";
+	for(var i=0;i<10;i++){
+		if(i==5) {break;}
+		text += "숫자는"+i+"<br>";
+	}
+document.getElementById("kk").innerHTML=text;
+</script>
+
+<!--
+	<script type="text/javascript">
+		var grade;
+		var score=prompt("당신의 학점을 입력하세요.");
+		score=parseInt(score);//prompt로 받은 문자열을 숫자로 변환
+
+		if(score>100){
+			document.write("점수를 다시 입력하세요");
+		}else{
+			if(score >= 95){
+				grade = "a+";
+			}else if(score >= 90){
+				grade = "a";
+			}else if(score >= 85){
+				grade = "b+";
+			}else if(score >= 80){
+				grade = "b";
+			}else if(score >= 75){
+				grade = "c+";
+			}else if(score >= 70){
+				grade = "c";
+			}else{
+				grade = "f";
+			}
+			document.write(score+"점은"+grade+"입니다."+"<br>");
+		}
+	</script> 
+-->
+
+<hr>
+<ol tpye="a">
+	<li>가</li>
+	<li>가</li>
+	<li>가</li>
+</ol>
+<style type="text/css">
+	/* *{margin:0;padding:0;}/*전체 다 간격 주는거*/
+	li{list-style: none;} /*리스트 앞에 모형 없애주기*/
+	ul>li{float:left;background-color: gray;padding:5px;}/*float는 왼쪽으로 나열 배경색 주기 간격 10px 줌*/
+</style>
+<ul>
+	<li>가</li>
+	<li>가</li>
+	<li>가</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+
+<p id="ff"></p>
+<script type="text/javascript">
+	var fruits=["바나나","오렌지","사과","망고"];
+	document.getElementById("ff").innerHTML=fruits.toString();
+</script>
+
+<p id="gg"></p>
+<script type="text/javascript">
+	var d = new Date();
+	var months = ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"];
+	document.getElementById("gg").innerHTML=months[d.getMonth()];
+</script>
+
+<p id=hh></p>
+<script type="text/javascript">
+	var d=new Date();
+	document.getElementById("hh").innerHTML=d.getDate()+"일";
+</script>
+
+
+<p id="ii"></p>
+<script type="text/javascript">
+	var day;
+	switch (new Date().getDay()){
+		case 0:
+		day="일요일";
+		break;
+		case 1:
+		day="월요일";
+		break;
+		case 2:
+		day="화요일";
+		break;
+		case 3:
+		day="수요일";
+		break;
+		case 4:
+		day="목요일";
+		break;
+		case 5:
+		day="금요일";
+		break;
+		case 6:
+		day="토요일";
+		break;
+	}
+document.getElementById("ii").innerHTML="오늘은"+day+"이다";
+</script>
+
+<p id="ll"></p>
+<script type="text/javascript">
+	var person={
+		firstName:"john",lastName:"doe",id:5566,fullName:function(){
+			return this.firstName+" "+this.lastName;
+		}
+	};
+	document.getElementById("ll").innerHTML=person.fullName();
+</script>
+
+
+</body>
+</html>
