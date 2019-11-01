@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		li{
+			list-style: none;
+		}
+		a{text-decoration: none;}
+		a:link,a:visited{
+			color: #000;
+		}
+		body{
+			background-image: url(../images/bg_grid.gif);
+		}
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.box1{
+			background-color: #f00;
+			/*position: relative;*/
+			position: absolute;
+			left: 100px;
+			top: 100PX;
+			z-index: 1;/*레이어의 레벨을 맞춰줌*/
+		}
+		.box2{
+			background-color: #00f;
+			position: absolute;
+			left: 150px;
+			top: 150PX;
+			z-index: 1;
+		}
+		.box3{
+			background-color: #0f0;
+			position: absolute;
+			left: 200px;
+			top: 200PX;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+</body>
+</html>
