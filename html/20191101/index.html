@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=">
+	<meta charset="UTF-8">
+	<title>layout 1st</title>
+	<style>
+		/*css reset*/
+		*{margin: 0; padding: 0;}
+		li{list-style: none;}
+		a{text-decoration: none;}
+		a:link,a:visited{color:#000;}
+
+		.navWrap{background-color: skyblue;}
+
+		ul{
+			width: 800px;
+			background-color: skyblue;
+			/*height: 50px; 얘를 써주면 레이아웃이 깨짐*/
+			margin: 0 auto;
+		}
+		ul:after{/*컨텐츠 높이가 벌어져도 자동으로 클리어 되게 그래서 float가 들어가면 무조건 써줌*/
+			content: ""; clear: both; display: block;
+		}
+		ul>li{/*float가 들어가는 부분들은 높이값을 설정해주지 않아도 된다*/
+			float: left; /* display:inline-block 이걸 대신 사용해도 된다 이건 높이값을 설정하지 않아도 된다 line-height이거 설정 안해도 됨*/
+			/*display:inline-block;*/
+			width: 133.3333px; /*800/6--- 100/6=%로한다 ctrl+shift+y*/
+			text-align: center;
+			/*height: 40px;*/
+			line-height: 40px; /*1em은 16px임*/
+			color: green;
+		}
+		ul>li:hover{
+			background-color: pink;
+			color: #fff;
+		}
+
+
+		ul.navSecond{
+			width: 800px; margin: 0 auto;
+			background-color: pink;
+		}
+		ul.navSecond:after{
+			content: ""; display: block; clear: both;
+		}
+		ul.navSecond>li{
+			float: left;
+			width: 133.33px;
+		}
+		ul.navSecond>li>a{
+			/*width: 133.33px;*//*width는 li에 넣어주는게 좋다!! 여기는 %가 넣어주면 안된다 왜냐면 뒤에 block가 있어서*/
+			display: block;/*글자가 나오게 하는건 display block--부모자의 크기만큼 꽉 채워주는거*/
+			text-align: center;
+			line-height: 40px;
+		}
+		ul.navSecond>li>a:hover{
+			background-color: red;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navWrap">
+		<ul>
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+		<li>menu6</li>
+		</ul>
+	</nav>
+	<!-- ul.navSecond>li*6>a[#]>{menu$} -->
+	<ul class="navSecond">
+		<li><a href="#">menu1</a></li>
+		<li><a href="#">menu2</a></li>
+		<li><a href="#">menu3</a></li>
+		<li><a href="#">menu4</a></li>
+		<li><a href="#">menu5</a></li>
+		<li><a href="#">menu6</a></li>
+	</ul>
+</body>
+</html>
