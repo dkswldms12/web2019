@@ -5,27 +5,51 @@
 	<meta charset="UTF-8">
 	<title>layout</title>
 	<link rel="stylesheet" href="../css/reset.css"><!-- link:css-->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+    </script>
+
+  <script>
+    $(document).ready(function(){
+      $(".slider").bxSlider({auto:true,controls:false});
+      $(".sliderOne").bxSlider();
+    });//pager:false 이건 점점점 이모티콘 auto:true는 자동으로 움직이게 
+    // $(document).ready(function(){
+
+    // });
+  </script>
+
 	<style>
-		#headerWrap{
+		img{
+			width: 100%;
+			display: block;
+		}
+
+		body,#headerWrap{
 			background-color:gray;
 		}
 		header#hdWrap{
 			width: 1000px;
-			height: 120px;
+			height: 110px;
 			margin: 0 auto;/*가운데 정렬임*/
 			background-color:orange;
 		}
-		#hdWrap{
+		header#hdWrap>h1{
 			width: 150px;
-			height: 50px;
-			background-color: blue;
-			margin:0 auto;
+			height:50px;
+			background-color: skyblue;
 			text-align:center;
+			margin: 0 auto;
+		}
+		#hdWrap>div#aa{
+			height: 10px;
+			background-color: orange;
 		}
 		nav.navWrap{
-			position:absolute;
-			bottom:0;
-
+			position: absolute;
 		}
 		nav.navWrap>ul:after{
 			content:""; display:block; clear:both;
@@ -36,15 +60,18 @@
 		}
 		nav.navWrap>ul>li>a{
 			background-color:#ccc; display:block;
-			line-height:40px;
+			line-height:50px;
 			text-align: center;
+		}
+		nav.navWrap>ul>li>a:hover{
+			background-color: #fff;
 		}
 
 		/*visual*/
 		.visual{
-			height:400px;
 			background-color:skyblue;
-
+			/*width: 1000px;
+			margin: 0 auto;*/
 		}
 		/*section*/
 		section#container{
@@ -61,25 +88,59 @@
 			margin:0 auto;
 		}
 
+	/*none로 취소시킬거야
+	.bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+     box-shadow: 0 0 5px #ccc;
+     border: 5px solid #fff;
+     background: #fff; */
+
+    .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+     box-shadow: none;
+     border: none;
+     margin-bottom: 10px;
+	}
+
+	.bx-wrapper .bx-pager{
+		bottom: 30px;
+	}
+	.visual {
+		background-color: gray;
+	}
 	</style>
 </head>
-<body>
 
+<body>
 <div id="headerWrap">
 	<header id="hdWrap">
 		<h1>logo</h1>
-			<nav class="navWrap">
-				<ul>
-					<li><a href="#">menu1</a></li>
-					<li><a href="#">menu2</a></li>
-					<li><a href="#">menu3</a></li>
-					<li><a href="#">menu4</a></li>
-					<li><a href="#">menu5</a></li>
-				</ul>
-			</nav>
+		<div id="aa"></div>
+				<nav class="navWrap">
+					<ul>
+						<li><a href="#">menu1</a></li>
+						<li><a href="#">menu2</a></li>
+						<li><a href="#">menu3</a></li>
+						<li><a href="#">menu4</a></li>
+						<li><a href="#">menu5</a></li>
+					</ul>
+				</nav>
 		</header>
 </div>
-<div class="visual"></div>
+<div class="visual">
+		  <div class="slider">
+		    <div><img src="../images/pc01.jpg" alt=""></div>
+		    <div><img src="../images/pc02.jpg" alt=""></div>
+		    <div><img src="../images/pc03.jpg" alt=""></div>
+		  </div>
+		  <div class="sliderOne">
+		    <div><img src="../images/images01.jpg" alt=""></div>
+		    <div><img src="../images/images02.jpg" alt=""></div>
+		    <div><img src="../images/images03.jpg" alt=""></div>
+		  </div>
+</div>
 <section id="container"></section>
 <footer id="footerWrap"></footer>
 </body>
