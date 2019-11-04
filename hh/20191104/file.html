@@ -6,7 +6,22 @@
 	<title>layout</title>
 	<link rel="stylesheet" href="../css/reset.css"><!-- link:css-->
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+    </script>
+
+<script>
+	$(document).ready(function(){
+		$(".slider").bxSlider({auto:true, autoControls:true, stopAutoOnClick:true, controls:false, pager:false});
+	});
+</script>
+
 	<style>
+		img{
+			display: block;
+		}
 		header#hdWrap{
 			width:1000px;
 			height: 50px;
@@ -17,8 +32,10 @@
 			content:""; display:block; clear:both;
 		}
 		#hdWrap>h1{
+			color: #fff;
 			width:120px;
 			line-height: 50px;
+			margin-left: 25px;
 			float:left;
 		}
 		#hdWrap>nav.navWrap{
@@ -44,12 +61,24 @@
 		nav.navWrap>ul>li>a:hover{
 			background-color:#ccc;
 			}
+		p#aa{
+			margin-bottom: 10px;
+		}
+		div#bb{
+			margin: 0 auto;
+			width:1000px;
+			height: 400px;
+		}
 
-/*		section.aa>div.slider{
-			height:400px;
-			background-color:skyblue;
-
-		}*/
+		.bx-wrapper {
+    	-moz-box-shadow: none;
+   	    -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+		}
+		.bx-wrapper {
+		margin-bottom: 0;
+		}
 	</style>
 </head>
 
@@ -66,12 +95,13 @@
 				</ul>
 			</nav>
 		</header>
-<!-- 	<section class="aa">
+		<p id="aa"></p>
+	<div id="bb">
 		<div class="slider">
 		    <div><img src="../images/pc01.jpg" alt=""></div>
 		    <div><img src="../images/pc02.jpg" alt=""></div>
 		    <div><img src="../images/pc03.jpg" alt=""></div>
 		  </div>
-	</section> -->
+	</div>  
 </body>
 </html>
