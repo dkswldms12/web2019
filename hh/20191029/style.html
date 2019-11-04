@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>css</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+		<!-- <link rel="stylesheet" href="common.css"> -->
+	<style>
+		/*이건 주석*/
+
+		@import url(style.css);
+
+		#aa1{
+			border-radius: 24px;
+			background-color: #73AD21;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+		#aa2{
+			border-radius: 25px;
+			border: 2px solid #73AD21; /*선색은 초록색에 두깨는 2px*/
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+
+		div{color: red;}
+		.box{color: blue;}
+		#vbox{color: black};
+
+	</style> 
+</head>
+<body>
+
+	<h3>스타일맛보기</h3>
+	<hr>
+	<p>Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit.</span> Nulla vero rerum tenetur dolorum obcaecati modi eum repellendus deserunt dolorem dignissimos, totam delectus culpa minima ipsum. Quas cumque, ab quae! Adipisci!</p>
+
+	<!-- div>lorem2+div>lorem2 -->
+	<div>Lorem ipsum.
+		<div>Lorem ipsum.</div>
+	</div>
+
+	<!-- div>lorem2^div>lorem2 -->
+	<div>Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+
+	<!-- (div>lorem2)+(div>lorem2) -->
+	<div>Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+
+	<p id="aa1"></p>
+	<p id="aa2"></p>
+
+	<div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur dolores eius mollitia impedit dolorum nemo maiores. Nesciunt laborum repellat autem, ipsum eos aperiam obcaecati magni, laboriosam qui explicabo, sunt?</div>
+		<div>Animi ipsum optio cumque dolor aliquid velit minima at corporis quia ullam, repudiandae debitis eligendi itaque ducimus enim explicabo blanditiis excepturi, aperiam hic, eos error iste ipsam. Nesciunt, quo, quod!</div>
+		<div class="box">Veniam quaerat omnis consequuntur, mollitia assumenda sit nihil, sapiente magnam nesciunt molestias voluptatem odio magni modi natus maiores est quod reiciendis. Asperiores eos officiis veniam dignissimos, amet dolorum expedita atque.</div>
+		<div>Ut impedit cum rerum a commodi nam voluptatibus mollitia hic optio facere nostrum, qui maiores exercitationem eligendi ullam eos iste suscipit iusto quisquam illo est et sapiente placeat eaque voluptas.</div>
+		<div>Perferendis sunt ipsum sint cum porro adipisci consequatur nihil eaque aperiam recusandae, illo voluptas praesentium quam quasi natus aut odit ullam excepturi obcaecati! Quia autem, maiores voluptates veritatis. Assumenda, fuga.</div>
+		<div class="box">Dolorem iste perspiciatis aut consequatur doloribus quibusdam velit repellat labore neque qui obcaecati veritatis et ullam eos libero inventore possimus, ab nostrum quasi voluptas quidem fugit, dolor in non. Praesentium.</div>
+		<div>Incidunt quibusdam, perspiciatis non rem amet minima saepe debitis dolorem fugiat voluptate deleniti, molestias, maxime itaque ipsum nesciunt necessitatibus quisquam eaque fugit. Reprehenderit, voluptatibus, cumque iusto libero cum debitis est.</div>
+		<div>Dicta quisquam praesentium, officiis repellat ut sequi laudantium, veritatis, modi iste assumenda non fuga at, nam cupiditate aspernatur velit deleniti illo odit explicabo. Ut reiciendis laborum laboriosam, quia ad non!</div>
+		<div>Fugiat ad, autem voluptatum est odit optio nihil architecto reiciendis quisquam, praesentium ut corporis unde sunt! Distinctio, cupiditate? Animi labore iste quo doloribus odio, dignissimos sequi ad soluta laborum neque.</div>
+		<div class="box" id="vbox">Modi quis quos ut omnis. Dolorem voluptatibus delectus aperiam ipsum perferendis aspernatur earum impedit nulla repellat, officiis neque, officia. Totam illo corporis, dolores voluptas laudantium nulla dolorum aspernatur similique ex.</div>
+	</div>
+	<!-- div.box#vbox1 -->
+	<div class="box" id="vbox1"></div>
+	div.box#vbox1>a[#]>{menu}
+	<div class="box" id="vbox1"><a href="#">menu</a></div>
+
+</body>
+</html>

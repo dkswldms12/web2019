@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>w3school javascript</title>
+	<style type="text/css">
+		div{
+			background-color: #D94A38;
+			width: 120px;
+			height: 20px;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+
+	<button onclick="displayDate()">지금 몇시?</button>
+	<script type="text/javascript">
+		function displayDate(){
+			document.getElementById("aa").innerHTML=Date();
+		}
+	</script>
+
+
+
+
+	<p id="aa"></p>
+
+	<div onmouseover="mOver(this)"onmouseout="mOut(this)" style="background-color: #D94A38;
+			width: 120px;
+			height: 20px;
+			padding: 40px;">
+		마우스를 올려봐
+	</div>
+	<script>
+		function mOver(obj){
+			obj.innerHTML="thank you"
+		}
+		function mOut(obj){
+			obj.innerHTML="마우스를 올려봐"
+		}
+	</script>
+
+
+
+		
+	<div onmousedown="mDown(this)" onmouseup="mUp(this)">눌러봐</div>
+
+	<script>
+		function mDown(obj){
+			obj.style.backgroundColor="#1ec5e5";
+			obj.innerHTML="색바뀐거임"
+		}
+		function mUp(obj){
+			obj.style.backgroundColor="#D94A38";
+			obj.innerHTML="원래색 이거임";
+		}
+	</script>
+
+	<p>숫자넣고 ok눌러봐</p>
+	<input type="number" id="id1" min="100" mac="300" required>
+	<button onclick="myF()">OK</button>
+	<p>100이상 300이하</p>
+	<p id="bb"></p>
+
+	<script>
+		function myF(){
+			var inpObj=document.getElementById("id1");
+			if(!inpObj.checkValidity()){
+				document.getElementById("bb").innerHTML=inpObj.validationMessage;
+			}else{
+				document.getElementById("bb").innerHTML="오키 들어갔따";
+			}
+		}
+	</script>
+
+</body>
+</html>

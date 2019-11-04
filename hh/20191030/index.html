@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+
+	<title>style</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Nanum+Gothic|PT+Serif&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-family: font-family: 'Nanum Gothic', sans-serif;
+			font-size: 20px;
+		}
+		.dbox>ul>li>{color: pink;}
+		.dbox ul strong{color:red;}
+		/*.box>div>strong{color:blue;}*/
+		.dbox div strong{color:blue;}
+		ul.menu>li>strong{color: yellow;}
+		ul.menu>li>p{color: pink;} 	/*ul.menu>p{color: pink;} li가 빠지면 안됨! */
+
+		.ebox>ul>li>{color: green;}
+		ul.menu1>li>p{color: black;} 	/*ul.menu>p{color: pink;} li가 빠지면 안됨! */
+		#aa>div>strong{background-color: green;}
+
+		.dbox div:first-letter{background-color: red;font-weight: bold;}
+		ul.menu li:hover{background-color: skyblue;color: blue;font-weight: bold;}
+		ul.menu li:active{background-color: red;}
+
+		/*a{text-decoration: none; background-color: #ffff00; display: block; width: 100px;text-align: center;}*/
+		/*a태그같은 인라인 태그들은 위드 하이트 적용이 안됨*/
+		/*그치만 display:블럭단위가 되면 위트 텍스트얼라인 조절이 가능해진다*/
+		/*a:link{color: black;}
+		a:visited{color: black;}
+		a:hover{color: gray; font-weight: bold;}
+		h3{background-color: #00ffff;  width:300px; height: 30px;}
+
+		div.box,p.box{background-color: blue; margin: 10px;}
+		#vbox{background-color: skyblue;}
+		#vbox.cbox{background-color: pink;}*/
+
+		/**{margin: 0;}*/
+		a{text-decoration:none;text-align: center; display: block;}
+		a:link,a:visited{color: black;}
+		a:hover{color: skyblue;}
+		h3{background-color: #ffff00;}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur  Voluptatibus,</div>
+	<div class="box">Lorem ipsum dolor sit amet,  Voluptatibus,</div>
+	<div id="vbox">Lorem ipsum dolor sit amet,  Voluptatibus,</div>
+	<div id="vbox" class="cbox">Lorem ipsum dolor sit amet,  Voluptatibus,</div>
+	<div id="vbox" class="cbox" style="background-color: red">Lorem ipsum dolor sit amet,  Voluptatibus,</div>
+	<p class="box">consectetur adipisicing elit. Quaerat, aspernatur.</p>
+	<!-- ctrl+shift+대괄호왼쪽거하면 숨기기 -->
+
+	<h3><a href="#">menu</a></h3>
+
+	<div class="dbox">
+		<div>Lorem <strong>ipsum dolor</strong> sit amet.</div>
+		<!-- ul>li*3>{title$} -->
+		<ul class="menu">
+			<li>title1</li>
+			<li><strong>title2</strong></li>
+			<li><p>title3</p></li>
+		</ul>
+	</div>
+
+	<div class="ebox">
+		<div id="aa">
+			<div>Lorem <strong>ipsum dolor</strong> sit amet.</div>
+		</div>
+		<!-- ul>li*3>{title$} -->
+		<ul class="menu1">
+			<li>title1</li>
+			<li><strong>title2</strong></li>
+			<li><p>title3</p></li>
+		</ul>
+	</div>
+ 
+	<!-- <div class="box"></div> 이것의 단축 #vbox1
+		 <div id="vbox1"></div> 이것의 단축 .box 
+	-->
+
+
+</body>
+</html>

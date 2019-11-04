@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+	body{background-color: yellow;}
+	h3{color: purple;}
+	hr{border: 5px; border-style:solid; border-color: green;}
+	span{color: blue; font-size: 20px;}

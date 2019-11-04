@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin: 0; padding: 0;}
+/*		h1{float: left;
+			background-color: pink;}
+		.bono{float: left; width: 100px; height: 100px;}
+		.bono1{float: left; width: 100px; height: 100px;}
+		p{width: 200px; float: left;background-color: pink;}*/
+		ul{
+			background-color: pink;
+			width: 600px;
+			height: 100px;
+		}
+		ul>li{float: left;
+			width:100px;
+			height: 100px;
+			background-color: skyblue;
+		};
+	</style>
+</head>
+<body>
+<!-- 	<img src="../images/lion.jpg" alt="" class="bono">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad illo dolore illum praesentium aperiam at hic architecto fugiat ab error eligendi odio optio quisquam enim, vero ipsum reprehenderit sunt inventore modi amet repudiandae. Deleniti autem blanditiis accusantium sint accusamus, numquam alias error cumque maiores. Culpa a doloribus consequuntur. Dolores consectetur quasi harum necessitatibus, qui quas, animi neque eos quae adipisci, similique alias nemo ducimus enim maxime minima impedit nisi eveniet, nihil fuga velit! Voluptas veniam modi architecto consectetur vel recusandae enim facilis, quas, cumque, maxime hic. Maxime molestias debitis enim, dicta velit nobis provident! Quibusdam quas quae rem cum unde.</p>
+	<img src="../images/lion.jpg" alt="" class="bono1">
+ -->
+	<ul class="clearfix">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+
+	<style>
+		.wrap{
+			width: 610px;
+			/*height: 100px;*/
+			background-color: red;
+		}
+		.box{ /*박스 높이만 수정해도 wrap의 길이가 바뀐다*/
+			width: 300px;
+			height: 500px;
+			background-color: blue;
+			float: left;
+		}
+		/*.nobox{clear:both;}*/
+		.clearfix:after{
+			content:"";
+			display: block;
+			clear: both;
+		}
+	</style>
+
+	<div class="wrap clearfix">
+		<div class="box">box</div>
+		<div class="box">box</div>
+		<!-- <div class="nobox"></div> -->
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nisi repellendus, dignissimos officiis quisquam modi error autem alias ut. Illum nihil harum doloremque, deleniti, necessitatibus soluta consequuntur ipsa incidunt eligendi eveniet quas deserunt, quidem, possimus praesentium tenetur quo rem asperiores impedit tempora laboriosam saepe. Nihil suscipit facilis, id hic, est praesentium amet, laborum quas voluptate dicta quisquam expedita debitis rerum culpa corrupti omnis libero esse. Delectus mollitia nisi necessitatibus perspiciatis culpa dolore. Repellat doloribus minus voluptatibus, magnam eaque quos dignissimos eius temporibus dolore cumque quae quas vero consequatur fugit id officiis illum possimus et ducimus. Ducimus praesentium numquam obcaecati architecto!</p>
+
+	<style>
+		div.boxafter{
+			background-color: gray;
+		}
+		div.boxafter:after{
+			content: "안녕하세요";
+		}
+		p.boxafter:before{
+			content: "아아앙";
+		}
+</style>
+	<div class="boxafter">
+		<h1>lorem10</h1>
+			<p>test</p>
+</div>
+</body>
+</html>

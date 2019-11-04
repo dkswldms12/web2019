@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery</title>
+
+	<style>
+		#div1{width: 80px;height: 80px;display: none;background-color: red;}
+		#div2{width: 80px;height: 80px;display: none;background-color: green;}
+		#div3{width: 80px;height: 80px;display: none;background-color: blue;}
+		#div4{background: yellow; height: 100px; width: 100px; position:absolute;}
+
+		#panel, #show{
+			padding: 5px;
+			font-size: 18px;
+			text-align: center;
+			background-color: #555;
+			color: white;
+			border: solid 1px #666;
+			border-radius: 3px; /*둥근모서리*/
+		}
+		#panel{
+			padding: 100px; /*내려가는 길이*/
+			display: none;
+		}
+
+		table{
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td,th{
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		tr:nth-child(even){
+			background-color: #dddddd;
+		}
+
+	</style>
+
+<!-- 	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("p").hide();
+			});
+			$("#show").click(function(){
+				$("p").show();
+			});
+		});
+	</script> 
+-->
+
+<!-- 
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				$("#div1").fadeIn();
+				$("#div2").fadeIn("slow");
+				$("#div3").fadeIn(3000);
+			});	
+			$("#button2").click(function(){
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow");
+				$("#div3").fadeOut(3000);
+			});	
+		});
+	</script> 
+
+ -->
+
+<!-- 	
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+			});
+		});
+	</script> 
+-->
+
+<!-- 
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div").animate({
+				left:'250px',opacity:'0.5',height:'150px',width:'150px'
+			});
+		});
+	});
+</script>
+ -->
+
+<!-- 
+	<script>
+		$(document).ready(function(){
+			$("#show").click(function(){
+				$("#panel").slideDown(1000);
+			});
+			$("#stop").click(function(){
+				$("#panel").stop();
+			});
+		});
+	</script>
+ -->
+
+<!-- 
+ 	<script>
+ 		$.noConflict();
+ 		jQuery(document).ready(function(){
+ 			jQuery("#button1").click(function(){
+ 				jQuery("p").text("hi");
+ 			});
+ 			jQuery("#button2").click(function(){
+ 				jQuery("p").text("안녕");
+ 			});
+ 		});
+ 	</script>
+
+ 	 -->
+<!-- 
+	<script>
+		$(document).ready(function(){
+			$("#myIn").on("keyup",function(){
+				var value=$(this).val().toLowerCase();
+				$("#myTable tr").filter(function(){
+
+					$(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+				});
+			});
+		});
+	</script>
+ -->
+	<script>
+		$(document).ready(function(){
+			$("#myInput").on("keyup",function(){
+				var value=$(this).val().toLowerCase();
+				$("#myList li").filter(function(){
+
+					$(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+				});
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("p").append(" leedaehwi ");
+			});
+			$("#btn2").click(function(){
+				$("ol").append("ㄱㅇㅇ");
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<!--
+ 	<div ng-app="">
+		
+		<p>Name : <input type="text" ng-model="name" placeholder="여기에입력하세요"</p>
+		<h1>{{name}}</h1>
+
+	</div> 
+--> 
+
+<!-- 	<div ng-app="" ng-init="myS=true">
+			<p><button ng-disabled="myS">눌러!</button></p>
+			<p><input type="checkbox" ng-model="myS"/>체크하세요</p>
+			<p>{{ myS }}</p>
+		</div>  
+-->
+
+
+<!-- 
+	<p>룰루랄라</p>
+	<button id="hide">hide</button>
+	<button id="show">show</button> 
+-->
+	
+<!-- 
+	<button id="button1">눌러봐</button>
+	<button id="button2">눌러봐</button><br><br>
+	<div id="div1"></div><br>
+	<div id="div2"></div><br>
+	<div id="div3"></div> 
+-->
+
+
+<!--
+ 	<p id="p1">이거 색 변한당</p>
+	<button>눌러봐</button> 
+-->
+
+<!-- 
+	<button>눌러봐</button>
+	<div id="div4"></div>
+ -->
+
+<!-- 
+	<button id="stop">멈추기</button>
+	<div id="show">누르면 내려간다</div>
+	<div id="panel">앗늉</div>
+ -->
+
+<!-- 
+ 	<p>안녕</p>
+ 	<button id="button1">영어로 바꾸기</button>
+ 	<button id="button2">한글로 바꾸기</button>
+
+ -->
+
+<!-- 
+	<h2>찾기를 해볼게</h2>
+	<input type="text" id="myIn" placeholder="Search.."><br><br>
+	<table>
+		<thead>
+			<tr>
+				<th>firstname</th>
+				<th>lastname</th>
+				<th>email</th>
+			</tr>
+		</thead>
+		<tbody id="myTable">
+			<tr>
+				<td>이</td>
+				<td>대휘</td>
+				<td>daehwi@naver.com</td>
+			</tr>
+			<tr>
+				<td>박</td>
+				<td>우진</td>
+				<td>woojin@naver.com</td>
+			</tr>
+			<tr>
+				<td>이</td>
+				<td>달이</td>
+				<td>moon@naver.com</td>
+			</tr>
+			<tr>
+				<td>이</td>
+				<td>별이</td>
+				<td>star@naver.com</td>
+			</tr>
+		</tbody>
+	</table>
+ -->
+
+ 	<h2>이름찾기ul</h2>
+ 	<input type="text" id="myInput" placeholder="search.."><br>
+ 	<ul id="myList">
+ 		<li>first item</li>
+ 		<li>second item</li>
+ 		<li>third item</li>
+ 		<li>fourth</li>
+ 		<li>leedaehwi</li>
+ 	</ul>
+
+	<p>세상에서 제일 귀여운 사람</p><br>
+	<ol>
+	</ol>
+
+	<button id="btn1">text</button>
+	<button id="btn2">list</button>
+
+</body>
+</html>
