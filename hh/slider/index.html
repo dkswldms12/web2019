@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>slider</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/limit.js"></script>
+	<script src="js/zA7n.js"></script>
+	<script>
+		$(window).load(function(){
+			$("#zA7n").zA7n({});
+		});
+	</script>
+	<style>
+		/*.aa{
+			background-color: pink;
+		}*/
+		header#aawrap{
+			width: 100%;
+			height: 100px;
+			margin: 0 auto;
+			background-color: orange;
+			position: relative;
+		}
+		#aawrap>h1{
+			width: 100px;
+			color: #fff;
+			text-align: center;
+			line-height: 90px;
+		}
+		nav.bbwrap{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		nav.bbwrap>ul:after{
+			content: ""; display: block; clear: both;
+		}
+		nav.bbwrap>ul>li{
+			float: left;
+			width: 270px;
+		}
+		nav.bbwrap>ul>li>a{
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			line-height: 50px;
+			color: #fff;
+		}
+		nav.bbwrap>ul>li>a:hover{
+			background-color: #000;
+		}
+
+		.accli {
+     		box-shadow: none;
+ 			}
+	</style>
+</head>
+<body>
+		<header id="aawrap">
+			<h1>logo</h1>
+				<nav class="bbwrap">
+					<ul>
+						<li><a href="#">menu1</a></li>
+						<li><a href="#">menu2</a></li>
+						<li><a href="#">menu3</a></li>
+						<li><a href="#">menu4</a></li>
+						<li><a href="#">menu5</a></li>
+					</ul>
+				</nav>
+		</header>
+	<div class="aa">
+		<div class="acc" id="zA7n">
+			<ul class="accul">
+				<li class="accli"><img src="image/pc01.jpg" alt="이미지1" class="accimg"></li>
+				<li class="accli"><img src="image/pc02.jpg" alt="이미지2" class="accimg"></li>
+				<li class="accli"><img src="image/pc03.jpg" alt="이미지3" class="accimg"></li>
+				<li class="accli"><img src="image/pc01.jpg" alt="이미지4" class="accimg"></li>
+				<li class="accli"><img src="image/pc02.jpg" alt="이미지5" class="accimg"></li>
+				<li class="accli"><img src="image/pc03.jpg" alt="이미지6" class="accimg"></li>
+			</ul>
+		</div>
+	</div>
+
+	
+</body>
+</html>

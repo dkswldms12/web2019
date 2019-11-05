@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>background</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{
+			background-image: url(../images/pc01.jpg);
+			background-repeat: no-repeat;/*no-repeat는사진 한번만 나오게하는거--repeat-x|repeat-y*/
+			background-position: 50%;
+			/*background-position: right bottom;*/
+		}
+		.logo{
+			width: 120px;
+			height: 30px;
+			
+		}
+		.logo>h1{/*항상 h1에 로고를 넣어줘야 한다*/
+			height: 30px;
+			font-size: 1em;
+			background-image: url(../images/naver.png);
+			background-repeat: no-repeat;
+		}
+		.logo>h1>a{
+			display: block;
+			line-height: 30px;
+			text-align: center;
+			text-indent: -9999px;/*글자 없애기*/
+		}
+		.button,.bt{
+			background-image: url(../images/naver.png);
+		}
+		.button{
+			width: 56px;
+			height: 20px;
+			/*background-image: url(../images/naver.png);*/
+			background-position: -124px 0px;
+			text-indent: -9999px;/*글자 없애기*/
+
+		}
+		.button:hover{
+			 background-position: -124px -23px;
+		}
+		.bt{
+			width: 57px;
+			height: 20px;
+			/*background-image: url(../images/naver.png);*/
+			background-position: -123px -46px;
+			text-indent: -9999px;
+		}
+		.bt:hover{
+			 background-position: -123px -69px;
+		}
+		.bt1{
+			width: 50px;
+			height: 20px;
+			background-image: url(../images/naver.png);
+			background-position: -178px -44px;
+			text-indent: -9999px;
+		}
+		.bt2{
+			width:58px;
+			height: 19px;
+			background-image: url(../images/naver.png);
+			background-position: 0px -75px;
+			text-indent: -9999px;
+
+		}
+		.bt2:hover{
+			 background-position: -0px -98px;
+		}
+		.bt3{
+			width:44px;
+			height: 20px;
+			background-image: url(../images/naver.png);
+			background-position: -45px -144px;
+			text-indent: -9999px;
+
+		}
+		.bt3:hover{
+			 background-position: -90px -144px;
+		}
+
+		.nav{
+			width: 980px;
+		}
+
+		.nav ul{
+			content: ""; display: block; clear: both;
+		}
+
+		.nav ul li{
+			background-image: url(../images/sprites.png);
+			width: 140px;
+			height: 50px;
+			text-indent: -9999px;
+			float: left;
+			transition: 0.3s;
+		}
+		.nav ul li a{
+			display: block;
+			height: 50px;
+		}
+			/*.nav ul li:nth-child(1){
+				background-position: 0 45px;
+			}
+			.nav ul li:nth-child(1):hover{
+				background-position: 0 100px;
+			}
+			.nav ul li:nth-child(2){
+				background-position: -139px 45px;
+			}
+			.nav ul li:nth-child(2):hover{
+				background-position: -144px 0px;
+			}
+			.nav ul li:nth-child(3){
+				background-position: -283px 45px;
+			}
+			.nav ul li:nth-child(3):hover{
+				background-position: -284px 0px;
+			}
+			.nav ul li:nth-child(4){
+				background-position: -420px 45px;
+			}
+			.nav ul li:nth-child(4):hover{
+				background-position: -425px 0px;
+			}
+			.nav ul li:nth-child(5){
+				background-position: -560px 45px;
+			}
+			.nav ul li:nth-child(5):hover{
+				background-position: -561px 0px;
+			}
+			.nav ul li:nth-child(6){
+				background-position: -703px 45px;
+			}
+			.nav ul li:nth-child(6):hover{
+				background-position: -703px 0px;
+			}
+			.nav ul li:nth-child(7){
+				background-position: -844px 45px;
+			}
+			.nav ul li:nth-child(7):hover{
+				background-position: -844px 0px;
+			}*/
+
+		.nav ul li:nth-child(1){
+			background-position: 0 0px;
+		}
+		.nav ul li:nth-child(1):hover{
+			background-position: 0 -50px;
+		}
+		.nav ul li:nth-child(1).active{
+			background-position: 0 -50px;
+		}
+		.nav ul li:nth-child(2){
+			background-position: -140px 0px;
+		}
+		.nav ul li:nth-child(2):hover{
+			background-position: -140px -50px;
+		}
+		.nav ul li:nth-child(2).active{
+			background-position: -140px -50px;
+		}
+		.nav ul li:nth-child(3){
+			background-position: -280px 0px;
+		}
+		.nav ul li:nth-child(3):hover{
+			background-position: -280px -50px;
+		}
+		.nav ul li:nth-child(3).active{
+			background-position: -280px -50px;
+		}
+		.nav ul li:nth-child(4){
+			background-position: -420px 0px;
+		}
+		.nav ul li:nth-child(4):hover{
+			background-position: -420px -50px;
+		}
+		.nav ul li:nth-child(4).active{
+			background-position: -420px -50px;
+		}
+		.nav ul li:nth-child(5){
+			background-position: -560px 0px;
+		}
+		.nav ul li:nth-child(5):hover{
+			background-position: -560px -50px;
+		}
+		.nav ul li:nth-child(5).active{
+			background-position: -560px -50px;
+		}
+		.nav ul li:nth-child(6){
+			background-position: -700px 0px;
+		}
+		.nav ul li:nth-child(6):hover{
+			background-position: -700px -50px;
+		}
+		.nav ul li:nth-child(6).active{
+			background-position: -700px -50px;
+		}
+		.nav ul li:nth-child(7){
+			background-position: -840px 0px;
+		}
+		.nav ul li:nth-child(7):hover{
+			background-position: -840px -50px;
+		}
+		.nav ul li:nth-child(7).active{
+			background-position: -840px -50px;
+		}
+		.bgtest{
+			width: 200px;
+			height: 200px;
+/*			background-image: url(../images/apple.png);
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-color: #ccc;
+			background-size: cover;*/
+			background:#ccc url(../images/apple.png) no-repeat center;
+		}
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1><a href="#">네이버</a></h1>
+	</div>
+	<div class="button">
+		지식백과
+	</div>
+	<p class="bt">통합검색</p>
+	<p class="bt1">지식in</p>
+	<p class="bt2">웹사이트</p>
+	<p class="bt3">블로그</p>
+
+	<div class="nav">
+		<ul>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li class="active"><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+		</ul>
+	</div>
+	<br><br><br><br>
+	<div class="bgtest"></div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+    </script>
+
+   	<script>
+    $(document).ready(function(){
+      $(".slider").bxSlider();
+    });
+	</script>
+
+	<script>
+		$(window).load(function(){
+			$("#zA7n").zA7n({});
+		});
+	</script>
+
+	<style>
+		img{
+			width: 100%;
+		}
+
+		header#nn{
+			width: 1000px;
+			height: 120px;
+			background-color: pink;
+			margin: 0 auto;
+			position: relative;
+		}
+		#nn>h1{
+			width: 100px;
+			line-height: 120px;
+			text-align: center;
+			color: #fff;
+			background-color: blue;
+		}
+		#nn>nav.aa{
+			width: 400px;
+			
+			background-color: skyblue;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		nav.aa ul:after{
+			content: ""; display: block; clear: both;
+		}
+		nav.aa ul li{
+			width: 100px;
+			float: left;
+
+		}
+		nav.aa ul li a{
+			display: block;
+			text-align: center;
+			line-height: 40px;
+
+		}
+
+		#nn>nav.bb{
+			width: 800px;
+			background-color: yellow;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		nav.bb ul:after{
+			content: ""; display: block; clear: both;
+		}
+		nav.bb ul li{
+			width: 200px;
+			float: left;
+			border-right: 1px solid #000;
+			box-sizing: border-box;/*라인이 이상하지 않게 도와주는*/
+
+		}
+	/*	nav.bb ul li:first-child{
+			border-left: 1px solid #000;
+		}*/
+		nav.bb ul li:last-child{
+			border-right: none
+		}
+		nav.bb ul li a{
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		}
+
+		.vv{
+			margin: 0 auto;
+		}
+
+		.bx-wrapper {
+    	-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
+    	border: none;
+		}
+		.bx-wrapper {
+     	margin-bottom: 0;
+     }
+
+     	.box{
+     		width: 100px;
+     		height: 100px;
+   /*  		border-width: 1px;
+     		border-style: solid;
+			color: black;*/
+			border: 2px dotted black;
+     	}
+
+	</style>
+</head>
+<body>
+
+<div class="full">
+	<header id="nn">
+		<h1>logo</h1>
+		<nav class="aa">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+			</ul>
+		</nav>
+		<nav class="bb">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+			</ul>
+		</nav>
+	</header>
+</div>
+
+<div class="vv">
+	<ul class="slider">
+		<li><img src="../images/pc01.jpg" alt="하나"></li>
+		<li><img src="../images/pc02.jpg" alt="둘"></li>
+		<li><img src="../images/pc03.jpg" alt="셋"></li>
+	</ul>
+</div>
+
+<div class="box"></div>
+
+</body>
+</html>
