@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>메뉴,슬라이더</title>
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+    </script>
+
+    <script>
+    	$(document).ready(function(){
+    		$(".slider").bxSlider({auto:true,controls:false,pager:false});
+    	});
+    </script>
+
+
+	<style>
+		element.style {
+    		width: 1200px;
+		}
+
+		.bx-wrapper {
+		    margin-bottom: 0;
+		}
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		}
+
+		.bx-wrapper img {
+		    max-width: 1200px;
+		    display: block;
+		}
+
+		img{
+			width: 1200px;
+			height: 500px;
+			margin: 0 auto;
+		}
+		header#hd{
+			width: 1200px;
+			height: 100px;
+			background-color: skyblue;
+			margin: 0 auto;
+			position: relative;
+		}
+		#hd>h1{
+			width: 100px;
+			text-align: center;
+			line-height: 90px;
+			color: #fff;
+			position: absolute;
+			left: 0;
+			margin-left: 20px;
+		}
+		#hd>nav.aa{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		nav.aa>ul:after{
+			content: ""; display: block; clear: both;
+		}
+		nav.aa>ul>li{
+			width: 200px;
+			float: left;
+			background-color: skyblue;
+		}
+		nav.aa>ul>li>a{
+			text-align: center;
+			line-height: 50px;
+			display: block;
+			color: #fff;
+		}
+		nav.aa>ul>li>a:hover{
+			background-color: pink;
+		}
+
+		#hd>nav.bb{
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		nav.bb>ul:after{
+			content: ""; display: block; clear: both;
+		}
+		nav.bb>ul>li{
+			width: 80px;
+			float: left;
+			background-color: skyblue;
+		}
+		nav.bb>ul>li>a{
+			text-align: center;
+			line-height: 30px;
+			display: block;
+			color: #fff;
+			font-size: 12px;
+		}
+		nav.bb>ul>li>a:hover{
+			background-color: pink;
+		}
+		hr{
+			border-width: 2px;
+			border-color: #fff;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header id="hd">
+		<h1>logo</h1>
+		<nav class="aa">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+		<nav class="bb">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+		<hr noshade>
+	<div class="aa">
+		<ul class="slider">
+				<li><img src="../images/img1.jpg" alt=""></li>
+				<li><img src="../images/img2.jpg" alt=""></li>
+				<li><img src="../images/img3.jpg" alt=""></li>
+				<li><img src="../images/img4.jpg" alt=""></li>
+				<li><img src="../images/img5.jpg" alt=""></li>
+		</ul>
+	</div>
+	
+</body>
+</html>
