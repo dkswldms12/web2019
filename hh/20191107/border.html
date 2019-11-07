@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>after</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box1{
+			width: 300px;
+			height: 200px;
+			background-color: pink;
+			margin: 0 auto;
+
+		}
+		.box1:before{
+			content: "hi";
+		}
+		.box1>p:after{
+			content: "";
+			display: block;
+			width: 80px;
+			height: 3px;
+			margin: 0 auto;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+		}
+		.box1>p{
+			width: 160px;
+			margin: 0 auto;
+			/*background-color: skyblue;*/
+			text-align: center;
+
+		}
+
+		.nav{
+			width: 1000px;
+			/*background-color: #ccc;*/
+			margin: 0 auto;
+		}
+		.nav>ul:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.nav>ul>li{
+			float: left;
+			width: 166.67px;
+			position: relative;
+		}
+/*		.nav>ul{ 이거랑 같다 nav>ul>li:first-child:after{
+			overflow: hidden;
+		}*/
+		.nav>ul>li:after{
+			content: "";
+			display: block;
+			width: 1px;
+			height: 15px;
+			background-color: #000;
+			position: absolute;
+			top: 12px;
+			left: -1px;
+		}
+		.nav>ul>li:first-child:after{
+			content: "";
+			display: none;
+		}
+		.nav>ul>li>a{
+			display: block;
+			line-height: 40px;
+			text-align: center;
+		}
+		.box2{
+			width: 200px;
+			height: 30px;
+			margin: 0 auto;
+			background-color: yellow;
+		/*	border-right-style: dotted; /*solid
+			border-width:2px;
+			border-color: black;*/
+			/*border-right: 1px solid #000;*/
+			border: 1px solid #000;
+			border-radius: 15px 15px 15px 15px;/*4다 똑같으면 15px하나만 넣어주면 됨*/
+			padding-left: 15px;/*박스안쪽 페딩으로 이동시키는게 좋다*/
+			padding-top: 3px;
+			box-sizing: border-box;
+		}
+		.box3{
+			width: 200px;
+			height: 200px;
+			margin: 20px auto;
+			background-color: pink;
+			border: 5px solid #000;
+			border-radius: 100px;/*동그라미*/
+			box-sizing: border-box;
+			overflow: hidden;
+
+		}
+		.box3 img{
+			width: 100%;
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p>Lorem ipsum dolor</p>
+	</div>
+
+	<div class="nav">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+			<li><a href="#">menu6</a></li>
+		</ul>
+	</div>
+	<div class="box2">
+		Lorem.
+	</div>
+	<div class="box3"><img src="../images/testimg.jpg">
+	</div>
+</body>
+</html>

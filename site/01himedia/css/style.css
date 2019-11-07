@@ -79,3 +79,82 @@ header#main_header>#main_util{
 			background-color: skyblue;
 			color: #1d5da4;
 		}
+
+	/*visual*/
+		#visual_wrap{
+			height: 400px;
+			background: #203969 url(../images/visual_bg.jpg) no-repeat;/*no-repear 반복하지 말라고*/
+		}
+
+		#visual_wrap .visual{
+			width: 980px;
+			height: 480px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		#visual_wrap .visual img{
+			position: absolute;
+		}
+		#visual_wrap .visual img.img01{
+			right: 0;
+		}
+		#visual_wrap .visual img.img02{
+			left: 0;
+			top: 80px;
+		}
+
+
+
+	/*visual_icon*/
+		#visual_icon{
+			background-color: #ccc;
+		}
+		#visual_icon .icon_wrap{
+			width: 980px;
+			margin: 0 auto;
+		}
+		#visual_icon .icon_wrap li{
+			float: left;
+			width: 196px;
+			height: 196px; 
+		}
+		#visual_icon .icon_wrap li:nth-child(1){
+			background-color: #7c99b9;
+		}
+		#visual_icon .icon_wrap li:nth-child(2){
+			background-color: #4f7441;
+		}
+		#visual_icon .icon_wrap li:nth-child(3){
+			background-color: #488ce8;
+		}
+		#visual_icon .icon_wrap li:nth-child(4){
+			background-color: #3db5f2;
+		}
+		#visual_icon .icon_wrap li:nth-child(5){
+			background-color: #95c8ff;
+		}
+		#visual_icon .card{
+			/*background-color: pink;*/
+			padding: 15px;
+		}
+		#visual_icon .card img{
+			display: block;/*블럭으로 잡아주고 가운데 정렬*/
+			margin: 0 auto;
+		}
+		#visual_icon .card_body{
+			text-align: center;
+			padding-top: 10px;
+			color: #fff;
+		}
+
+
+
+		#menu1 .menu2{
+			width: 980px;
+			margin: 0 auto;
+		}
+		#menu1 .munu2 li{
+			float: left;
+			width: 326px;
+		}

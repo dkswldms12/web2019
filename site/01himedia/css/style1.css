@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+header#main_header>#main_util{
+	border: 1px solid #ccc;
+}
+#util_menu{
+	width: 980px;
+	margin: 0 auto;
+}
+#util_menu ul.util_wrap{
+	float: right;
+}
+#util_menu ul.util_wrap li{
+	float: left;
+}
+#util_menu ul.util_wrap li:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+}
+#util.menu ul.util_wrap li a{
+	text-align: center;
+	line-height: 30px;
+	display: block;
+	padding: 20px;
+}
