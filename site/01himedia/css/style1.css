@@ -88,6 +88,7 @@ header#main_header>#main_util{
 
 #visual_icon{
 	background-color: #ccc;
+	margin-bottom: 20px;/*얘는 마진*/
 }
 #visual_icon .icon_wrap{
 	width: 980px;
@@ -112,4 +113,127 @@ header#main_header>#main_util{
 	text-align: center;
 	padding: 10px;
 	color: #fff;
+}
+
+#secwrap1{
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+#secwrap1 li{
+	float: left;
+	width: 310px;
+	margin-right: 25px;/*얘도 마진*/
+}
+
+#secwrap1 li:last-child{
+	margin-right: 0px;
+}
+#secwrap1 li img{
+	display: block;
+}
+#secwrap1 li .card_body{
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+#secwrap1 li .card-title{
+	padding-bottom: 10px;
+}
+#secwrap1 li .card-text{
+	overflow: hidden;/*글자가 넘치는것을 자름*/
+	white-space: nowrap;/*줄바꿈 안되게*/
+	text-overflow: ellipsis;/*...처리*/
+	-webkit-line-clamp:3;/*보여줄 줄 갯수*/
+	width: 250px;
+}
+
+#secwrap2{
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+#secwrap2 li{
+	float: left;
+	width: 310px;
+	position: relative;
+	margin-right: 25px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+#secwrap2 li:last-child{
+	margin-right: 0px;
+}
+#secwrap2 li img{
+	padding-top: 30px;
+	width: 170px;
+	height: 140px;
+	display: block;
+	float: right;
+	position: absolute;
+	right: -15px;
+}
+#secwrap2 .card-title{
+	padding-top: 20px;
+	padding-left: 13px;
+}
+#secwrap2 .card-text{
+	padding-top: 5px;
+	padding-left: 13px;
+	padding-bottom: 15px;
+}
+#secwrap2 .card-h{
+	padding-left: 13px;
+	font-size: 12px;
+}
+
+.aa{
+	background-color: #5D5D5D;
+}
+.bb{
+	width: 980px;
+	margin: 0 auto;
+}
+.bb li{
+	float: left;
+	position: relative;
+}
+.bb li:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #fff;
+	position: absolute;
+	top: 10px;
+}
+.bb li a{
+	text-align: center;
+	line-height: 30px;
+	padding: 10px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.ft{
+	padding-top: 20px;
+	background-color: gray;
+	padding-bottom: 30px;
+}
+.ftw{
+	width: 980px;
+	margin:0 auto;
+}
+.ftw h2{
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+}
+.ftw1{
+	float: left;
+	padding-left: 50px;
+	color: #fff;
+	font-size: 13px;
 }
