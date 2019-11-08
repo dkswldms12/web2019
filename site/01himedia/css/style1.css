@@ -219,7 +219,7 @@ header#main_header>#main_util{
 .ft{
 	padding-top: 20px;
 	background-color: gray;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .ftw{
 	width: 980px;
@@ -236,4 +236,5 @@ header#main_header>#main_util{
 	padding-left: 50px;
 	color: #fff;
 	font-size: 13px;
+	line-height: 20px;
 }
