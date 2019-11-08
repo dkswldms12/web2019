@@ -75,12 +75,41 @@ header#main_header>#main_util{
 	margin: 0 auto;
 	position: relative;
 }
-#wisual_wrap .visual img{
+#visual_wrap .visual img{
 	position: absolute;
 }
-#wisual_wrap .visual img.img01{
-	right: 30px;
+#visual_wrap .visual img.img01{
+	right: 0px;
 }
-#wisual_wrap .visual img.img02{
-	
+#visual_wrap .visual img.img02{
+	top: 80px;
+	left: 0;
+}
+
+#visual_icon{
+	background-color: #ccc;
+}
+#visual_icon .icon_wrap{
+	width: 980px;
+	margin: 0 auto;
+}
+.icon_wrap ul li{
+	float: left;
+	width: 196px;
+	height: 196px;
+}
+.icon_wrap ul li :nth-child(){
+
+}
+.icon_wrap .card{
+	padding: 15px;/*위에 간격 떨어트려 주는거*/
+}
+.icon_wrap .card img{
+	display: block;
+	margin: 0 auto;
+}
+.icon_wrap .card_body{
+	text-align: center;
+	padding: 10px;
+	color: #fff;
 }

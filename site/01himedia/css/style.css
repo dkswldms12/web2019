@@ -109,6 +109,7 @@ header#main_header>#main_util{
 	/*visual_icon*/
 		#visual_icon{
 			background-color: #ccc;
+			margin-bottom: 30px;/*밑에 레이아웃 부분이랑 간격주기*/
 		}
 		#visual_icon .icon_wrap{
 			width: 980px;
@@ -146,4 +147,27 @@ header#main_header>#main_util{
 			text-align: center;
 			padding-top: 10px;
 			color: #fff;
+		}
+
+
+		section#secwrap1{
+			width: 980px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		#secwrap1 li{
+			float: left;
+			width: 310px;/*980-(310*3)=50/2=25px*/
+			margin-right: 25px;/*오른쪽 여백*/
+		}
+		#secwrap1 li:last-child{
+			margin-right: 0;
+		}
+		#secwrap1 li img{/*이미지는 블럭처리 해주는게 좋다*/
+			display: block;
+		}
+		#secwrap1 li .card_body{
+			padding: 10px 20px;/*10은 윗부분 20은 왼쪽*/
+			border: 1px solid #ccc;
+			border-top: none;
 		}

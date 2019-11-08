@@ -14,28 +14,35 @@
 			$("#zA7n").zA7n({});
 		});
 	</script>
-	<style>
-		/*.aa{
-			background-color: pink;
-		}*/
+ 	<style>
 		header#aawrap{
-			width: 1200px;
-			height: 100px;
-			margin: 0 auto;
-			background-color: orange;
-			position: relative;
-		}
-		#aawrap>h1{
-			width: 100px;
-			color: #fff;
-			text-align: center;
-			line-height: 100px;
-		}
+	      width: 1200px;
+	      height: 100px;
+	      margin: 0 auto;
+	      background-color: orange;
+	      position: relative;
+	    }
+	    #aawrap>h1{
+	      width: 100px;
+	      color: #fff;
+	      text-align: center;
+	      line-height: 100px;
+	    }
+		
+
 		nav.bbwrap{
+			z-index: 1;
 			position: absolute;
 			right: 0;
-			bottom: 0;
+			bottom: 0px;
 		}
+
+		nav.bbwrap ul {
+		  list-style: none;
+		  position: relative;
+		  display: inline-block;
+		}
+		
 		nav.bbwrap>ul:after{
 			content: ""; display: block; clear: both;
 		}
@@ -43,31 +50,80 @@
 			float: left;
 			width: 220px;
 		}
-		nav.bbwrap>ul>li>a{
+	/*	nav.bbwrap>ul>li>a{
 			text-align: center;
 			margin: 0 auto;
-			display: block;
 			line-height: 50px;
-			color: #fff;
-		}
+		}*/
 		nav.bbwrap>ul>li>a:hover{
 			background-color: #000;
 		}
+		nav.bbwrap ul ul {
+		    display: none;
+		}
 
-		.accli {
-     		box-shadow: none;
- 			}
-	</style>
+	    nav.bbwrap ul li:hover > ul {
+		   	display: block;
+		}
+
+/*		nav.bbwrap ul {
+		  list-style: none;
+		  position: relative;
+		  display: inline-block;
+		}*/
+
+		nav.bbwrap ul li a {
+			  text-align: center;
+			  margin: 0 auto;
+			  line-height: 50px;
+		      display: block;
+		      color: #fff;
+		}
+		nav.bbwrap ul ul {
+		    background: #5f6975;
+		    position: absolute; top: 100%;
+  		}
+	    nav.bbwrap ul ul li {
+	      float: none; 
+	      border-top: 1px solid #6b727c;
+	      border-bottom: 1px solid #575f6a; position: relative;
+	    }
+        nav.bbwrap ul ul li a {
+        padding: 15px 30px;
+        color: #fff;
+        } 
+
+        nav.bbwrap ul ul li a:hover {
+          background: #4b545f;
+        }
+	</style> 
 </head>
 <body>
-		<header id="aawrap">
-			<h1>logo</h1>
-				<nav class="bbwrap">
+	<header id="aawrap">
+		<h1>logo</h1>
+
+				 <nav class="bbwrap">
 					<ul>
 						<li><a href="#">menu1</a></li>
 						<li><a href="#">menu2</a></li>
-						<li><a href="#">menu3</a></li>
-						<li><a href="#">menu4</a></li>
+						<li><a href="#">menu3</a>
+							<ul>
+								<li><a href="#">Photoshop</a></li>
+								<li><a href="#">Illustrator</a></li>
+									<li><a href="#">Web Design</a>
+										<ul>
+											<li><a href="#">HTML</a></li>
+											<li><a href="#">CSS</a></li>
+										</ul>
+								</li>
+								</ul>
+						</li>
+						<li><a href="#">menu4</a>
+							<ul>
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">User Experience</a></li>
+							</ul>
+						</li>
 						<li><a href="#">menu5</a></li>
 					</ul>
 				</nav>
