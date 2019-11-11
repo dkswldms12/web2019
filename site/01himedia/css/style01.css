@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+header.main_hh{
+}
+header.main_hh>.menu_nav{
+}
+nav.menu_nav>div.menu{
+	width: 980px;
+	margin: 0 auto;
+	background-color: #ccc;
+}
+div.menu ul.menu_wrap{
+	float: right;
+}
+div.menu ul.menu_wrap li{
+	float: left;	
+}
+div.menu ul.menu_wrap li a{
+	display: block;
+	padding: 0 15px;
+}
+header.main_hh>h1{
+}
+header.main_hh>nav.cc{
+
+}
