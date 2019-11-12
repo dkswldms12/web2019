@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<style>
+	table{
+		width: 400px;
+		border-collapse: collapse;
+		border-top: 2px solid #000;
+		border-bottom: 2px solid #000;
+	}
+	/*th,td{
+		border: 1px solid #000;
+	}*/
+	table>caption{
+		padding: 0;
+		font-size: 0;
+		line-height: 0
+	}
+	table>thead{
+		border-bottom: 2px solid #000;
+	}
+	th{
+		height: 40px;
+		border: 1px solid #ccc;
+	}
+	td{
+		text-align: center;
+		height: 50px;
+	}
+	table>tbody td{
+		border-bottom: 1px solid #000;
+		border-right: 1px solid #ccc;
+	}
+	table tbody tr td:last-child{
+		border-right: none;
+	}
+	table tbody tr:nth-child(2n){
+		background-color: #ddd;
+	}
+	table tbody tr:hover{
+		background-color: skyblue;
+	}
+	td.tdr{
+		background-color: red;
+	}
+</style>
+<body>
+	<table>
+		<col width="20%"><!--간격주는거-->
+		<col width="50%">
+		<col width="30%">
+		<thead>
+			<tr>
+				<th>subject1</th>
+				<th>subject1</th>
+				<th>subject1</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="3">1</td>
+				<td colspan="2">2</td>
+				<!-- <td>3</td> -->
+			</tr>
+			<tr>
+				<!-- <td rowspan="2">4</td> -->
+				<td>5</td>
+				<td class="tdr">6</td>
+			</tr>
+			<tr>
+			<!-- 	<td>7</td> -->
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>20</td>
+				<td>50</td>
+				<td>60</td>
+			</tr>
+		</tfoot>
+	</table>
+	<table>
+		<caption>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+		</caption>
+	</table>
+</body>
+</html>
