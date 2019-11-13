@@ -237,12 +237,12 @@ a.btn{
 }
 .ctn_wrap li .pic p{
 	text-align: left;
-	font-size: 13px;
+	font-size: 14px;
 	width: 140px;
 	position: absolute;
 	right: 0;
 	padding-right: 10px;
-	padding-top: 10px;
+	padding-top: 3px;
 }
 
 .ctn_wrap li:nth-child(6){
