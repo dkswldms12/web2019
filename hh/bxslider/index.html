@@ -11,7 +11,13 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({auto:true,controls:false,pager:false});
+			var mySlider = $(".slider").bxSlider({auto:true,controls:false,pager:false});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
 		});
 	</script>
 	<style>
@@ -29,6 +35,23 @@
 	 .bx-wrapper {
 	     margin-bottom: 0;
 	 }
+	 .visual{
+	 	position: relative;
+	 }
+	 .visual .prevBtn,
+	 .visual .nextBtn{
+	 	position: absolute;
+	 	top: 0;
+	 	margin-top: 230px;
+	 	opacity: 0.5;
+	 }
+	 .visual .prevBtn{
+	 	left: 0;
+
+	 }
+	 .visual .nextBtn{
+	 	right: 0;
+	 }
 	</style>
 </head>
 <body>
@@ -39,7 +62,8 @@
 			<li><img src="images/pc02.jpg" alt="이미지2"></li>
 			<li><img src="images/pc03.jpg" alt="이미지3"></li>
 		</ul>
+		<div class="prevBtn"><img src="images/btn_pre.png" alt=""></div>
+		<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
 	</div>
-	
 </body>
 </html>

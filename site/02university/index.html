@@ -7,6 +7,31 @@
 </head>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<!-- script:src -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		var myslide = $(".slide").bxSlider({auto:true,controls:false});
+		$(".prevBtn").click(function(){
+			myslide.goToPrevSlide();
+		});
+		$(".nextBtn").click(function(){
+			myslide.goToNextSlide();
+		});
+	});
+</script>
+<style>
+	.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+     box-shadow: none;
+     border: none;
+}
+.bx-wrapper .bx-pager{
+    bottom: 30px;
+</style>
 <body>
 	<header id="top_menu">
 		<nav class="menu">
@@ -24,9 +49,103 @@
 				</ul>
 			</div>
 		</nav>
-			<div class="logo clearfix">
-				<img src="images/logo.jpg" alt="">
+
+		<div class="main_menu">
+			<nav class="mm clearfix">
+			<div class="logo">
+				<img src="images/logo.jpg" alt="로고">
 			</div>
+			<div class="menu_aa">
+				<ul class="clearfix">
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">대학소개</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
+
+	<section id="sec">
+		<div class="con clearfix">
+			<div class="title">
+				<span>함께나누며 세상을 이끌어</span>
+				<h1>세상을 향하는 한국대학교</h1>
+			</div>
+			<div class="con_icon clearfix">
+				<ul>
+					<li><img src="images/icon04.png" alt="" class="icon04">
+						<p>입학절차안내</p></li>
+					<li><img src="images/icon03.png" alt="" class="icon03">
+					<p>입학설명회</p></li>
+					<li><img src="images/icon02.png" alt="" class="icon02">
+					<p>장학제도</p></li>
+					<li><img src="images/icon01.png" alt="" class="icon01">
+					<p>증명서발급</p></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ctn_wrap">
+				<ul class="clearfix">
+					<li>
+						<div class="slid_bar">
+							<div class="slide">
+								<img src="images/main_slide_01.jpg" alt="메인1">
+								<img src="images/main_slide_02.jpg" alt="메인2">
+								<img src="images/main_slide_03.jpg" alt="메인3">
+							</div>
+							<div class="prevBtn"><img src="images/btn_pre.png" alt="버튼1"></div>
+							<div class="nextBtn"><img src="images/btn_next.png" alt="버튼2"></div>
+						</div>
+					</li>
+				<li>
+					<div class="banner01">
+					<p class="banner_txt">
+						<b>APP</b>으로<br>
+						<b>스마트 도서관</b><br>
+						바로이용하자!
+					</p>
+					<p>
+						모바일 열람증은<br>
+						도서관 자료실/도서대출 등에<br>
+						사용 할 수 있습니다.
+					</p>
+					<a href="#" class="btn">자세히보기 ▶</a>
+					</div>
+				</li>
+				<li>
+					<div class="aa_icon clearfix">
+						<h3>HOT LINK</h3>
+						<div class="bb_icon">
+							<div id="aa">
+								<img src="images/bb_icon1.png" alt="아이콘1"><p>국제교육센터</p>
+							</div>
+							<div id="bb">
+								<img src="images/bb_icon2.png" alt="아이콘1"><p>원격지원시스템</p>
+							</div>
+							<div id="cc">
+								<img src="images/bb_icon3.png" alt="아이콘1"><p>예산/결산공고</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li></li>
+				<li>
+					<h3>SNS NEWS</h3>
+					<div class="pic">
+						<img src="images/work.jpg" alt="">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, consectetur
+						</p>
+					</div>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
 </body>
 </html>
