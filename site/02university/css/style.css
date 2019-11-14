@@ -14,17 +14,12 @@ div.menu1 .left_menu li{
 	background-color: #00163b;
 	border: 1px solid #0044af;
 }
-div.menu1 .left_menu li:first-child{
-	color: #000;
-	background-color: #fff;
-	border: 1px solid #fff;
-}
 div.menu1 .left_menu li a{
 	text-align: center;
 	line-height: 30px;
 	padding: 0 30px;
-	/*color: #fff;*/
 	font-size: 14px;
+	color: #fff;
 }
 div.menu1 .right_menu li{
 	float: right;
@@ -68,7 +63,9 @@ div.menu_aa li a{
 section#sec{
 		background:#558fce url(../images/bg_01.jpg) no-repeat center;
 }
-
+#sec{
+	padding-bottom: 60px;
+}
 #sec .con{
 	width: 1200px;
 	height: 260px;
@@ -200,15 +197,10 @@ a.btn{
 	line-height: 20px;
 	padding-top: 5px;
 }
-.ctn_wrap li .aa_icon .bb_icon #aa{
+.ctn_wrap li .aa_icon .bb_icon div{
 	padding-left: 30px;
 }
-.ctn_wrap li .aa_icon .bb_icon #bb{
-	padding-left: 30px;
-}
-.ctn_wrap li .aa_icon .bb_icon #cc{
-	padding-left: 30px;
-}
+
 .ctn_wrap li:nth-child(4){
 	height: 230px;
 	background-color: #1651b7;
@@ -216,6 +208,7 @@ a.btn{
 .ctn_wrap li:nth-child(5){
 	height: 230px;
 	background-color: #fff;
+	position: relative;
 }
 .ctn_wrap li h3{
 	font-weight: bold;
@@ -245,11 +238,137 @@ a.btn{
 	padding-top: 3px;
 }
 
-.ctn_wrap li:nth-child(6){
+.ctn_wrap li .snsimg2{
+	width: 140px;
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
 }
+.ctn_wrap li .snsimg2 a{
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+
+.ctn_wrap li:nth-child(6){
+	background-image: url(../images/school02.jpg);
+	width: 25%;
+	height: 230px;
+	position: relative;	
+}
+.ctn_wrap li .box{
+	width: 300px;
+	height: 50px;
+	background-color: #000;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+.ctn_wrap li .box h4{
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+}
+
 .ctn_wrap li:nth-child(7){
+	width: 25%;
+	height: 250px;
+	background-color: #fff;
 }
 .ctn_wrap li:nth-child(8){
 	width: 75%;
-	height: 450px;
+	height: 250px;
+}
+
+.foot_date{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #fff;
+}
+.foot_date li{
+	float: left;
+	width: 25%
+}
+.foot_date li:nth-child(1){
+	width: 25%;
+	height: 50px;
+	border-right: 2px solid #ccc;
+}
+.foot_date li .plane{
+	margin: 0 auto;
+}
+.foot_date li .plane p{
+	text-align: center;
+	line-height: 50px;
+}
+
+.foot_date li:nth-child(2){
+	width: 75%;
+	height: 50px;
+}
+
+
+.bottom_slid_bar{
+	width: 800px;
+	background-color: pink;
+}
+.foot_date .bt_slide_bar p{
+	text-align: center;
+	line-height: 50px;
+}
+.slider_pager_bar{
+	position: relative;
+}
+.bt-pager_bar{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+}
+.bt-pager_bar a {
+	display: block;
+}
+
+
+
+.ft_menu{
+	width: 900px;
+	height: 100px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.ft_menu li{
+	float: left;
+	position: relative;
+}
+.ft_menu li:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #000;
+	position: absolute;
+	top: 10px;
+}
+.ft_menu li:first-child:after{
+	display: none;
+}
+.ft_menu li a{
+	padding: 15px;
+	text-align: center;
+}
+.ft_p{
+	padding-top: 10px;
+}
+.ft_p p{
+	text-align: center;
+	height: 20px;
 }

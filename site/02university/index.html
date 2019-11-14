@@ -22,6 +22,16 @@
 		});
 	});
 </script>
+<script>
+	$(document).ready(function(){
+		var myslide1 = $(".bslide").bxSlider({auto:true,controls:false});
+	});
+</script>
+<script>
+	$(document).ready(function(){
+		var myslide2 = $(".bt_slide_bar").bxSlider({mode:'vertical',auto:true,controls:false, pagerCustom:".bt-pager"});
+	});
+</script>
 <style>
 	.bx-wrapper {
     -moz-box-shadow: none;
@@ -31,6 +41,7 @@
 }
 .bx-wrapper .bx-pager{
     bottom: 30px;
+}
 </style>
 <body>
 	<header id="top_menu">
@@ -75,13 +86,13 @@
 			</div>
 			<div class="con_icon clearfix">
 				<ul>
-					<li><img src="images/icon04.png" alt="" class="icon04">
+					<li><img src="images/icon04.png" alt="icon4">
 						<p>입학절차안내</p></li>
-					<li><img src="images/icon03.png" alt="" class="icon03">
+					<li><img src="images/icon03.png" alt="icon3">
 					<p>입학설명회</p></li>
-					<li><img src="images/icon02.png" alt="" class="icon02">
+					<li><img src="images/icon02.png" alt="icon2">
 					<p>장학제도</p></li>
-					<li><img src="images/icon01.png" alt="" class="icon01">
+					<li><img src="images/icon01.png" alt="icon1">
 					<p>증명서발급</p></li>
 				</ul>
 			</div>
@@ -119,13 +130,13 @@
 					<div class="aa_icon clearfix">
 						<h3>HOT LINK</h3>
 						<div class="bb_icon">
-							<div id="aa">
+							<div>
 								<img src="images/bb_icon1.png" alt="아이콘1"><p>국제교육센터</p>
 							</div>
-							<div id="bb">
+							<div>
 								<img src="images/bb_icon2.png" alt="아이콘1"><p>원격지원시스템</p>
 							</div>
-							<div id="cc">
+							<div>
 								<img src="images/bb_icon3.png" alt="아이콘1"><p>예산/결산공고</p>
 							</div>
 						</div>
@@ -134,18 +145,85 @@
 				<li></li>
 				<li>
 					<h3>SNS NEWS</h3>
-					<div class="pic">
-						<img src="images/work.jpg" alt="">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, consectetur
-						</p>
-					</div>
+						<div class="pic">
+							<img src="images/work.jpg" alt="">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, consectetur
+							</p>
+						</div>
+						<div class="snsimg2 clearfix">
+							<a href="#"><img src="images/sns01.png" alt="이미지1"></a>
+							<a href="#"><img src="images/sns02.png" alt="이미지1"></a>
+							<a href="#"><img src="images/sns03.png" alt="이미지1"></a>
+							<a href="#"><img src="images/sns04.png" alt="이미지1"></a>
+							
+						</div>
+				</li>
+				<li>
+				<div class="box">
+					<h4>캠퍼스 투어</h4>
+				</div>
 				</li>
 				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<div class="banner_slid_bar">
+						<div class="bslide">
+							<img src="images/banner_slide_01.jpg" alt="베너1">
+							<img src="images/banner_slide_01.jpg" alt="베너2">
+							<img src="images/banner_slide_01.jpg" alt="베너3">
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
+
+
+
+
+
+		<div class="foot_date">
+			<ul>
+				<li>
+					<div class="plane">
+						<p>학사일정</p>
+					</div>
+				</li>
+				<li>
+					<div class="bottom_slid_bar">
+						<div class="bt_slide_bar">
+							<p>111Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum.</p>
+							<p>222Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum.</p>
+							<p>333Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+				<div class="slider_pager_bar">
+					<div class="bt-pager_bar">
+						<a href="#" data-slide-index="0"><img src="images/up.png" alt=""></a>
+						<a href="#" data-slide-index="1"><img src="iamges/down.png" alt=""></a>
+					</div>
+				</div>
+		</div>
 	</section>
+	<footer>
+		<div class="ft_menu">
+			<ul class="clearfix">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">한국대학교</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">이용정책</a></li>
+				<li><a href="#">입점/제휴문의 및 광고</a></li>
+				<li><a href="#">이메일 무단수집거부</a></li>
+			</ul>
+		
+		<div class="ft_p">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis.</p>
+		</div>
+		</div>
+	</footer>
 </body>
 </html>
