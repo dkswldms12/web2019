@@ -328,8 +328,9 @@ a.btn{
 }
 .bt-pager_bar{
 	width: 100px;
-	height: 50px;
+	height: 70px;
 	position: absolute;
+	right: 0;
 	top: 0;
 }
 .bt-pager_bar a {
