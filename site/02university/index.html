@@ -29,7 +29,13 @@
 </script>
 <script>
 	$(document).ready(function(){
-		var myslide2 = $(".bt_slide_bar").bxSlider({mode:'vertical',auto:true,controls:false, pagerCustom:".bt-pager"});
+		var myslide2 = $(".bt_slide_bar").bxSlider({mode:'vertical',auto:true,controls:false,pager:false});
+		$(".prevBtn1").click(function(){
+			myslide2.goToPrevSlide();
+		});
+		$(".nextBtn1").click(function(){
+			myslide2.goToNextSlide();
+		});
 	});
 </script>
 <style>
@@ -38,17 +44,29 @@
     -webkit-box-shadow: none;
      box-shadow: none;
      border: none;
-}
-.bx-wrapper .bx-pager{
-    bottom: 30px;
-}
+      margin-bottom: 0;
+	}
+	.bx-wrapper .bx-pager{
+	    bottom: 20px;
+	}
+	.banner_slid_bar .bx-wrapper .bx-pager {
+    	text-align: right;
+    	top: -5px;
+    	right: 20px;
+    }
+    .slid_bar .bx-wrapper .bx-pager.bx-default-pager a.active{
+    	background-color: blue;
+    }
+    .banner_slid_bar .bx-wrapper .bx-pager.bx-default-pager a.active{
+    	background-color: orange;
+    }
 </style>
 <body>
 	<header id="top_menu">
 		<nav class="menu">
 			<div class="menu1 clearfix">
 				<ul class="left_menu">
-					<li><a href="#">대학교</a></li>
+					<li><a href="#" class="active">대학교</a></li>
 					<li><a href="#">입학안내</a></li>
 					<li><a href="#">대학원</a></li>
 				</ul>
@@ -142,7 +160,8 @@
 						</div>
 					</div>
 				</li>
-				<li></li>
+				<li>
+				</li>
 				<li>
 					<h3>SNS NEWS</h3>
 						<div class="pic">
@@ -164,7 +183,9 @@
 					<h4>캠퍼스 투어</h4>
 				</div>
 				</li>
-				<li></li>
+				<li>
+					<iframe width="300" height="230" src="https://www.youtube.com/embed/LOVnVZjbB2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</li>
 				<li>
 					<div class="banner_slid_bar">
 						<div class="bslide">
@@ -176,9 +197,6 @@
 				</li>
 			</ul>
 		</div>
-
-
-
 
 
 		<div class="foot_date">
@@ -199,10 +217,14 @@
 				</li>
 			</ul>
 				<div class="slider_pager_bar">
-					<div class="bt-pager_bar">
-						<a href="#" data-slide-index="0"><img src="images/up.png" alt=""></a>
-						<a href="#" data-slide-index="1"><img src="images/down.png" alt=""></a>
-					</div>
+						<div class="slider_bt">
+							<div class="prevBtn1">
+								<img src="images/up.png" alt="">
+							</div>
+							<div class="nextBtn1">
+								<img src="images/down.png" alt="">
+							</div>
+						</div>
 				</div>
 		</div>
 	</section>

@@ -12,15 +12,21 @@ nav.menu div.menu1{
 div.menu1 .left_menu li{
 	float: left;
 	background-color: #00163b;
-	border: 1px solid #0044af;
+	margin-right: 2px;
 }
 div.menu1 .left_menu li a{
 	text-align: center;
+	display: block;
 	line-height: 30px;
 	padding: 0 30px;
 	font-size: 14px;
 	color: #fff;
 }
+div.menu1 .left_menu li a.active{
+	background-color: #fff;
+	color: #aaa;
+}
+
 div.menu1 .right_menu li{
 	float: right;
 }
@@ -62,9 +68,7 @@ div.menu_aa li a{
 
 section#sec{
 		background:#558fce url(../images/bg_01.jpg) no-repeat center;
-}
-#sec{
-	padding-bottom: 60px;
+		padding-bottom: 19px;
 }
 #sec .con{
 	width: 1200px;
@@ -277,12 +281,13 @@ a.btn{
 
 .ctn_wrap li:nth-child(7){
 	width: 25%;
-	height: 250px;
-	background-color: #fff;
+	height: 230px;
+	background-image: url(../images/video.jpg);
 }
 .ctn_wrap li:nth-child(8){
 	width: 75%;
-	height: 250px;
+	height: 230px;
+	overflow: hidden;
 }
 
 .foot_date{
@@ -319,6 +324,7 @@ a.btn{
 	width: 800px;
 	background-color: pink;
 }
+
 .foot_date .bt_slide_bar p{
 	text-align: center;
 	line-height: 50px;
@@ -326,18 +332,19 @@ a.btn{
 .slider_pager_bar{
 	position: relative;
 }
-.bt-pager_bar{
-	width: 100px;
-	height: 70px;
+.slider_bt{
+	width: 25px;
+	height: 50px;
 	position: absolute;
-	right: 0;
+	right: 0px;
 	top: 0;
 }
-.bt-pager_bar a {
+.slider_bt .prevBtn1 {
+	border-bottom: 1px solid #ccc;
+}
+.slider_bt img {
 	display: block;
 }
-
-
 
 .ft_menu{
 	width: 900px;
