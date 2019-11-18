@@ -121,10 +121,35 @@ section#sec{
 	width: 1200px;
 	margin: 0 auto;
 }
+.slid_txt{
+	position: relative;
+}
+.main_txt{
+	position: absolute;
+	left: 100px;
+	top: 80px;
+}
+.main_txt p{
+	font-size: 50px;
+	color: #1353b5;
+}
+a.btn1{
+	width: 150px;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	background-color: #182c4d;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #fff;
+	margin-top: 30px;
+	padding-right: 0;
+}
 
 .ctn_wrap li .slid_bar{
 	position: relative;
 }
+
 .slid_bar div.prevBtn, .ctn_wrap div.nextBtn{
 	position: absolute;
 	top: 0;
@@ -288,6 +313,31 @@ a.btn{
 	width: 75%;
 	height: 230px;
 	overflow: hidden;
+}
+.slid_txt1{
+	position: relative;
+}
+.main_txt1{
+	position: absolute;
+	left: 35px;
+	top: 30px;
+}
+.main_txt1 p{
+	font-size: 40px;
+	color: #ff4538;
+}
+a.btn2{
+	width: 150px;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ff4538;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #fff;
+	margin-top: 10px;
+	padding-right: 0;
+	opacity: 0.8;
 }
 
 .foot_date{

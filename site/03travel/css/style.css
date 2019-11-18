@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+header#h_top{
+	width: 100%;
+	height: 80px;
+	background-image: url(../images/logo_bg.jpg);
+}
+.h_menu{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.h_menu .logo{
+	width: 160px;
+	height: 30px;
+	padding-top: 10px;
+}
+.h_menu .logo img{
+	display:block;
+}
+.h_menu .h_search{
+	height: 40px;
+	width: 300px;
+	border: 1px solid #363e41;
+	background-color: #fff;
+	margin: 0 auto;
+	position: absolute;
+	left: 270px;
+	top: 25px;
+}
+.h_menu input{
+	font-size: 16px;
+	width: 250px;
+	padding: 10px;
+	border: 0px;
+	outline: none;
+	float: left;
+}
+.h_menu button{
+	width: 40px;
+	height: 100%;
+	border: 0px;
+	background: #363e41;
+	outline: none;
+	float: right;
+	color: #fff;
+}
+.h_num .num{
+	width: 200px;
+	position: absolute;
+	right: 170px;
+}
+.h_num .num p{
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 20px;
+}
+.sns .sns_icon{
+	width: 150px;
+	position: absolute;
+	right: 20px;
+}
+.sns .sns_icon{
+	display: block;
+}
+nav.menu{
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 3px solid #0e73a7;
+}
+.menu .menu_b{
+	width: 1000px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+}
+.menu_b li{
+	float: left;
+	width: 166.67px;
+	border: 1px solid #ccc;
+}
+.menu_b li:after{
+	border-top: none;
+	}
+.menu_b li a{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+section#sec{
+	background:url(../images/bg.jpg) no-repeat center;
+}
+#sec .con{
+	width:1000px;
+	height: 260px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	width: 500px;
+	height: 300px;
+	position: relative;
+	border: 1px solid #000;
+}
+.slider_wrap{
+	width: 350px;
+	height: 300px;
+	background-color: #ccc;
+}
+.slider_wrap li{
+	float: right;
+}
