@@ -28,11 +28,15 @@ header#h_wrap{
 	color: #fff;
 }
 .menu_body{
-	width: 900px;
+	width: 1000px;
 	height: 70px;
 	/*background-color: #ccc;*/
 	/*margin: 0 auto;*/
 	float: right;
+}
+.menu_body ul{
+	width: 800px;
+	float: left;
 }
 .menu_body li{
 	width: 133.33px;
@@ -48,8 +52,11 @@ header#h_wrap{
 	font-weight: bold;
 }
 .menu_right{
+	width: 150px;
 	float: right;
 	background-color: #ccc;
+	text-align: center;
+	line-height: 70px;
 }
 
 
