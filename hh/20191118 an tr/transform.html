@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<link rel="stylesheet" href="../css/reset.css">
+<style>
+	body{background-image: url(../images/bg_grid.gif);
+	}
+	div{
+		width: 200px;
+		height: 100px;
+		background-color: yellow;
+	}
+	/*div.box2{
+		transform: translate(100px,50px) scale(1,1);
+		transition: 0.3s;
+	}
+	div.box2:hover{
+		transform: translate(150px,100px) scale(1.5,1.5) rotate(30deg);
+	}*/
+
+	.boxwrap{
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		position: relative;
+		left: 200px;
+		top: 100px;
+		/*overflow: hidden;*/
+	}
+	.boxwrap .box{
+		width: 200px;
+		height: 200px;
+		transition: 0.3s;
+		/*transform-origin: 100% 0;/*중심축을 다른곳으로 주는거*/
+	}
+
+	.boxwrap .box1{
+		width: 200px;
+		height: 200px;
+		transition: 0.3s;
+		background-color: orange;
+		position: absolute;
+		top: 0;
+		
+	}
+	.boxwrap .box2{
+		width: 200px;
+		height: 200px;
+		transition: 0.3s;
+		background-color: blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+	}
+	.boxwrap:hover .box{
+		
+		transform: translate(0,0) rotate(-30deg);
+	}
+	.boxwrap:hover .box1{
+		
+		transform: translate(0,0) rotate(-20deg);
+	}
+	.boxwrap:hover .box2{
+		
+		transform: translate(0,0) rotate(-10deg);
+	}
+</style>
+<body>
+	<div class="box1">박스1</div>
+	<div class="box2">박스2</div>
+	<div class="boxwrap">
+		<div class="box">test</div>
+		<div class="box1">test</div>
+		<div class="box2">test</div>
+	</div>
+</body>
+</html>

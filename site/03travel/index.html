@@ -13,12 +13,30 @@
 <script>
 	$(document).ready(function(){
 		$(".slider").bxSlider({
-			/*mode:'vertical',/*fade vertical horigintal 슬라이드를 위에서 아래로 넘길지 아니면 옆으로 넘길지 정하는*/
-			auto:true,
+			auto:false,
 			pagerCustom:".bx-pager"
 		});
 	});
 </script>
+<script>
+	$(document).ready(function(){
+		var myslide = $(".slid").bxSlider({auto:true,controls:false});
+		$(".pBtn").click(function(){
+			myslide.goToPrevSlide();
+		});
+		$(".nBtn").click(function(){
+			myslide.goToNextSlide();
+		});
+	});
+</script>
+<style>
+	.wrapper .bx-controls{
+		display: none;
+	}
+	.slid_bar .bx-controls{
+		display: none;
+	}
+</style>
 <body>
 	<header id="h_top">
 		<div class="h_menu">
@@ -47,7 +65,7 @@
 		<nav class="menu">
 			<div class="menu_b">
 				<ul class="clearfix">
-					<li><a href="#">menu1</a></li>
+					<li><a href="#" class="active">menu1</a></li>
 					<li><a href="#">menu2</a></li>
 					<li><a href="#">menu3</a></li>
 					<li><a href="#">menu4</a></li>
@@ -58,36 +76,82 @@
 		</nav>
 	
 	<section id="sec">
-		<div class="con">
-				<div class="wrapper">
-		<div class="slider_wrap">
-			<ul class="slider">
-				<li class="sliderView">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
-				</li>
-				<li class="sliderView">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
-				</li>
-				<li class="sliderView">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
-				</li>
-				<li class="sliderView">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
-				</li>
-			</ul>
-		</div>
-		<div class="slider_pager">
-			<div class="bx-pager">
-				<ul>
-					<li><a href="#" data-slide-index="0">menu1</a></li>
-					<li><a href="#" data-slide-index="1">menu2</a></li>
-					<li><a href="#" data-slide-index="2">menu3</a></li>
-					<li><a href="#" data-slide-index="3">menu4</a></li>
-				</ul>
+		<div class="con clearfix">
+			<div class="wrapper">
+				<div class="slider_wrap">
+					<ul class="slider">
+						<li class="sliderView">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
+						</li>
+						<li class="sliderView">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
+						</li>
+						<li class="sliderView">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
+						</li>
+						<li class="sliderView">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="slider_pager">
+					<div class="bx-pager">
+						<ul>
+							<li><a href="#" data-slide-index="0">menu1</a></li>
+							<li><a href="#" data-slide-index="1">menu2</a></li>
+							<li><a href="#" data-slide-index="2">menu3</a></li>
+							<li><a href="#" data-slide-index="3">menu4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="con-txt">
+				<div class="txt">
+					<h1>TRAVEL GO</h1>
+					<p>지금,여행이 떠나고 싶다면?<br>
+					하이미디어와 여행을 떠나자!</p>
+				</div>
 			</div>
 		</div>
-	</div>
+
+		<div class="ctn clearfix">
+			<ul>
+				<li>
+					<div class="bar clearfix">
+						<p>프랑스</p><p>\1,900,000~</p>
+					</div>
+				</li>
+				<li>
+					<div class="bar clearfix">
+						<p>일본</p><p>\890,000~</p>
+					</div>
+				</li>
+				<li></li>
+				<li>
+					<div class="slid_bar">
+						<div class="slid">
+							<img src="images/nth3.jpg" alt="메인1">
+							<img src="images/nth4.jpg" alt="메인2">
+						</div>
+						<div class="pBtn"><img src="images/pre.jpg" alt="버튼1"></div>
+						<div class="nBtn"><img src="images/next.jpg" alt="버튼2"></div>
+					</div>
+					<div class="bar1">
+						<div class="txt">
+							hotel
+						</div>
+						<div class="star">★★★☆☆</div>
+					</div>
+					</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
+
+
 	</section>
 	
 </body>
