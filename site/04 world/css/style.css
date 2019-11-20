@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+header#h_wrap{
+	width: 100%;
+	position: relative;
+}
+#header .slider_bar{
+	width: 100%;
+}
+.head_top{
+	width: 1300px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	/*background-color: pink;*/
+}
+.head_top .logo{
+	float: left;
+	width: 120px;
+	height: 70px;
+	padding-left: 20px;
+	/*background-color: #ccc;*/
+}
+.logo h1{
+	display: block;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+}
+.menu_body{
+	width: 900px;
+	height: 70px;
+	/*background-color: #ccc;*/
+	/*margin: 0 auto;*/
+	float: right;
+}
+.menu_body li{
+	width: 133.33px;
+	height: 70px;
+	float: left;
+	/*background-color: #ccc;*/
+}
+.menu_body li a{
+	display: block;
+	text-align: center;
+	line-height: 80px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.menu_right{
+	float: right;
+	background-color: #ccc;
+}
+
+
