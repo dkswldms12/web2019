@@ -3,25 +3,43 @@
 header#h_wrap{
 	width: 100%;
 	position: relative;
+	margin: 0 auto;
 }
 #header .slider_bar{
 	width: 100%;
 }
+.slider_bar{
+	position: relative;
+}
+.slider_bar .preBtn, .nextBtn{
+	position: absolute;
+	top: 300px;
+	opacity: 0.5;
+}
+.preBtn{
+	left: 0;
+}
+.nextBtn{
+	right: 0;
+}
 .head_top{
-	width: 1300px;
-	margin: 0 auto;
+	width: 100%;
 	position: absolute;
 	top: 0;
+	margin: 0 auto;
 	/*background-color: pink;*/
 }
-.head_top .logo{
+.head_top .mid_top{
+	width: 1300px;
+	margin: 0 auto;
+}
+.mid_top .logo{
 	float: left;
 	width: 120px;
 	height: 70px;
-	padding-left: 20px;
-	/*background-color: #ccc;*/
+	padding-left: 100px;
 }
-.logo h1{
+.mid_top .logo h1{
 	display: block;
 	text-align: center;
 	line-height: 70px;
@@ -60,3 +78,201 @@ header#h_wrap{
 }
 
 
+#body_box{
+	width: 100%;
+}
+.mid_box{
+	width: 1300px;
+	margin: 0 auto;
+	position: absolute;
+	top: 510px;
+	left: 110px;
+}
+.mid_box li{
+	float: left;
+	width: 25%;
+}
+
+.mid_box li:nth-child(1){
+	height: 300px;
+	background-color: #92c1d5;
+}
+.mid_box li:nth-child(2){
+	height: 300px;
+}
+.mid_box li:nth-child(3){
+	width: 50%;
+	height: 300px;
+}
+.thirdbox{
+	width: 650px;
+}
+.thirdbox .news{
+	width: 325px;
+	height: 300px;
+	float: left;
+	background-color: #fff;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.thirdbox .news_img{
+	width: 325px;
+	float: right;
+}
+/*.threebox .news_img{
+	display: block;
+}*/
+.mid_box li:nth-child(4){
+	height: 300px;
+	background-color: #b8307c;
+}
+.mid_box li:nth-child(5){
+	height: 300px;
+	background-color: #413d3e;
+}
+.mid_box li:nth-child(6){
+	width: 50%;
+	height: 300px;
+	background-image: url(../images/img03.jpg);
+}
+.card{
+	width: 325px;
+	height: 300px;
+	position: relative;
+}
+.card_body{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.card_body h5{
+	color: #fff;
+	padding-bottom: 15px;
+}
+.card_body .box{
+	width: 50px;
+	height: 2px;
+	background-color: #fff;
+	left: 20px;
+	margin-bottom: 20px;
+}
+.card_body p{
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+}
+.mid_box li:nth-child(7){
+	height: 600px;
+	background-image: url(../images/img06.jpg);
+}
+.mid_box li:nth-child(8){
+	width: 50%;
+	height: 300px;
+	background-image: url(../images/img04.jpg);
+	color: #424348;
+}
+.card_body1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.card_body1 h5{
+	color: #424348;
+	padding-bottom: 15px;
+}
+.card_body1 .box{
+	width: 50px;
+	height: 2px;
+	background-color: #424348;
+	left: 20px;
+	margin-bottom: 20px;
+}
+.card_body1 p{
+	font-size: 30px;
+	color: #424348;
+	font-weight: bold;
+}
+.mid_box li:nth-child(9){
+	height: 300px;
+	background-color: #b8307c;
+}
+.mid_box li:nth-child(10){
+	height: 300px;
+	background-color: #413d3e;
+}
+.mid_box li:nth-child(11){
+	width: 50%;
+	height: 300px;
+	background-image: url(../images/img05.jpg);
+}
+
+.ediya{
+	width: 100%;
+	height: 230px;
+	background-image: url(../images/EDIYA.jpg);
+	position: absolute;
+	top: 1710px;
+}
+.ediya a{
+	display: block;
+	/*text-align: center;*/
+	line-height: 30px;
+	padding-top: 120px;
+	padding-left: 700px;
+	color: #fff;
+	font-weight: bold;
+}
+.ediya_menu{
+	width: 100%;
+	height: 500px;
+	background-color: #ccc;
+	position: absolute;
+	top: 1940px;
+}
+.ediya_menu a.btn{
+	width: 100px;
+	height: 50px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #000;
+	background-color: rgba(0,0,0,0);
+	margin: 0 auto;
+	margin-top: 230px;
+}
+.ediya_menu a.btn:hover{
+	border: 1px solid blue;
+	background-color: blue;
+	color: #fff;
+	font-weight: bold;
+}
+.ediya_animation{
+	width: 100%;
+	height: 800px;
+	background-color: #000;
+	position: absolute;
+	top: 2440px;
+}
+.ediya_animation .bt1{
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	border-radius: 150px;
+	animation-name: bt1;
+	margin-left: 50px;
+	margin-top: 50px;
+	top: 50px;
+
+}
+.ediya_animation .bt1 p{
+	color: #fff;
+	font-size: 12px;
+}
+
+.ediya_animation .bt1:hover{
+	transform: translate(0,150);
+}
