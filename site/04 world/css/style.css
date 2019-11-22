@@ -232,7 +232,6 @@ div.box1{
 	width: 100%;
 	height: 500px;
 	background-color: #ccc;
-	margin: 0 auto;
 	position: relative;
 }
 .ediya_menu a.btn{
@@ -257,6 +256,7 @@ div.box1{
 	width: 100%;
 	height: 800px;
 	background-color: #000;
+	margin:0 auto;
 	position: relative;
 }
 .ediya_animation .bt1{
@@ -266,9 +266,17 @@ div.box1{
 	background-color: #fff;
 	border-radius: 150px;
 	position: absolute;
-	top: 350px;
+	top: 500px;
 	left: 200px;
 }
+.ediya_animation p{
+	color: #fff;
+	position: absolute;
+	top: 200px;
+	left: 15px;
+	text-align: center;
+	line-height: 30px;
+	}
 .ediya_animation .bt1:hover{
 	animation-name: bt1;
 	animation-duration: 1s;
@@ -279,11 +287,69 @@ div.box1{
 	from{
 		width: 170px;
 		height: 170px;
+		top: 500px;
+	}
+	to{
+		width: 170px;
+		height: 170px;
+		top: 530px;
+	}
+}
+
+.ediya_animation .bt2{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background-color: #fff;
+	border-radius: 150px;
+	position: absolute;
+	top: 350px;
+	left: 700px;
+}
+.ediya_animation .bt2:hover{
+	animation-name: bt2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes bt2{
+	from{
+		width: 170px;
+		height: 170px;
 		top: 350px;
 	}
 	to{
 		width: 170px;
 		height: 170px;
 		top: 380px;
+	}
+}
+
+.ediya_animation .bt3{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background-color: #fff;
+	border-radius: 150px;
+	position: absolute;
+	top: 500px;
+	left: 1200px;
+}
+.ediya_animation .bt3:hover{
+	animation-name: bt3;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes bt3{
+	from{
+		width: 170px;
+		height: 170px;
+		top: 500px;
+	}
+	to{
+		width: 170px;
+		height: 170px;
+		top: 530px;
 	}
 }
