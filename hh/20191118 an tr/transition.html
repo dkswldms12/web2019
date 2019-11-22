@@ -30,11 +30,12 @@
 	div.btn01 .bar{
 		width: 100%;
 		height: 40px;
-		background-color: #00f;
+		background-color: #ff0;
 		position: absolute;
 		bottom: 0;
 		animation-name: bar01;
-		animation-duration: 0.5s;
+		animation-duration: 1s;
+		/*animation-iteration-count: infinite;*/
 	}
 	@keyframes bar01{
 		from{
@@ -107,7 +108,6 @@
 		bottom: 0;
 		transition: 0.3s;
 		transform: scaleX(0);/*중심축이 가운데여서 가운데부터 시작한다*/
-		transition: 0.3s;
 	}
 	div.btn03:hover .bar{
 		transform: scaleX(1);

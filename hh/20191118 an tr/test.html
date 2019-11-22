@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<link rel="stylesheet" href="../css/reset.css">
+<style>
+	div.box1{
+		width: 200px;
+		height: 200px;
+		background-color: #f0f;
+		animation-name: box1;
+		animation-duration: 2s;/*속도*/
+		position: absolute;
+		animation-iteration-count: infinite;/*반복하게 해준다*/
+		animation-direction: alternate;/*되돌아오게 해준다*/
+
+	}
+	@keyframes box1{
+		from{
+			width: 50px;
+			height: 50px;
+			background-color: #ff0;
+			top: 0;
+			right: 0;
+		}
+		to{
+			width: 200px;
+			background-color: #f0f;
+			top: 50px;
+			right: 50px;
+		}
+	}
+	div.box2{
+		width: 200px;
+		height: 200px;
+		background-color: #ccc;
+		animation-name: box2;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	@keyframes box2{
+		from{
+			background-color: #fff;
+			top: 0px;
+			left: 0px;
+		}
+		to{
+			background-color: #ccc;
+			top: 50px;
+			left: 50px;
+		}
+	}
+	div.boxw{
+		width: 500px;
+		height: 500px;
+		background-color: #ccc;
+		position: relative;
+	}
+	div.boxw .box11{
+		width: 500px;
+		height: 10px;
+		background-color: #ff0;
+		animation-name: box11;
+		animation-duration: 1s;
+	}
+	@keyframes box11{
+		from{
+			width: 0;
+		}
+		to{
+			width: 500px;
+		}
+	}
+	div.boxw .box12{
+		width: 10px;
+		height: 0px;
+		background-color: #0ff;
+		animation-name: box12;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		position: absolute;
+		right: 0;
+		animation-fill-mode: forwards;
+	}
+	@keyframes box12{
+		from{
+			height: 0;
+		}
+		to{
+			height: 490px;
+		}
+	}
+	div.boxw .box13{
+		width: 0px;
+		height: 10px;
+		background-color: #f0f;
+		animation-name: box13;
+		animation-duration: 1s;
+		animation-delay: 2s;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		animation-fill-mode: forwards;
+	}
+	@keyframes box13{
+		from{
+			width: 0px;
+		}
+		to{
+			width: 500px;
+		}
+	}
+	div.boxw .box14{
+		width: 10px;
+		height: 0;
+		background-color: #f00;
+		animation-name: box14;
+		animation-duration: 1s;
+		animation-delay: 3s;
+		position: absolute;
+		bottom: 0;
+		animation-fill-mode: forwards;
+	}
+	@keyframes box14{
+		from{
+			height: 0px;
+		}
+		to{
+			height: 490px;
+		}
+	}
+
+	div.box20{
+		width: 200px;
+		height: 100px;
+		background-color: pink;
+		border-radius: 100px;
+		position: relative;
+		overflow: hidden;
+	}
+	div.box20 .txt{
+		width: 200px;
+		line-height: 100px;
+		font-weight: bold;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+	div.box20 .bar{
+		width: 100%;
+		height: 100px;
+		background-color: skyblue;
+		animation-name: box20;
+		animation-duration: 1s;
+		position: absolute;
+		bottom: 0;
+	}
+	@keyframes box20{
+		from{
+			width: 0;
+		}
+		to{
+			width: 100%;
+		}
+	}
+	div.box21{
+		width: 200px;
+		height: 100px;
+		background-color: pink;
+		border-radius: 100px;
+		position: relative;
+		overflow: hidden;
+	}
+	div.box21 .txt{
+		width: 200px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 100px;
+		position: relative;
+		z-index: 1;
+	}
+	div.box21 .bar{
+		width: 0px;
+		height: 50px;
+		background-color: skyblue;
+		position: absolute;
+		bottom: 0;
+		transition: 0.3s;
+	}
+	div.box21:hover .bar{
+		width: 100%;
+	}
+	div.box22{
+		width: 200px;
+		height: 100px;
+		background-color: pink;
+		border-radius: 100px;
+		overflow: hidden;
+		position: relative;
+	}
+	div.box22 .txt{
+		width: 200px;
+		line-height: 100px;
+		font-weight: bold;
+		text-align: center;
+		z-index: 1;
+		position: relative;
+	}
+	div.box22 .bar{
+		width: 100%;
+		height: 100px;
+		background-color: skyblue;
+		position: absolute;
+		bottom: 0;
+		/*transform: scale(0); 물처럼 쌓인다*/
+		transform: scaleX(0);
+		transition: 0.5s;
+	}
+	div.box22:hover .bar{
+		/*transform: scale(3);*/
+		transform: scaleX(2);
+	}
+	.card{
+		width: 300px;
+		height: 300px;
+		position: relative;
+		border-radius: 150px;
+		overflow: hidden;
+	}
+	.card_body{
+		width: 100%;
+		height: 100%;
+		color: green;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		top: 0;
+		left: 300px;
+		transition: 0.3s;
+	}
+	.card img{
+		display: block;
+		transform: scale(1,1);
+		transition: 0.3s;
+	}
+	.card .card_body .card_txt{
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		margin-top: -10px;
+	}
+	.card:hover .card_body{
+		top: 0;
+		left: 0;
+	}
+	.card:hover img{
+		transform: scale(2,2);
+	}
+</style>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="boxw">
+		<div class="box11"></div>
+		<div class="box12"></div>
+		<div class="box13"></div>
+		<div class="box14"></div>
+	</div>
+
+	<div class="box20">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+	</div>
+	<div class="box21">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+	</div>
+	<div class="box22">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+	</div>
+	<div class="card">
+		<img src="images/dak.png" alt="">
+		<div class="card_body">
+			<div class="card_txt">
+				아아아아아아아아아
+			</div>
+		</div>
+	</div>
+</body>
+</html>
