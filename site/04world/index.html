@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=">
+	<meta charset="UTF-8">
+	<title>world</title>
+</head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script>
+	$(document).ready(function(){
+	var myslide = $(".slider").bxSlider({
+		auto:true,controls:false
+		});
+		$(".preBtn").click(function(){
+			myslide.goToPrevSlide();
+		});
+		$(".nextBtn").click(function(){
+			myslide.goToNextSlide();
+		});
+		$(".youtube").colorbox({
+			iframe:true,
+			innerWidth:"560px",
+			innerHeight:"315px"
+		});
+	});
+</script>
+<style>
+	.bx-wrapper {
+    -moz-box-shadow: none;
+     -webkit-box-shadow: none;
+     box-shadow: none; 
+     border: none;
+     margin-bottom: 0;
+}
+	 .bx-wrapper .bx-pager{
+	  bottom: 350px;
+}
+</style>
+<body>
+
+	<header id="h_wrap">
+		<div class="slider_bar">
+			<div class="slider">
+				<img src="images/bg01.jpg" alt="메인1">
+				<img src="images/bg02.jpg" alt="메인2">
+			</div>
+			<div class="preBtn"><img src="images/pre.png" alt="버튼1"></div>
+			<div class="nextBtn"><img src="images/next.png" alt="버튼2"></div>
+		</div>
+
+		<div class="head_top">
+			<div class="mid_top clarfix">
+				<div class="logo">
+					<h1>logo</h1>
+				</div>
+				<div class="menu_full clearfix">
+					<div class="menu_body">
+						<ul class="clearfix">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+							<li><a href="#">menu5</a></li>
+							<li><a href="#">menu6</a></li>
+						</ul>
+						<div class="menu_right">
+							cc
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<section id="body_box clearfix">
+			<div class="mid_box">
+				<ul>
+					<li>
+						<img src="images/icon01.png" alt="아이콘1">
+					</li>
+					<li>
+						<a href="https://www.youtube.com/embed/rlaaTHpQZSs" class="youtube"><img src="images/img01.jpg"></a>
+					</li>
+					<li>
+						<div class="thirdbox clearfix">
+							<div class="news">
+								<h3>뉴스</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque similique consequatur debitis, ut ex aliquid placeat iusto accusantium sequi reiciendis?</p>
+							</div>
+							<div class="news_img">
+								<img src="images/img02_02.jpg" alt="">
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="images/icon02.png" alt="아이콘2">
+					</li>
+					<li>
+						<img src="images/icon03.png" alt="아이콘3">
+					</li>
+					<li>
+						<div class="card">
+							<div class="card_body">
+								<h5>전력 및 에너지 플렌트</h5>
+								<div class="box"></div>
+								<p>세상을 밝히는<br>
+								빛과 에너지</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<div class="card_body">
+								<h5>건축</h5>
+								<div class="box"></div>
+								<p>편안하고<br>
+								안전한 공간을<br>
+								만들어가는<br>
+								기술</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<div class="card_body1">
+								<h5>정유</h5>
+								<div class="box"></div>
+								<p>핵심 설계기술과<br>
+								우수한 전문인력 확보</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="images/icon04.png" alt="아이콘4">
+					</li>
+					<li>
+						<img src="images/icon05.png" alt="아이콘5">
+					</li>
+					<li>
+						<div class="card">
+							<div class="card_body1">
+								<h5>인프라 및 환경</h5>
+								<div class="box"></div>
+								<p>인간중심의 인프라 및<br>
+								환경사업 전계</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</header>
+</body>
+</html>

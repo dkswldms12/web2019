@@ -1,0 +1,324 @@
+@charset "utf-8";
+#header{
+	width: 100%;
+}
+#header div.top_h{
+	width: 1200px;
+	/*background-color: #ccc;*/
+	margin: 0 auto;
+}
+#header div.top_h .top_L{
+	width: 300px;
+	height: 35px;
+	/*background-color: #ccc;*/
+	float: left;
+	position: relative;
+}
+
+#header div.top_h .top_L li{
+	float: left;
+}
+#header div.top_h .top_L li:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	position: absolute;
+	top: 18px;
+	background-color: #ccc;
+}
+#header div.top_h .top_L li:first-child:after{
+	display: none;
+}
+#header div.top_h .top_L li a{
+	display: block;
+	text-align: center;
+	line-height:35px;
+	color: #ccc;
+	padding:5px;
+	font-size: 12px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#header div.top_h .top_R{
+	width: 600px;
+	float: right;
+	margin-bottom: 5px;
+}
+#header div.top_h .top_R .top_body{
+	width: 600px;
+	position: relative;
+}
+#header div.top_h .top_R .top_body ul{
+	width: 300px;
+}
+#header div.top_h .top_R .top_body li{
+	float: left;
+}
+#header div.top_h .top_R .top_body li:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	position: absolute;
+	top: 18px;
+	background-color: #ccc;
+}
+#header div.top_h .top_R .top_body li:first-child:after{
+	display: none;
+}
+#header div.top_h .top_R .top_body li a{
+	display: block;
+	text-align: center;
+	line-height:35px;
+	color: #ccc;
+	padding:5px;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#header div.top_h .top_R .top_body .snsimg{
+	width: 150px;
+	position: absolute;
+	right: 210px;
+	top:8px;
+}
+#header div.top_h .top_R .top_body .country{
+	position: absolute;
+  	right: 150px;
+  	top: 9px;
+}
+#header div.bot_h{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#header div.bot_h .logo{
+	width: 300px;
+	float: left;
+	margin: 0 auto;
+}
+#header div.bot_h .logo img{
+	display: block;
+}
+#header div.bot_h .menu{
+	width: 800px;
+	/*background-color: #ccc;*/
+	float: left;
+	margin-top: 10px;
+}
+#header div.bot_h .menu li{
+	float: left;
+	width: 160px;
+}
+#header div.bot_h .menu li a{
+	display: block;
+	text-align: center;
+	line-height:35px;	
+}
+#mid_con{
+	width: 100%;
+	margin: 0 auto;
+}
+#mid_con .ediya{
+	width: 100%;
+	height: 230px;
+	background-image: url(../images/EDIYA.jpg);
+}
+#mid_con .ediya a{
+	display: block;
+	/*text-align: center;*/
+	line-height: 30px;
+	padding-top: 120px;
+	padding-left: 705px;
+	color: #fff;
+	font-weight: bold;
+}
+#mid_con .ediya_menu{
+	width: 100%;
+	height: 500px;
+	background-color: #ccc;
+	position: relative;
+}
+#mid_con .ediya_menu a.btn{
+	width: 100px;
+	height: 50px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #000;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	top: 220px;
+	left: 47%;
+}
+#mid_con .ediya_menu a.btn:hover{
+	border: 1px solid blue;
+	background-color: blue;
+	color: #fff;
+	font-weight: bold;
+}
+#mid_con .ediya_animation{
+	width: 100%;
+	height: 800px;
+	background-color: #000;
+	margin:0 auto;
+	position: relative;
+}
+#mid_con .ediya_animation .bt1{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background-color: #fff;
+	border-radius: 150px;
+	position: absolute;
+	top: 400px;
+	left: 350px;
+}
+#mid_con .ediya_animation .bt1:hover{
+	animation-name: bt1;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes bt1{
+	from{
+		width: 170px;
+		height: 170px;
+		top: 400px;
+	}
+	to{
+		width: 170px;
+		height: 170px;
+		top: 430px;
+	}
+}
+
+#mid_con .ediya_animation .bt2{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background-color: #fff;
+	border-radius: 150px;
+	position: absolute;
+	top: 250px;
+	left: 860px;
+}
+#mid_con .ediya_animation .bt2:hover{
+	animation-name: bt2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes bt2{
+	from{
+		width: 170px;
+		height: 170px;
+		top: 250px;
+	}
+	to{
+		width: 170px;
+		height: 170px;
+		top: 280px;
+	}
+}
+
+#mid_con .ediya_animation .bt3{
+	width: 170px;
+	height: 170px;
+	display: block;
+	background-color: #fff;
+	border-radius: 150px;
+	position: absolute;
+	top: 400px;
+	left: 1350px;
+}
+#mid_con .ediya_animation .bt3:hover{
+	animation-name: bt3;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes bt3{
+	from{
+		width: 170px;
+		height: 170px;
+		top: 400px;
+	}
+	to{
+		width: 170px;
+		height: 170px;
+		top: 430px;
+	}
+}
+#mid_con .ediya_animation p{
+	width: 130px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 200px;
+	left: 15px;
+	text-align: center;
+	line-height: 30px;
+	}
+#mid_con .ediya_animation p:first-child{
+	width: 140px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 180px;
+	left: 15px;
+	text-align: center;
+	line-height: 30px;
+	}
+#mid_con .lab{
+	width: 100%;
+	height: 860px;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 
+}
+#mid_con .lab img{
+	display: block;
+	position: absolute;
+	right: 650px;
+	top: 100px;
+}
+#mid_con .lab:after{
+	content: "";
+	display: block;
+	width: 130px;
+	height: 1px;
+	background-color: blue;
+	position: absolute;
+	right: 880px;
+	top: 270px;
+}
+#mid_con .lab .img1{
+	width: 630px;
+	height: 640px;
+	position: absolute;
+	left:1000px;
+	top: 250px;
+	
+}
+#mid_con .lab .img1:hover img{
+	width: 630px;
+	height: 640px;
+	transform: scale(1.1,1.1);
+	transition: 0.3s;
+}
+#mid_con .lab .img2{
+	width: 630px;
+	height: 640px;
+	position: absolute;
+	right:-300px;
+	top: 300px;
+}
+#mid_con .lab .img2:hover img{
+	width: 630px;
+	height: 640px;
+	transform: scale(1.1,1.1);
+	transition: 0.3s;
+	overflow: hidden;
+}
