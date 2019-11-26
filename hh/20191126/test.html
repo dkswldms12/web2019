@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<link rel="stylesheet" href="../css/reset.css">
+<style>
+	.sub{
+		display: none;
+	}
+	nav.menu{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.menu>ul>li{
+		float: left;
+		width: 20%;
+		height: 35px;
+	}
+	.menu>ul>li>a{
+		display: block;
+		text-align: center;
+		line-height: 35px;
+	}
+	.menu>ul>li>a:hover{
+		background-color: #ff0;
+	}
+	.menu>ul>li:hover .sub{
+		display: block;
+	}
+	ul.sub>li{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	nav.menu>ul:hover .sub{
+		display: block;
+	}
+	ul.sub>li>a{
+		display: block;
+		text-align: center;
+		line-height: 35px;
+	}
+	ul.sub>li>a:hover{
+		background-color: #0ff;
+	}
+</style>
+<body>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">menu1</a>
+				<ul class="sub">
+					<li><a href="#">sub11</a></li>
+					<li><a href="#">sub12</a></li>
+					<li><a href="#">sub13</a></li>
+					<li><a href="#">sub14</a></li>
+					<li><a href="#">sub15</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu2</a>
+				<ul class="sub">
+					<li><a href="#">sub21</a></li>
+					<li><a href="#">sub22</a></li>
+					<li><a href="#">sub23</a></li>
+					<li><a href="#">sub24</a></li>
+					<li><a href="#">sub25</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu3</a>
+				<ul class="sub">
+					<li><a href="#">sub31</a></li>
+					<li><a href="#">sub32</a></li>
+					<li><a href="#">sub33</a></li>
+					<li><a href="#">sub34</a></li>
+					<li><a href="#">sub35</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu4</a>
+				<ul class="sub">
+					<li><a href="#">sub41</a></li>
+					<li><a href="#">sub42</a></li>
+					<li><a href="#">sub43</a></li>
+					<li><a href="#">sub44</a></li>
+					<li><a href="#">sub45</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu5</a>
+				<ul class="sub">
+					<li><a href="#">sub51</a></li>
+					<li><a href="#">sub52</a></li>
+					<li><a href="#">sub53</a></li>
+					<li><a href="#">sub54</a></li>
+					<li><a href="#">sub55</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
