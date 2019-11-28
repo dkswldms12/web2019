@@ -8,9 +8,11 @@
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/animate.css">
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
+<script src="js/wow.js"></script>
 <script>
 	$(document).ready(function(){
 	var myslide = $(".slider").bxSlider({
@@ -41,6 +43,9 @@
 	  bottom: 350px;
 }
 </style>
+<script>
+	new WOW().init();
+</script>
 <body>
 
 	<header id="h_wrap">
@@ -52,7 +57,7 @@
 			<div class="preBtn"><img src="images/pre.png" alt="버튼1"></div>
 			<div class="nextBtn"><img src="images/next.png" alt="버튼2"></div>
 		</div>
-
+	</header>
 		<div class="head_top">
 			<div class="mid_top clarfix">
 				<div class="logo">
@@ -79,30 +84,30 @@
 		<section id="body_box clearfix">
 			<div class="mid_box">
 				<ul>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="0.8s">
 						<img src="images/icon01.png" alt="아이콘1">
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="1s">
 						<a href="https://www.youtube.com/embed/rlaaTHpQZSs" class="youtube"><img src="images/img01.jpg"></a>
 					</li>
-					<li>
-						<div class="thirdbox clearfix">
+					<li class="wow fadeInUp" data-wow-delay="1.2s">
+						<div class="thirdbox">
 							<div class="news">
 								<h3>뉴스</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque similique consequatur debitis, ut ex aliquid placeat iusto accusantium sequi reiciendis?</p>
 							</div>
 							<div class="news_img">
-								<img src="images/img02_02.jpg" alt="">
+								<img src="images/img02.jpg" alt="">
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="1.4s">
 						<img src="images/icon02.png" alt="아이콘2">
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="1.6s">
 						<img src="images/icon03.png" alt="아이콘3">
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="1.8s">
 						<div class="card">
 							<div class="card_body">
 								<h5>전력 및 에너지 플렌트</h5>
@@ -112,7 +117,7 @@
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="2s">
 						<div class="card">
 							<div class="card_body">
 								<h5>건축</h5>
@@ -124,7 +129,7 @@
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="2.2s">
 						<div class="card">
 							<div class="card_body1">
 								<h5>정유</h5>
@@ -134,13 +139,13 @@
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="2.4s">
 						<img src="images/icon04.png" alt="아이콘4">
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="2.6s">
 						<img src="images/icon05.png" alt="아이콘5">
 					</li>
-					<li>
+					<li class="wow fadeInUp" data-wow-delay="2.6s">
 						<div class="card">
 							<div class="card_body1">
 								<h5>인프라 및 환경</h5>
@@ -154,5 +159,51 @@
 			</div>
 		</section>
 	</header>
+	<div class="aa" style="height: 930px"></div>
+	<section id="sec_body">
+		<div class="vision">
+			<div class="vision_con">
+				<h4>비젼</h4>
+				<p>vision 2020</p>
+				<ul class="clearfix">
+					<li>
+						<div class="card">
+							<img src="images/icon0101.png" alt="">
+							<div class="card_body">
+								<p class="card-title">engineering</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, cumque.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="images/icon0101.png" alt="">
+							<div class="card_body">
+								<p class="card-title">engineering</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, cumque.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="images/icon0101.png" alt="">
+							<div class="card_body">
+								<p class="card-title">engineering</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, cumque.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="images/icon0101.png" alt="">
+							<div class="card_body">
+								<p class="card-title">engineering</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, cumque.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 </body>
 </html>
