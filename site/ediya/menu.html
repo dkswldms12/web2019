@@ -9,7 +9,23 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css">
 <script src="js/jquery-3.1.1.min.js"></script>
-
+<script src="js/jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+	var myslide = $(".mslide").bxSlider({
+		auto:true,controls:false
+		});
+		$(".preBtn").click(function(){
+			myslide.goToPrevSlide();
+		});
+		$(".nextBtn").click(function(){
+			myslide.goToNextSlide();
+		});
+	});
+</script>
+<style>
+	
+</style>
 <body>
 	<header id="header">
 		<div class="top_h clearfix">
@@ -81,7 +97,21 @@
 			<div class="line2"></div>
 		</div>
 		<div class="manu_banner">
-			
+				<div class="menu_slide">
+					<div class="mslide">
+						<img src="images/cof1.jpg" alt="cof1">
+						<img src="images/cof2.jpg" alt="cof2">
+						<img src="images/cof3.jpg" alt="cof3">
+						<img src="images/cof4.jpg" alt="cof4">
+						<img src="images/cof5.jpg" alt="cof5">
+						<img src="images/cof6.jpg" alt="cof6">
+						<img src="images/cof7.jpg" alt="cof7">
+						<img src="images/cof8.jpg" alt="cof8">
+						<img src="images/cof9.jpg" alt="cof9">
+					</div>
+				<div class="preBtn"><img src="images/pre.jpg" alt="버튼1"></div>
+				<div class="nextBtn"><img src="images/next.jpg" alt="버튼2"></div>
+				</div>
 		</div>
 	</section>
 </body>

@@ -289,6 +289,7 @@
 	height: 860px;
 	background-color: #fff;
 	position: relative;
+	z-index: 1;
 }
 #mid_con .ediya_lab .lab img{
 	display: block;
@@ -507,6 +508,7 @@ nav.menu_banner .menu_name{
 	width: 1000px;
 	margin: 0 auto;
 	position: relative;
+	margin-bottom: 30px;
 }
 h1{
 	width: 1000px;
@@ -548,8 +550,19 @@ h1{
 	font-size: 13px;
 	font-weight: bold;
 }
-
-
+.menu_banner{
+}
+.menu_banner .menu_slide{
+	width: 900px;
+	margin: 0 auto;
+}
+.meun_slide{
+	position: relative;
+}
+.menu_slide .preBtn .nextBtn{
+	position: absolute;
+	top: 0;
+}
 
 .foot{
 	width: 100%;

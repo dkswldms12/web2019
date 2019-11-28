@@ -229,8 +229,10 @@ section#sec_body{
 	margin: 0 auto;
 }
 #sec_body .vision{
-	height: 750px;
-	background-image: url(../images/sec_bg.jpg);
+	height: 700px;
+	background: url(../images/sec_bg.jpg) no-repeat center fixed;
+	background-attachment: fixed;/*모바일사용x*/
+	background-size: cover;
 }
 .vision_con{
 	width: 1260px;
@@ -248,10 +250,13 @@ section#sec_body{
 	height: 2px;
 	background-color: #fff; 
 	margin: 0 auto;
+	margin-bottom: 10px;
 }
 .vision_con p{
 	text-align: center;
-	color: #fff
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 30px;
 }
 .vision_con ul{
 
@@ -259,6 +264,14 @@ section#sec_body{
 .vision_con ul li{
 	float: left;
 	margin-right: 20px;
+	transition: 0.3s;
+}
+.vision_con ul li:hover{
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	transform: translate(-10px,-10px);
+}
+.vision_con ul li:hover .card{
+	transform: rotateZ(20deg);
 }
 .vision_con ul li:last-child{
 	margin-right: 0;
@@ -266,9 +279,10 @@ section#sec_body{
 .vision_con ul li .card{
 	width: 300px;
 	height: 380px;
-	background-color: #f0f;
 	border-radius: 5px;
 	padding-top: 45px;
+	/*background-color: #ff0;*/
+	cursor: pointer;
 }
 .vision_con ul li .card img{
 	display: block;
@@ -276,7 +290,6 @@ section#sec_body{
 }
 .vision_con ul li .card-body{
 	text-align: center;
-	padding: 15px;
 }
 .vision_con ul li .card .card-title{
 	font-size: 1.5em;
@@ -284,6 +297,9 @@ section#sec_body{
 	margin-bottom: 10px;
 }
 .vision_con ul li .card p{
-	color: #000;
+	color: #fff;
 	font-size:12px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
 }
