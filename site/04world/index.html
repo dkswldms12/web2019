@@ -17,13 +17,25 @@
 	$(document).ready(function(){
 	var myslide = $(".slider").bxSlider({
 		auto:true,controls:false
-		});
+	});
 		$(".preBtn").click(function(){
 			myslide.goToPrevSlide();
 		});
 		$(".nextBtn").click(function(){
 			myslide.goToNextSlide();
 		});
+
+	var slide2btn = $(".slider2").bxSlider({
+			mode:"fade",pager:false,controls:false,auto:true
+		});
+		$(".preB").click(function(){
+			slide2btn.goToPrevSlide();
+		});
+		$(".nextB").click(function(){
+			slide2btn.goToNextSlide();
+		});
+
+
 		$(".youtube").colorbox({
 			iframe:true,
 			innerWidth:"560px",
@@ -84,24 +96,40 @@
 		<section id="body_box clearfix">
 			<div class="mid_box">
 				<ul>
-					<li class="wow fadeInUp" data-wow-delay="0.8s">
+					<li class="wow fadeInUp" data-wow-delay="0.8s" style="background-color: #92c1d5">
 						<img src="images/icon01.png" alt="아이콘1">
 					</li>
 					<li class="wow fadeInUp" data-wow-delay="1s">
 						<a href="https://www.youtube.com/embed/rlaaTHpQZSs" class="youtube"><img src="images/img01.jpg"></a>
 					</li>
-					<li class="wow fadeInUp" data-wow-delay="1.2s">
-						<div class="thirdbox">
-							<div class="news">
-								<h3>뉴스</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque similique consequatur debitis, ut ex aliquid placeat iusto accusantium sequi reiciendis?</p>
-							</div>
-							<div class="news_img">
-								<img src="images/img02.jpg" alt="">
-							</div>
+					<li class="news wow fadeInUp" data-wow-delay="1.2s">
+						<h3>뉴스</h3>
+						<div class="slider_2">
+							<ul class="slider2">
+								<li class="clearfix">
+									<div class="left">01Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, omnis.</div>
+									<div class="right"><img src="images/img02.jpg" alt="이미지1"></div>
+								</li>
+								<li>
+									<div class="left">02Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, omnis.</div>
+									<div class="right"><img src="images/img02.jpg" alt="이미지1"></div>
+								</li>
+								<li>
+									<div class="left">03Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, omnis.</div>
+									<div class="right"><img src="images/img02.jpg" alt="이미지1"></div>
+								</li>
+								<li>
+									<div class="left">04Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, omnis.</div>
+									<div class="right"><img src="images/img02.jpg" alt="이미지1"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="btn2">
+							<img src="images/pre.jpg" alt="" class="preB">
+							<img src="images/next.jpg" alt="" class="nextB">
 						</div>
 					</li>
-					<li class="wow fadeInUp" data-wow-delay="1.4s">
+					<li class="wow fadeInUp" data-wow-delay="1.4s" style="background-color: #b8307c">
 						<img src="images/icon02.png" alt="아이콘2">
 					</li>
 					<li class="wow fadeInUp" data-wow-delay="1.6s">

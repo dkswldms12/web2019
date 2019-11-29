@@ -98,7 +98,6 @@ header#h_wrap{
 
 .mid_box li:nth-child(1){
 	height: 300px;
-	background-color: #92c1d5;
 }
 .mid_box li:nth-child(2){
 	height: 300px;
@@ -108,38 +107,81 @@ header#h_wrap{
 	width: 50%;
 	height: 300px;
 }
-.thirdbox{
-	width: 650px;
-}
 .news{
-	background-color: #00f;
-	width: 325px;
-	height: 300px;
 	position: relative;
+	background-color: #fff;
+	padding-top: 30px;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.news h3{
+	width: 325px;
+	z-index: 1;
+	position: relative;
+}
+.news .slider2 .left:after{
+	content: "";
+	border-width: 20px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+	position: absolute;
+	left: 290px;
+	top: 50px;
 	z-index: 1;
 }
+.news .slider_2{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.news .slider_2 .bx-wrapper{
+	width: 650px;
+}
+.news .slider2 li{
+	width: 630px;
+}
+.news .slider2 li div{
+	width: 325px;
+	height: 300px;
+	float: left;
+}
+.news .slider2 li div.left{
+	position: absolute;
+	left: 33px;
+	top: 80px;
+}
+.news .slider2 li div.right{
+	float: right;
+}
+.news .btn2{
+	position: absolute;
+	bottom: 0;
+	right: 325px;
+}
+.news .btn2 img{
+	display: block;
+	float: left;
+	width: 35px;
+	border: 1px solid #cdcdcd;
+}
+.news .btn2 img:first-child{
+	border-right: 1px solid #fff;
+}
+/*
 .news:after{
 	content: "";
 	position: absolute;
 	border-style: solid;
 	top: 50%;
 	_margin-top: -20px;
-	transform: translateY(-50%);/*얘도 가운데 정렬할때 씀*/
+	transform: translateY(-50%);/*얘도 가운데 정렬할때 씀
 	right: -40px;
 	border-width: 20px;
 	border-color: transparent transparent transparent white;
 	display: block;
-}
-.thirdbox .news_img{
-	display: block;
-	width: 325px;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
+}*/
 .mid_box li:nth-child(4){
 	height: 300px;
-	background-color: #b8307c;
 }
 .mid_box li:nth-child(5){
 	height: 300px;
