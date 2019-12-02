@@ -255,19 +255,24 @@ section#sec{
 	position: absolute;
 	bottom: 0;
 }
-.ctn li .bar1 .txt{
-	width: 100px;
-	text-align: center;
+.ctn li .txt{
+	width: 120px;
 	line-height: 23px;
 	font-weight: bold;
 	color: #fff;
 	font-size: 20px;
 	padding-left: 30px;
 }
-.ctn li .bar1 .txt .star{
+.ctn li .txt .star{
 	color: yellow;
 }
-
+.ctn li .bar2{
+	width: 100%;
+	height: 50px;
+	background-color: #152630;
+	position: absolute;
+	bottom: 0;
+}
 .ctn li:nth-child(5){
 	width: 232.5px;
 	height: 230px;
@@ -278,13 +283,45 @@ section#sec{
 .ctn li:nth-child(6){
 	width: 232.5px;
 	height: 230px;
-	background-color: #fff;
+	background: url(../images/img5.jpg) no-repeat center;
 	margin-right: 10px;
 }
+.ctn li .bar3{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+}
+h3{
+	position: absolute;
+	top: 20px;
+	left: 90px;
+	color: #fff;
+}
+.ctn li .txt1{
+	width: 200px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 15px;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.ctn li .txt2{
+	width: 200px;
+	line-height: 10px;
+	color: #fff;
+	font-size: 12px;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+
 .ctn li:nth-child(7){
 	width: 232.5px;
 	height: 230px;
-	background-color: #fff;
+	background: url(../images/img6.jpg) no-repeat center;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
