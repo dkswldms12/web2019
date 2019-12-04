@@ -119,17 +119,17 @@ header#h_wrap{
 
 .top_bg .sub_name h1{
 	position: absolute;
-	top: 180px;
+	top: 150px;
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -70px;
 	color: #fff;
 	text-align: center;
 }
 .top_bg .sub_name p{
 	position: absolute;
-	top: 240px;
+	top: 210px;
 	left: 50%;
-	margin-left: -80px;
+	margin-left: -140px;
 	color: #fff;
 	font-size: 13px;
 	text-align: center;
@@ -641,6 +641,7 @@ section#sec_body{
 .cp p{
 	width: 1100px;
 }
+
 section#sub_body{
 	width: 100%;
 }
@@ -655,4 +656,47 @@ section#sub_body{
 .mini-top a:last-child{
 	color: #b8307c;
 	font-weight: bold;
+}
+.menu2page{
+	width: 1250px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 50px;
+}
+.menu2page h3{
+	color: #b8307c;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+}
+.menu2page h3:after{
+	content: "";
+	display: block;
+	width: 75px;
+	height: 2px;
+	background-color: #b8307c;
+	position: absolute;
+	top: -10px;
+}
+.sub_txt{
+	width: 500px;
+	height: 200px;
+	background: url(../images/sub_txt.jpg) no-repeat center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.menu2page_sub{
+	width: 1250px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu2page_sub:after{
+	content: "";
+	display: block;
+	width: 1200px;
+	height: 2px;
+	background-color: blue;
+	position: absolute;
+	top: 0px;
+	margin-left: -20px;
 }
