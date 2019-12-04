@@ -8,9 +8,88 @@
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/all.css">
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		var myslide = $(".slide").bxSlider({
+			auto:true,controls:false
+		});
+		$(".prebtn").click(function(){
+			myslide.goToPrevSlide();
+		});
+		$(".nextbtn").click(function(){
+			myslide.goToNextSlide();
+		});
+	});
+</script>
 <body>
-	
+	<header id="header">
+		<div class="h_top clearfix">
+			<div class="logo">
+				<img src="images/logo.png" alt="" style="width: 150px; height: 150px;">
+			</div>
+			<div class="h_menu clearfix">
+				<div class="left_menu">
+					<ul class="clearfix">
+						<li><a href="#">Menu</a>
+							<ul class="submenu">
+								<li><a href="#">버거</a></li>
+								<li><a href="#">맥모닝</a></li>
+								<li><a href="#">해피밀</a></li>
+								<li><a href="#">사이드&디저트</a></li>
+								<li><a href="#">맥카페&음료</a></li>
+								<li><a href="#">365일 즐거운 혜택</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Store</a>
+							<ul class="submenu">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">맥딜리버리</a></li>
+								<li><a href="#">맥드라이브</a></li>
+								<li><a href="#">임차문의</a></li>
+							</ul>
+						</li>
+						<li><a href="#">What's New</a>
+							<ul class="submenu">
+								<li><a href="#">프로모션</a></li>
+								<li><a href="#">새로운 소식</a></li>
+								<li><a href="#">주방공개의 날</a></li>
+								<li><a href="#">이달의 해피밀</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Story</a>
+							<ul class="submenu">
+								<li><a href="#">브랜드 소개</a></li>
+								<li><a href="#">사회적 책임과 지원</a></li>
+								<li><a href="#">맥도날드 경쟁력</a></li>
+								<li><a href="#">맥도날드 사람들</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="right_menu">
+					<div class="btn1"><a href="#">btn</a></div>
+					<div class="btn2"><a href="#">btn1</a></div>
+					<i class="fas fa-search"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="banner">
+		<div class="slide">
+			<img src="images/bn1.png" alt="베너1">
+			<img src="images/bn2.png" alt="베너2">
+			<img src="images/bn3.png" alt="베너3">
+			<img src="images/bn4.png" alt="베너4">
+			<img src="images/bn5.png" alt="베너5">
+			<img src="images/bn6.png" alt="베너6">
+			<img src="images/bn7.png" alt="베너7">
+			<img src="images/bn8.png" alt="베너8">
+		</div>
+		<div class="prebtn"><i class="fas fa-angle-left"></i></div>
+		<div class="nextbtn"><i class="fas fa-angle-right"></i></div>
+	</div>
 </body>
 </html>

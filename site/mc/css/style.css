@@ -1,1 +1,131 @@
 @charset "utf-8";
+header#header{
+	width: 100%;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+#header .h_top{
+	width: 1500px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+.h_top .logo{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.h_top .h_menu .left_menu ul>li .submenu{
+	display: none;
+}
+.h_top .h_menu{
+	float: right;
+}
+.h_top .h_menu .left_menu{
+	float: left;
+}
+.h_top .h_menu .left_menu li{
+	float: left;
+	width: 250px;
+}
+.h_top>.h_menu>.left_menu>ul>li>a{
+	display: block;
+	text-align: center;
+	line-height: 150px;
+	font-weight: bold;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 20px;
+}
+.h_top>.h_menu>.left_menu>ul:hover .submenu{
+	display: block;
+}
+ul.submenu>li>a{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Alatsi', sans-serif;
+	color: #ccc;
+}
+.h_top .h_menu .right_menu{
+	float: right;
+	width: 300px;
+	height: 150px;
+	/*background-color: #ccc;*/
+	margin: 0 auto;
+	position: relative;
+}
+.h_top .h_menu .right_menu .btn1{
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	width: 100px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #ffbc0d;
+}
+.h_top .h_menu .right_menu .btn1 a{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+.h_top .h_menu .right_menu .btn2{
+	position: absolute;
+	top: 50px;
+	left: 110px;
+	width: 100px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #264a36;
+}
+.h_top .h_menu .right_menu .btn2 a{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+.h_top .h_menu .right_menu i{
+	color: #000;
+	font-size: 50px;
+	position: absolute;
+	top: 45px;
+	right: 15px;
+}
+
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.banner .bx-wrapper .bx-pager {
+	display:none;
+}
+.banner .prebtn{
+	position: absolute;
+	top: 220px;
+	left: 0;
+}
+.banner .nextbtn{
+	position: absolute;
+	top: 220px;
+	right: 0;
+}
+.banner i{
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 50px;
+	color: #fff;
+	padding-left: 10px;
+}
