@@ -7,4 +7,4 @@
 
 ## study
 [wow/animate](https://dkswldms12.github.io/web2019/hh/20191128animate)
-[wow/animate](https://dkswldms12.github.io/web2019/hh/20191201media)
+[media](https://dkswldms12.github.io/web2019/hh/20191201media)
