@@ -12,6 +12,13 @@ header#header{
 	width: 150px;
 	height: 150px;
 	float: left;
+	position: relative;
+}
+.h_top .logo img{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 50px;
 }
 .h_top .h_menu .left_menu ul>li .submenu{
 	display: none;
