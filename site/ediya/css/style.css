@@ -1097,7 +1097,7 @@ nav.menu_banner .menu_name:after{
 	transition: 0.3s;
 }
 #coffee_menu .menu_all ul li img:hover{
-	transform: scale(1.2,1.2);
+	transform: scale(1.1,1.1);
 }
 }
 

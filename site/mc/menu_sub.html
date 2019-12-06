@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=">
 	<meta charset="UTF-8">
-	<title>맥도날드 버거</title>
+	<title>문서 제목</title>
 	<link rel="shortcut icon" href="images/logo1.ico">
 </head>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/all.css">
-<link rel="stylesheet" href="css/animate.css">
-<script src="js/wow.js"></script>
-<script>
-	new WOW().init();
-</script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <body>
 	<div class="line"></div>
 	<header id="header">
@@ -68,89 +64,84 @@
 			</div>
 		</div>
 	</header>
-	
-<!-- <script>
-    $(document).ready(function(){
-        $(".menu>a").click(function(){
-            $(this).next("ul").toggleClass("hide");
-        });
-    });
-</script> -->
+<script>
+	$(document).ready(function(){
+		$(".icon").click(function(){
+			$(".icon").hide();
+			$(".iconx").show();
+			$(".fi").addClass("responsive");
+		});
+		$(".iconx").click(function(){
+			$(".iconx").hide();
+			$(".icon").show();
+			$(".fi").removeClass("responsive");
+		});
 
-	<section id="sub_menu">
+	});
+</script>
+	<section id="m_sub">
 		<div class="menu_top_bg">
 		</div>
-		<div class="menu_list">
-			<ul class="clearfix">
-				<li>
-					<div class="card">
-						<img src="images/menu1.jpg" alt="메뉴1">
-						<div class="card_txt">
-							1955 스모키 더블 베이컨
-						</div>
-						<div class="card_etxt">
-							1955 Smoky Double Bacon
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/menu2.png" alt="메뉴2">
-						<div class="card_txt">
-							1955 스모키 더블 베이컨
-						</div>
-						<div class="card_etxt">
-							1955 Smoky Double Bacon
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/menu3.png" alt="메뉴3">
-						<div class="card_txt">
-							1955 스모키 더블 베이컨
-						</div>
-						<div class="card_etxt">
-							1955 Smoky Double Bacon
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/menu4.png" alt="메뉴4">
-						<div class="card_txt">
-							1955 스모키 더블 베이컨
-						</div>
-						<div class="card_etxt">
-							1955 Smoky Double Bacon
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/menu5.jpg" alt="메뉴5">
-						<div class="card_txt">
-							1955 스모키 더블 베이컨
-						</div>
-						<div class="card_etxt">
-							1955 Smoky Double Bacon
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/menu6.jpg" alt="메뉴6">
-						<div class="card_txt">
-							1955 스모키 더블 베이컨
-						</div>
-						<div class="card_etxt">
-							1955 Smoky Double Bacon
-						</div>
-					</div>
-				</li>
-			</ul>
+		<div class="m_list">
+			<div class="card">
+				<div class="t_txt">1955 스모키 더블 베이컨</div>
+				<div class="t_etxt">1955 Smoky Double Bacon</div>
+				<img src="images/buger1.png" alt="">
+				<div class="b_txt">
+					더블 베이컨과 바비큐 소스로<br>
+					더 특별해진 1955버거<br>
+					더욱 진한 고기맛을 느껴라!
+				</div>
+			</div>
 		</div>
-		<div class="add_btn"></div>
+		<div class="food_in">
+			<div class="fi clearfix">
+				<table class="food">
+					<thead>
+				        <tr>
+				          <th class="f">영양소</th>
+				          <th>중량(g)</th>
+				          <th>영양소</th>
+				          <th>중량(g)</th>
+				          <th>영양소</th>
+				          <th>중량(g)</th>
+				          <th>영양소</th>
+				          <th>중량(g)</th>
+				        </tr>
+				      </thead>
+					<tbody>
+				        <tr class="ff">
+				          <th class="f">함량</th>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				        </tr>
+				        <tr>
+				          <th class="f">기준치</th>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				        </tr>
+				      </tbody>
+				</table>
+				<a href="#" class="icon"><i class="fas fa-plus"></i></a>
+				<a href="#" class="iconx"><i class="fas fa-minus"></i></a>
+			</div>
+		</div>
+		<div class="allergy">
+			
+		</div>
 	</section>
+	
 </body>
 </html>

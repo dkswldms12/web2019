@@ -4,13 +4,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>맥도날드</title>
+	<link rel="shortcut icon" href="images/logo1.ico">
 </head>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css">
 <link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/animate.css">
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
+<script src="js/wow.js"></script>
 <script>
 	$(document).ready(function(){
 		var myslide = $(".slide").bxSlider({
@@ -24,11 +27,15 @@
 		});
 	});
 </script>
+<script>
+	new WOW().init();
+</script>
 <body>
+	<div class="line"></div>
 	<header id="header">
 		<div class="h_top clearfix">
-			<div class="logo">
-				<img src="images/logo.png" alt="" style="width: 100px; height: 100px;">
+			<div class="logo wow bounceInDown">
+				<img src="images/logo1.png" alt="로고">
 			</div>
 			<div class="h_menu clearfix">
 				<div class="left_menu">
@@ -70,8 +77,8 @@
 					</ul>
 				</div>
 				<div class="right_menu">
-					<div class="btn1"><a href="#">btn1</a></div>
-					<div class="btn2"><a href="#">btn2</a></div>
+					<div class="animated infinite btn1 wow pulse"><a href="#">btn1</a></div>
+					<div class="animated infinite btn2 wow pulse"><a href="#">btn2</a></div>
 					<i class="fas fa-search"></i>
 				</div>
 			</div>

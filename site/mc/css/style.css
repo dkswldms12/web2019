@@ -1,4 +1,11 @@
 @charset "utf-8";
+.line{
+	width: 100%;
+	height: 20px;
+	background-color: #ffcc00;
+	position: absolute;
+	top: 0;
+}
 header#header{
 	width: 100%;
 	font-family: 'Nanum Gothic', sans-serif;
@@ -13,11 +20,12 @@ header#header{
 	height: 150px;
 	float: left;
 	position: relative;
+	border-radius: 150px;
 }
 .h_top .logo img{
 	display: block;
 	position: absolute;
-	top: 20px;
+	top: 0px;
 	left: 50px;
 }
 .h_top .h_menu .left_menu ul>li .submenu{
@@ -81,6 +89,9 @@ ul.submenu>li>a{
 	font-weight: bold;
 	color: #fff;
 }
+.h_top .h_menu .right_menu .btn1:hover{
+	background-color: #264a36;
+}
 .h_top .h_menu .right_menu .btn2{
 	position: absolute;
 	top: 50px;
@@ -98,6 +109,9 @@ ul.submenu>li>a{
 	font-size: 20px;
 	font-weight: bold;
 	color: #fff;
+}
+.h_top .h_menu .right_menu .btn2:hover{
+	background-color: #ffbc0d;
 }
 .h_top .h_menu .right_menu i{
 	color: #000;
@@ -146,6 +160,7 @@ section#section{
 	width: 1300px;
 	/*background-color: #ccc;*/
 	margin: 0 auto;
+	position: relative;
 }
 .body_box li{
 	float: left;
@@ -158,18 +173,39 @@ section#section{
 	border-radius: 30px;
 	margin-bottom: 30px;
 	overflow: hidden;
+	position: relative;
 }
 .body_box li .card{
+	position: absolute;
+	transition: 0.3s;
 }
 .body_box li .card img{
 	display: block;
 }
 .body_box li .card .txt{
-	padding-left: 20px;
-	font-size: 19px;
+	padding-left: 25px;
+	font-size: 17px;
 	padding-top: 20px;
 	font-weight: bold;
 	font-family: 'Varela Round', sans-serif;
+}
+.body_box li .card:hover{
+	animation-name: card;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes card{
+	from{
+		width: 365px;
+		height: 420px;
+		transform: scale(1,1);
+	}
+	to{
+		width: 365px;
+		height: 420px;
+		transform: scale(1.1,1.1);
+	}
 }
 
 #footer{
@@ -254,4 +290,57 @@ section#sub_menu{
 	padding-left: 20px;
 	color: #808084;
 	font-weight: bold;
+}
+
+/*menu_sub 상세*/
+#m_sub{
+	width: 100%;
+}
+.m_list{
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.food_in{
+	width: 100%;
+	position: relative;
+}
+.food_in table{
+	width: 1000px;
+	color: #000;
+	margin: 0 auto;
+}
+.food_in table th, tr,td{
+	padding: 10px 30px;
+}
+.food_in table{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.food_in table th.f{
+	border-right: 1px solid #000;
+}
+.food_in table .ff{
+	border: 1px solid #ccc;
+}
+.food_in table{
+	display: none;
+}
+/*.food_in a:first-child{
+	display: block;
+}*/
+.fi.responsive table{
+	display: block;
+}
+.food_in .icon{
+	display: block;
+	position: absolute;
+	bottom: 150px;
+	right: 300px;
+}
+.food_in .iconx{
+	display: none;
+	position: absolute;
+	bottom: 150px;
+	right: 300px;
 }
