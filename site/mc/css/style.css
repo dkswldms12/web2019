@@ -299,11 +299,54 @@ section#sub_menu{
 .m_list{
 	width: 1500px;
 	margin: 0 auto;
+	margin-bottom: 150px;
 }
+.m_list .card{
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.m_list .card .t_txt{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 10px;
+
+}
+.m_list .card .t_etxt{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.m_list .card img{
+	display: block;
+}
+.m_list .card .b_txt{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 20px;
+	color: #ccc;
+}
+
 
 .food_in{
 	width: 100%;
 	position: relative;
+}
+.food_in h3{
+	position: absolute;
+	left: 25%;
+	bottom: 100px;
+}
+.food_in h3:after{
+	content: "";
+	display: block;
+	width: 950px;
+	height: 1px;
+	background-color: #000;
+	margin-top: 20px;
 }
 .food_in table{
 	width: 1000px;
@@ -320,9 +363,6 @@ section#sub_menu{
 .food_in table th.f{
 	border-right: 1px solid #000;
 }
-.food_in table .ff{
-	border: 1px solid #ccc;
-}
 .food_in table{
 	display: none;
 }
@@ -332,15 +372,69 @@ section#sub_menu{
 .fi.responsive table{
 	display: block;
 }
+
+.allergy{
+	width: 100%;
+	position: relative;
+}
+.allergy h3{
+	position: absolute;
+	left: 25%;
+	bottom: 30px;
+}
+.allergy h3:after{
+	content: "";
+	display: block;
+	width: 950px;
+	height: 1px;
+	background-color: #000;
+	margin-top: 20px;
+}
+.allergy table{
+	width: 1000px;
+	color: #000;
+	margin: 0 auto;
+}
+.allergy table th, tr,td{
+	padding: 10px 30px;
+}
+.allergy table{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.allergy table th.f{
+	border-right: 1px solid #000;
+}
+.allergy table{
+	display: none;
+}
+/*.food_in a:first-child{
+	display: block;
+}*/
+.allergy_sub.responsive table{
+	display: block;
+}
 .food_in .icon{
 	display: block;
 	position: absolute;
-	bottom: 150px;
-	right: 300px;
+	bottom: 120px;
+	right: 25%;
 }
 .food_in .iconx{
 	display: none;
 	position: absolute;
-	bottom: 150px;
-	right: 300px;
+	bottom: 120px;
+	right: 25%;
+}
+.allergy .icon1{
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	right: 25%;
+}
+.allergy .iconx1{
+	display: none;
+	position: absolute;
+	bottom: 40px;
+	right: 25%;
 }

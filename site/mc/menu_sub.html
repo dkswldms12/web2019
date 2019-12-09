@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=">
 	<meta charset="UTF-8">
-	<title>문서 제목</title>
+	<title>버거 메뉴</title>
 	<link rel="shortcut icon" href="images/logo1.ico">
 </head>
 <link rel="stylesheet" href="css/reset.css">
@@ -15,7 +15,7 @@
 	<header id="header">
 		<div class="h_top clearfix">
 			<div class="logo wow bounceInDown">
-				<img src="images/logo1.png" alt="로고">
+				<a href="index.html"><img src="images/logo1.png" alt="로고"></a>
 			</div>
 			<div class="h_menu clearfix">
 				<div class="left_menu">
@@ -78,6 +78,19 @@
 		});
 
 	});
+	$(document).ready(function(){
+		$(".icon1").click(function(){
+			$(".icon1").hide();
+			$(".iconx1").show();
+			$(".allergy_sub").addClass("responsive");
+		});
+		$(".iconx1").click(function(){
+			$(".iconx1").hide();
+			$(".icon1").show();
+			$(".allergy_sub").removeClass("responsive");
+		});
+
+	});
 </script>
 	<section id="m_sub">
 		<div class="menu_top_bg">
@@ -96,7 +109,8 @@
 		</div>
 		<div class="food_in">
 			<div class="fi clearfix">
-				<table class="food">
+				<h3>영양정보</h3>
+				<table class="food_t">
 					<thead>
 				        <tr>
 				          <th class="f">영양소</th>
@@ -110,7 +124,7 @@
 				        </tr>
 				      </thead>
 					<tbody>
-				        <tr class="ff">
+				        <tr>
 				          <th class="f">함량</th>
 				          <td>300</td>
 				          <td>300</td>
@@ -139,7 +153,49 @@
 			</div>
 		</div>
 		<div class="allergy">
-			
+			<div class="allergy_sub clearfix">
+				<h3>알레르기 정보</h3>
+				<table class="allergy_t">
+					<thead>
+				        <tr>
+				          <th class="f">영양소</th>
+				          <th>중량(g)</th>
+				          <th>영양소</th>
+				          <th>중량(g)</th>
+				          <th>영양소</th>
+				          <th>중량(g)</th>
+				          <th>영양소</th>
+				          <th>중량(g)</th>
+				        </tr>
+				      </thead>
+					<tbody>
+				        <tr>
+				          <th class="f">함량</th>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				        </tr>
+				        <tr>
+				          <th class="f">기준치</th>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				          <td>300</td>
+				        </tr>
+				      </tbody>
+				</table>
+				<a href="#" class="icon1"><i class="fas fa-plus"></i></a>
+				<a href="#" class="iconx1"><i class="fas fa-minus"></i></a>
+			</div>
 		</div>
 	</section>
 	
