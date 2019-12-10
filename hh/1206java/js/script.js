@@ -255,7 +255,7 @@ switch($select){
 if($url){
 	location.href=$url;
 }*/
-
+/*
 var $session=prompt("관심있는 있는 분야의 세션 번호를 선택하세요. \n 힌트 : 1-디자인, 2-개발파트, 3-마케팅","");
 console.log(typeof $session);
 //문자형 데이터를 숫자형 데이터로 변경 : number("문자형 데이터") var num=Number("7");
@@ -269,7 +269,7 @@ switch($session){
 	default : alert("조건에 일치하는걸 입력하세요");
 	location.reload();
 }
-
+*/
 //반복문은 세가지 필수항목 1 초기값 2 조건문 또는 조건식 3 증감식+실행문
 document.write("<h3>while 문</h3>");
 var $n=1;
@@ -278,3 +278,139 @@ while($n<=3){
 	$n++;
 }
 
+var $i=1;
+while($i<=50){
+	document.write($i+"<br>");
+	$i++;
+}
+
+var $box_num=1;
+while($box_num<=12){
+	if($box_num%3==0){
+		document.write("<div class='bx bx_"+$box_num+"' style='background:#ffaaff;'>"+$box_num+"</div>");
+	}else{document.write("<div class='bx bx_"+$box_num+"' style='background:#ffffaa;'>"+$box_num+"</div>");
+	}
+	$box_num++;
+}
+document.write("<div class='clear'></div>");
+
+
+document.write("<h3>do while</h3>");//먼저 실행하고 나서 조건식을 검사하여 반복한다
+var $dw=1;//1
+do{
+	document.write("<div class='dw_bx'>"+$dw+"</div>");//2
+	$dw++;//3
+}while($dw<=9)//4
+document.write("<div class='clear'></div>");
+
+
+document.write("<h3>for</h3>");//초기값 조건식 실행문 증감식
+for($a=1; $a<=10; $a++){
+	document.write("<div class='for_bx' style='background:#ffffaa;'>"+$a+"</div>");
+}
+document.write("<div class='clear'></div>");
+
+
+//50개의 박스를 구성. 3의배수 4의배수 3과4의 교집합이 되는 배수 박스영역 색상
+for($a=1; $a<=50; $a++){
+	if($a%3==0 && $a%4!=0){//3배수고 4의배수가 아닌경우
+		document.write("<div class='fox' style='background:#ffffaa;'>"+$a+"</div>");
+	}else if($a%3!=0 && $a%4==0){//3의배수가 아니고 4의배수인격ㅇ우
+		document.write("<div class='fox' style='background:#ffaaaa;'>"+$a+"</div>");
+	}else if($a%3==0 && $a%4==0){//3의배수이고 4의배수인경우
+		document.write("<div class='fox' style='background:#aaffaa;'>"+$a+"</div>");
+	}else{//그외경우
+		document.write("<div class='fox' style='background:#00ffaa;'>"+$a+"</div>");
+	}
+}
+document.write("<div class='clear'></div>");
+
+
+document.write("<h3>break</h3>");
+for($m=1; $m<=10; $m++){
+	document.write("<div class='for_break'>"+$m+"</div>");
+	break;//반복문이 실행되지 않도록 막는역할
+}
+document.write("<div class='clear'></div>");
+
+for(n=1; n<=10000; n++){
+	if(n==10){
+		break;
+	}
+	document.write("<div class='for_break'>"+n+"</div>");
+}
+document.write("<div class='clear'></div>");
+
+document.write("<h3>continue</h3>");
+for($p=1; $p<=20; $p++){
+	if($p%5==0){
+		document.write("<div class='for_continue' style='background:#aaffff;'>"+$p+"</div>");
+		continue;//다음에 오는 실행문은 실행하지 않고 건너뛴 상태에서 다음 증감식으로 이동하여 다음 박스에서 다시 실행문을 반복한다
+	}
+	document.write("<div class='for_continue'>"+$p+"</div>");
+}
+document.write("<div class='clear'></div>");
+
+
+document.write("<h3>중첩 for문</h3>");
+for($g=2; $g<=9; $g++){//2단에서 9단까지
+	document.write($g+"단"+"<br>");
+	for($h=1; $h<=9; $h++){//1~9까지
+		document.write($g+"*"+$h+"="+($g*$h)+"<br>");
+	}
+}
+document.write("<div class='clear'></div>");
+document.write("-----------<br>");
+/*
+var a=prompt("숫자를입력해라","");
+document.write(a+"단"+"<br>");
+for(i=1; i<=9; i++){
+	document.write(a+"*"+i+"="+(a*i)+"<br>");
+}
+document.write("-----------<br>");
+var a=prompt("숫자를입력해라","");
+for(i=a; i<=9; i++){
+	document.write(i+"단"+"<br>");
+	for(b=1; b<=9; b++){
+		document.write(i+"*"+b+"="+(i*b)+"<br>");
+	}
+}
+*/
+document.write("<h3>형변환 숫자->문자</h3>");
+var numString=24;
+console.log(typeof numString);
+var resultString=String(numString);//String S은 대문자로
+console.log(typeof resultString);
+
+document.write("<h3>형변환 문자->숫자</h3>");
+var numString="25";
+console.log(typeof numString);
+var result=Number(numString);//Number N은 대문자로
+console.log(typeof result);
+
+var strNo="3.14511111";
+var rstNo1=parseInt(strNo);//정수형태의 숫자형 데이터로 변환
+console.log(rstNo1);
+console.log(typeof rstNo1);
+
+var rstNo2=parseFloat(strNo);//실수형태의 숫자형 데이터로 변환
+console.log(rstNo2);
+console.log(typeof rstNo2);
+
+//var number1 = Number(prompt("첫번째수 입력",""));
+//var number2 = Number(prompt("두번째수 입력",""));
+//console.log(typeof number1);
+//console.log(typeof number2);
+//var sum=number1+number2;
+//var subtract=number1-number2;
+//console.log(typeof sum);
+//console.log(typeof subtract);
+//alert("입력받은 수:"+number1+","+number2+"\n\n sum :"+sum+"\n\n subtract :"+subtract);
+var n1=prompt("숫자를입력해","");
+var n2=prompt("숫자를입력해","");
+var n11=Number(n1);
+var n22=Number(n2);
+var sum=n11+n22;
+var sub=n11-n22;
+document.write("입력한"+n11+"+"+n22+"="+sum+"<br>");
+document.write("입력한"+n11+"-"+n22+"="+sub+"<br>");

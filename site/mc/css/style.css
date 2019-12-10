@@ -10,6 +10,7 @@ header#header{
 	width: 100%;
 	font-family: 'Nanum Gothic', sans-serif;
 }
+@media screen and (min-width: 415px){/*pc버전*/
 #header .h_top{
 	width: 1500px;
 	margin: 0 auto;
@@ -120,7 +121,127 @@ ul.submenu>li>a{
 	top: 45px;
 	right: 15px;
 }
+}
+@media screen and (max-width: 414px){
+#header .h_top{
+	width: 100%;
+	margin: 0 auto;
+	/*border-bottom: 1px solid #ccc;*/
+	margin-bottom: 15px;
+}
+.h_top .logo{
+	width: 50px;
+	height: 50px;
+	float: left;
+	position: relative;
+	border-radius: 150px;
+}
+.h_top .logo img{
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.h_top .h_menu .left_menu ul>li .submenu{
+	display: none;
+}
+.h_top .h_menu{
+	float: left;
+	width: 350px;
+}
+.h_top .h_menu .left_menu{
+	width: 250px;
+	float: left;
+	padding-top: 30px;
+	padding-left: 20px;
+	/*height: 200px;*/
+}
+.h_top .h_menu .left_menu li{
+	float: left;
+	padding-left: 10px;
+}
+.h_top>.h_menu>.left_menu>ul>li>a{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 10px;
+	line-height: 30px;
+}
+.h_top>.h_menu>.left_menu>ul:hover .submenu{
+	display: block;
+	border-top: 1px solid #ccc;
+}
 
+ul.submenu>li>a{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: 'Alatsi', sans-serif;
+	color: #ccc;
+	line-height: 20px;
+}
+.h_top .h_menu .right_menu{
+	float: right;
+	width: 100px;
+	height: 50px;
+	/*background-color: #ccc;*/
+	margin: 0 auto;
+	position: relative;
+}
+.h_top .h_menu .right_menu .btn1{
+	position: absolute;
+	top: 35px;
+	left: -40px;
+	width: 50px;
+	height: 20px;
+	border-radius: 100px;
+	background-color: #ffbc0d;
+}
+.h_top .h_menu .right_menu .btn1 a{
+	display: block;
+	text-align: center;
+	line-height: 20px;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+.h_top .h_menu .right_menu .btn1:hover{
+	background-color: #264a36;
+}
+.h_top .h_menu .right_menu .btn2{
+	position: absolute;
+	top: 35px;
+	left: 15px;
+	width: 50px;
+	height: 20px;
+	border-radius: 100px;
+	background-color: #264a36;
+}
+.h_top .h_menu .right_menu .btn2 a{
+	display: block;
+	text-align: center;
+	line-height: 20px;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+.h_top .h_menu .right_menu .btn2:hover{
+	background-color: #ffbc0d;
+}
+.h_top .h_menu .right_menu i{
+	color: #000;
+	font-size: 20px;
+	position: absolute;
+	top: 35px;
+	right: 5px;
+}
+}
+@media screen and (min-width: 415px){/*pc버전*/
 .banner{
 	width: 100%;
 	position: relative;
@@ -153,6 +274,94 @@ ul.submenu>li>a{
 	padding-left: 10px;
 }
 
+.bx{
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.bx_01{background-image: url(../images/bn1.png)}
+.bx_02{background-image: url(../images/bn2.png)}
+.bx_03{background-image: url(../images/bn3.png)}
+.bx_04{background-image: url(../images/bn4.png)}
+.bx_05{background-image: url(../images/bn5.png)}
+.bx_06{background-image: url(../images/bn6.png)}
+.bx_07{background-image: url(../images/bn7.png)}
+.bx_08{background-image: url(../images/bn8.png)}
+
+
+}
+@media screen and (max-width: 414px){
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.banner .bx-wrapper .bx-pager {
+	display:none;
+}
+.banner .prebtn{
+	position: absolute;
+	top: 100px;
+	left: 0;
+}
+.banner .nextbtn{
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+.banner i{
+	width: 15px;
+	height: 20px;
+	background-color: rgba(0,0,0,0.3);
+	font-size: 20px;
+	color: #fff;
+	padding-left:2px;
+}
+/*.bx{
+	width:100%;
+	height: 300px;
+	background-repeat: no-repeat; 
+	background-position: center center;
+	background-size: cover;
+}*/
+.bx{
+	width:100%;
+	height: 240px;
+	background-position: 25% 50%;
+}
+.bx_01{
+	background-image: url(../images/banner1.jpg);
+}
+.bx_02{
+	background-image: url(../images/banner2.jpg);
+}
+.bx_03{
+	background-image: url(../images/banner3.jpg);
+}
+.bx_04{
+	background-image: url(../images/banner4.jpg);
+}
+.bx_05{
+	background-image: url(../images/banner5.jpg);
+}
+.bx_06{
+	background-image: url(../images/banner6.jpg);
+}
+.bx_07{
+	background-image: url(../images/banner7.jpg);
+}
+.bx_08{
+	background-image: url(../images/banner8.jpg);
+}
+}
+@media screen and (min-width: 415px){/*pc버전*/
 section#section{
 	width: 100%;
 }
@@ -207,6 +416,70 @@ section#section{
 		transform: scale(1.1,1.1);
 	}
 }
+}
+@media screen and (max-width: 414px){
+section#section{
+	width: 100%;
+}
+#section .body_box{
+	width: 100%;
+	/*background-color: #ccc;*/
+	margin: 0 auto;
+	position: relative;
+}
+.body_box li{
+	width: 300px;
+	height: 250px;
+	/*background-color: skyblue;*/
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	margin-right: 20px;
+	margin-left: 60px;
+	border-radius: 30px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.body_box li .card{
+	position: absolute;
+	transition: 0.3s;
+	position: relative;
+}
+.body_box li .card img{
+	display: block;
+	background-position: 50% 25%;
+}
+.body_box li .card .txt{
+	width: 300px;
+	height: 50px;
+	font-weight: bold;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 15px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 50px;
+	padding-left: 20px;
+	padding-top: 5px;
+	color: #fff;
+}
+.body_box li .card:hover{
+	animation-name: card;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes card{
+	from{
+		width: 365px;
+		height: 420px;
+		transform: scale(1,1);
+	}
+	to{
+		width: 365px;
+		height: 420px;
+		transform: scale(1.1,1.1);
+	}
+}
+}
 
 #footer{
 	width: 100%;
@@ -244,7 +517,46 @@ section#section{
 	color: #fff;
 	padding-right: 10px;
 }
-
+@media screen and (max-width: 414px){
+#footer{
+	width: 100%;
+	height: 150px;
+	background-color: #292929;
+}
+.foot{
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+}
+.foot .p1{
+	color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+	top: 25px;
+	left: 10px;
+	padding-top: 10px;
+}
+.foot .p2{
+	color: #4b4b4b;
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+	top: 25px;
+	left: 100px;
+	padding-top: 10px;
+}
+.foot .sns{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.foot .sns i{
+	font-size: 20px;
+	color: #fff;
+	padding-right: 0px;
+}
+}
 
 /*sub menu*/
 section#sub_menu{
@@ -343,7 +655,7 @@ section#sub_menu{
 .food_in h3:after{
 	content: "";
 	display: block;
-	width: 950px;
+	width: 750px;
 	height: 1px;
 	background-color: #000;
 	margin-top: 20px;
@@ -385,7 +697,7 @@ section#sub_menu{
 .allergy h3:after{
 	content: "";
 	display: block;
-	width: 950px;
+	width: 750px;
 	height: 1px;
 	background-color: #000;
 	margin-top: 20px;
@@ -438,3 +750,13 @@ section#sub_menu{
 	bottom: 40px;
 	right: 25%;
 }
+
+/*div.font{
+	width: 200px;
+	height: 100px;
+	color: #000;
+	background-color: pink;
+	margin: 50px;
+	padding-left: 20px;
+	padding-top: 20px;
+}*/
