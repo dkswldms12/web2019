@@ -1,0 +1,44 @@
+@charset "utf-8"
+@font-face{
+    font-family: 'BM JUA';
+    src: url('../fonts/BMJUA.eot');
+    src: url('../fonts/BMJUA.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BMJUA.woff2') format('woff2'),
+        url('../fonts/BMJUA.woff') format('woff'),
+        url('../fonts/BMJUA.ttf') format('truetype'),
+        url('../fonts/BMJUA.svg#BMJUA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	font-family: 'BM JAU';
+	/*bx+tab 누르면 자동생성된다*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html. body{
+	margin:0; padding: 0;
+}
+header, section, article, aside, nav, footer{
+	display: block;
+}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
