@@ -154,3 +154,77 @@ document.write("<img src='img/view"+random_img+".jpg'>");
 //0.00000001*9=0.00000009
 //좌측의 값으로부터 1을 더한다면 1.00000009가 되니까 floor로 내림을 적용하기 때문에 1
 //만약 0.99*9=8.91 +1을 하면 9.91이 나오고 여기서 내림하면 최종값은 9 
+
+document.write("<br>")
+//문자객체
+var txt = "Hello Thank You good luck to you";//0부터시작
+document.write(txt.charAt(7)+"<br>");//charAt(숫자) 왼쪽으로부터 인덱스 번호를 측정하여 해당하는 문자를 반환
+document.write(txt.indexOf("you")+"<br>");//indexOf(문자)좌측으로부터 최초로 시작하는 인덱스 번호를 반환
+document.write(txt.indexOf("o",10)+"<br>");//10번째 이후로 최초로 o가 나오는 곳 번호 반환
+document.write(txt.lastIndexOf("ou")+"<br>");//lastIndexOf(문자) 오른쪽으로부터 문자를 찾아서 최초로 일치하는 문자의 번호를 추출
+document.write(txt.match("good")+"<br>");//match(문자) 문자를 찾아서 왼쪽으로부터 최초로 일치하는 문자를 반환
+//이때 찾는 문자가 없으면 null을 반환
+document.write(txt.search("luck")+"<br>");//search(문자)문자를 좌측으로부터 찾아서 최초로 일치하는 인덱스 번호를 반환
+document.write(txt.substr(12,3)+"<br>");//substr은 인덱스 번호로 12번부터 3글자를 추출
+document.write(txt.substring(16,20)+"<br>");//substring은 인덱스 번호 16번부터 20이전의 구간까지 문자를 추출
+document.write(txt.replace("You","Me")+"<br>");//replace는 앞에"You"는 바꿀문자 "Me"는 새문자로 바꿔주는거
+document.write(txt.replace("You","")+"<br>");
+document.write(txt.toLowerCase()+"<br>");//모두 소문자로
+document.write(txt.toUpperCase()+"<br>");//모두 대문자로
+
+document.write("!!!!!!!!!!여기부터 중요!!!!!!!!!!!!!!"+"<br>");
+document.write(txt.length+"<br>");//문자의갯수 띄어쓰기도 포함 1부터 시작
+
+var $strArr=txt.split(" ");//공백을 기준으로 문자를 쪼개서 저장하기
+document.write($strArr+"<br>");
+document.write($strArr[1]+"<br>");//배열로 [1]두번째 문장의 글자가 나옴
+
+var $phoneNum = "01012345678";
+var $result = $phoneNum.substring(0,7)+"****";
+document.write($result+"<br>");
+/*
+010-1234-5678, 010 1234 5678, 01012345678 공백 또는 기호가 포함 또는 공백이 없는 경우
+*/
+var $phoneNum = "010-1234-5678";
+var $result = $phoneNum.substring(0,9)+"****";
+var $result1 = $phoneNum.substring(0,$phoneNum.length-4)+"****";
+//숫자길이가 다르기때문에 전체를 다 잡고 마지막 4부분은 *로
+document.write($result1+"<br>");
+
+//배열 객체 : DB내의 데이터처럼 운용이 가능하다는 장점
+var $member=["유재석","김종국","하하","이광수","송지효","지석진","전소민","양세찬"];
+document.write("벌칙대상자1 : "+$member[3]+"<br>");
+document.write("벌칙대상자2 : "+$member[5]+"<br>");
+
+var $arr_day=["일","월","화","수","목","금","토"];
+var day=new Date();//년월일시분초 추출
+var $yoil=$arr_day[day.getDay()];//일 추출
+document.write($yoil+"<br>");
+
+var $img_day=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var $yoil=$img_day[day.getDay()];//일 추출
+document.write("<img src='img/img-day/"+$yoil+".gif'>"+"<br>");
+
+$member.pop();//pop은 배열 데이터중에서 마지막 인덱스를 삭제
+document.write($member[7]+"<br>");
+document.write($member.length+"<br>");
+$member.push("강하늘");//push는 마지막인덱스에 추가
+document.write($member+"<br>");
+document.write($member.length+"<br>");
+$member.shift();//첫번째 인덱스 데이터를 삭제
+document.write($member+"<br>");
+$member.unshift("이대휘");//첫번째 인덱스 데이터를 추가
+document.write($member+"<br>");
+
+//2차 배열을 활용한 콘텐츠 구성하기
+var $arr_bx=[
+	["shop_01.jpg", "마마스앤파파스", "NEW 스터그 트레이완구 포함", "월 17,480"],
+	["shop_02.jpg", "알집매트", "알집 꾸러기소파", "월 7,500"],
+	["shop_03.jpg", "알집매트", "알집 네오소파", "월 8,300원"],
+	["shop_04.jpg", "알집매트", " 알집 핑크퐁소파", "월 9,100원"]
+];
+document.write("<div class='outer'>");
+for(i=0; i<$arr_bx.length; i++){
+	document.write("<div class='box'><img src='img/img_arr_02/"+$arr_bx[i][0]+"'><h2>"+$arr_bx[i][1]+"</h2><p class='context'>"+$arr_bx[i][2]+"</p><p class='price'>"+$arr_bx[i][3]+"</p></div>");
+}
+document.write("</div>");

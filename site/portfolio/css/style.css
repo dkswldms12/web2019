@@ -1,0 +1,111 @@
+@charset "utf-8";
+/*color:ffd000*/
+html, body{margin: 0; padding: 0;}
+header{
+	width: 100%;
+	height: 70px;
+}
+.headerT{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 12px;
+}
+.logo{
+	float:left;
+	margin-left:5%;
+	padding-top:20px;
+/*	
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform: translate(0, -50%);
+
+*/	
+}
+.logo img{height:30px;}
+.logo_img{
+	position: absolute;
+	height: 100%;
+	top:0;
+	left:50%;
+	transform: translate(-50%,0);
+}
+.logo_img img{height:calc(100% - 16px); margin-top:8px;}
+.line1{
+	width: 100%;
+	height: 5px;
+	background: #ffd000;
+	position: absolute;
+	top: 0;
+	z-index:-1;
+}
+.line2{
+	width: 100%;
+	height: 5px;
+	background: #ffd000;
+	position: absolute;
+	bottom: 0;
+	z-index:-1;
+}
+.menu .sub_m{
+	display: none;
+}
+.menu{
+	height: auto;
+	float:right;
+	margin-right:5%;
+
+	/*position: absolute;
+	right: 5%;
+	top: 60px;
+	*/
+}
+.menu>ul{}
+.menu>ul>li{
+	float:left;
+	/*
+	vertical-align: top;
+	width: 100px;
+	*/
+}
+.menu>ul>li>a{
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	color: #ffd000;
+	padding:0 20px;
+	line-height:70px;
+}
+.menu>ul>li>a:hover{
+	cursor: pointer;
+}
+
+.menu:hover>ul>li .sub_m{
+	display: block;
+}
+
+.menu ul.sub_m{
+/*	padding-top: 20px;*/
+}
+.menu ul.sub_m>li{}
+.menu ul.sub_m>li>a{
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	color: #ffd000;
+}
+.menu ul.sub_m>li>a:hover{
+	cursor: pointer;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+}
+.main .font{
+	text-align: center;
+	vertical-align: middle;
+}
+.main .photo{
+
+}

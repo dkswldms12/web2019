@@ -3,9 +3,18 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>문서 제목</title>
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="css/res.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".mobile>a").click(function(){
+				$("html, body").animate({scrollTop:$("#cont_part").offset().top}, 500);
+			});
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -20,6 +29,13 @@
 					<li><a href="#">portpolio</a></li>
 					<li><a href="#">project</a></li>
 					<li><a href="#">contact us</a></li>
+					<li class="icon">
+						<ul>
+							<li><a href="#" target="_blank"><img src="img/sns3.png" alt="페이스북"></a></li>
+							<li><a href="#" target="_blank"><img src="img/sns4.png" alt="트위터"></a></li>
+							<li><a href="#" target="_blank"><img src="img/sns5.png" alt="플러스"></a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 			<div class="link">
@@ -30,9 +46,12 @@
 					<li><a href="#" target="_blank"><img src="img/sns5.png" alt="플러스"></a></li>
 				</ul>
 			</div>
+			<div class="mobile">
+				<a href="#cont_part"><img src="img/if_Bottom_Arrow_2125601.png" alt="화살표"></a>
+			</div>
 		</div>
 	</header>
-	<section>
+	<section id="cont_part">
 		<article>
 			<div class="cont-box cont-01">
 				<div class="rgba">

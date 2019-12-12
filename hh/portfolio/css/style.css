@@ -75,6 +75,9 @@ nav>ul>li:hover>a{
 	color: #6ab3b2;
 	box-shadow: inset 1px 1px 3px #000;
 }
+.icon{
+	display: none;
+}
 .link{
 	position: absolute;
 	bottom: 20px;
@@ -94,6 +97,9 @@ nav>ul>li:hover>a{
 }
 .link ul li a img{
 	padding: 0 5px;
+}
+.mobile{
+	display: none;
 }
 section{
 	width: 100%;
