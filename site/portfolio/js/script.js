@@ -33,19 +33,67 @@ gogo();
 */
 
 $(document).ready(function(){
+	var slide = $(".slide").bxSlider({mode:'vertical',auto:true,controls:false,pager:false});
+	$(".prevB").click(function(){
+		slide.goToPrevSlide();
+	});
+	$(".nextB").click(function(){
+		slide.goToNextSlide();
+	});
+
+
+
+
+
+	var $img_group = `
+	<img src="img/m_1.png" alt="m1">
+	<img src="img/m_2.png" alt="m2">
+	<img src="img/m_3.png" alt="m3">
+	<img src="img/m_4.png" alt="m4">
+	<img src="img/m_5.png" alt="m5">
+	<img src="img/m_6.png" alt="m6">
+	<img src="img/m_7.png" alt="m7">
+	<img src="img/m_8.png" alt="m8">
+	<img src="img/m_9.png" alt="m9">
+	<img src="img/m_10.png" alt="m10">
+	<img src="img/m_11.png" alt="m11">
+	<img src="img/m_12.png" alt="m12">
+	`;
+
+	$(".main_slid li").each(function(index){
+		$(this).find(".photo1").html($img_group);
+
+	});
+	$(".photo1").css("width", "1200%");
+	$(".photo1 img").css("width", "calc(100% / 12)");
+
+	setInterval(function(){
+		var $f_child = $(".photo1 img").eq(0);
+		$(".photo1").animate({"margin-left":"-100%"}, 500, function(){
+			$(".photo1").append($f_child).css({"margin-left":"0"});
+
+		});
+	}, 2000);
+
+
+
+
+
+
+
+
+/*
 	$('.photo').slick({
 	 	slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
+		speed:1000,
+		callbacks:function(){
+
+
+		}
 	});
-});
-$(document).ready(function(){
-	var slide = $(".slide").bxSlider({mode:'vertical',auto:true,controls:false,pager:false});
-		$(".prevB").click(function(){
-			slide.goToPrevSlide();
-		});
-		$(".nextB").click(function(){
-			slide.goToNextSlide();
-		});
+*/
+
 });

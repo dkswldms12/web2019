@@ -101,6 +101,8 @@ header{
 	background-color: #aa0;
 	position: relative;
 	left: 10%;
+	overflow: hidden;
+	margin: 5px;
 }
 .main .main_slid li{
 	width: calc(33.33% - 10px);
@@ -109,10 +111,10 @@ header{
 	/*background-color: #f0f;*/
 	margin: 5px;
 }
-.main .main_slid .photo_slid{}
+.main .main_slid .photo_slid{overflow: hidden;}
 .main .main_slid .photo_slid img{
 	width: 100%;
-	height: 255px;
+	height: 400px;
 }
 .photo_slid .slick-prev{
 	position: absolute;
@@ -141,4 +143,16 @@ header{
 	right: 10%;
 	bottom: 0;
 }
-
+.slide p{
+	height: 50px;
+	position: relative;
+}
+.slide p span{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+.slick-slide{
+	height: 300px;
+}
+.slick-track{width:1400% ! important;}
