@@ -13,68 +13,150 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<link rel="stylesheet" href="css/slick.css">
+	<script src="js/slick.js"></script>
 </head>
+<style>
+.bx-wrapper{
+   margin-bottom: 0px; 
+}
+</style>
 <body>
 	<header>
 		<div class="headerT">
-			<div class="line1"></div>
-			<div class="logo">
-				<img src="img/logo.svg" alt="로고">
+			<!-- <div class="line1"></div> -->
+			<div class="head_top">
+				<div class="logo">
+					<img src="img/logo.svg" alt="로고">
+				</div>
+				<div class="logo_img">
+					<img src="img/logo_img.svg" alt="로고이미지">
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#">1menu</a>
+							<ul class="sub_m">
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+							</ul>
+						</li>
+						<li><a href="#">2menu</a>
+							<ul class="sub_m">
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+							</ul>
+						</li>
+						<li><a href="#">3menu</a>
+							<ul class="sub_m">
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+							</ul>
+						</li>
+						<li><a href="#">4menu</a>
+							<ul class="sub_m">
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+							</ul>
+						</li>
+						<li><a href="#">5menu</a>
+							<ul class="sub_m">
+								<li><a href="#">menu</a></li>
+								<li><a href="#">menu</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<div class="logo_img">
-				<img src="img/logo_img.svg" alt="로고이미지">
-			</div>
-			<nav class="menu">
-				<ul>
-					<li><a href="#">1menu</a>
-						<ul class="sub_m">
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-						</ul>
-					</li>
-					<li><a href="#">2menu</a>
-						<ul class="sub_m">
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-						</ul>
-					</li>
-					<li><a href="#">3menu</a>
-						<ul class="sub_m">
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-						</ul>
-					</li>
-					<li><a href="#">4menu</a>
-						<ul class="sub_m">
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-						</ul>
-					</li>
-					<li><a href="#">5menu</a>
-						<ul class="sub_m">
-							<li><a href="#">menu</a></li>
-							<li><a href="#">menu</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="line2"></div>
-		</div>
+			<!-- <div class="line2"></div>
+ -->		</div>
 	</header>
 
 	<section>
-		<div class="main">	
-			<!-- <div class="font">
-				<span id="texts"></span>
-			</div> -->
-			<div class="photo">
-				
+		<div id="main" class="main">	
+			<div class="main_top">
+				<div class="font">
+					<!-- <span id="texts"></span> -->
+				</div>
+			</div>
+			<div class="main_slid">
+				<ul>
+					<li>
+						<div class="photo_slid">
+							<div class="photo">
+								<img src="img/m_1.png" alt="m1">
+								<img src="img/m_2.png" alt="m2">
+								<img src="img/m_3.png" alt="m3">
+								<img src="img/m_4.png" alt="m4">
+								<img src="img/m_5.png" alt="m5">
+								<img src="img/m_6.png" alt="m6">
+								<img src="img/m_7.png" alt="m7">
+								<img src="img/m_8.png" alt="m8">
+								<img src="img/m_9.png" alt="m9">
+								<img src="img/m_10.png" alt="m10">
+								<img src="img/m_11.png" alt="m11">
+								<img src="img/m_12.png" alt="m12">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="photo_slid">
+							<div class="photo">
+								<img src="img/m_1.png" alt="m1">
+								<img src="img/m_2.png" alt="m2">
+								<img src="img/m_3.png" alt="m3">
+								<img src="img/m_4.png" alt="m4">
+								<img src="img/m_5.png" alt="m5">
+								<img src="img/m_6.png" alt="m6">
+								<img src="img/m_7.png" alt="m7">
+								<img src="img/m_8.png" alt="m8">
+								<img src="img/m_9.png" alt="m9">
+								<img src="img/m_10.png" alt="m10">
+								<img src="img/m_11.png" alt="m11">
+								<img src="img/m_12.png" alt="m12">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="photo_slid">
+							<div class="photo">
+								<img src="img/m_1.png" alt="m1">
+								<img src="img/m_2.png" alt="m2">
+								<img src="img/m_3.png" alt="m3">
+								<img src="img/m_4.png" alt="m4">
+								<img src="img/m_5.png" alt="m5">
+								<img src="img/m_6.png" alt="m6">
+								<img src="img/m_7.png" alt="m7">
+								<img src="img/m_8.png" alt="m8">
+								<img src="img/m_9.png" alt="m9">
+								<img src="img/m_10.png" alt="m10">
+								<img src="img/m_11.png" alt="m11">
+								<img src="img/m_12.png" alt="m12">
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 			<div class="bottom_slid_bar">
-				
+				<div class="bottom_slid">
+					<div class="slide">
+						<p>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p>
+						<p>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</p>
+						<p>33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333</p>
+					</div>
+				</div>
+				<div class="slider_bar">
+					<div class="slid_bt">
+						<div class="prevB">
+							<img src="img/up.png" alt="">
+						</div>
+						<div class="nextB">
+							<img src="img/down.png" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
