@@ -92,13 +92,13 @@ header{
 	position: absolute;
 	left: 20%;
 	vertical-align: middle;
-	background-color: #ccc;
+	border: 1px solid #000;
 	margin-bottom: 10px;
 }
 .main .main_slid{
 	width: 80%;
 	height: 45%;
-	background-color: #aa0;
+	/*background-color: #aa0;*/
 	position: relative;
 	left: 10%;
 	overflow: hidden;
@@ -111,7 +111,7 @@ header{
 	/*background-color: #f0f;*/
 	margin: 5px;
 }
-.main .main_slid .photo_slid{overflow: hidden;}
+/*.main .main_slid .photo_slid{overflow: hidden;}*/
 .main .main_slid .photo_slid img{
 	width: 100%;
 	height: 400px;
@@ -131,17 +131,18 @@ header{
 	height: 10%;
 	position: relative;
 	left: 10%;
+	margin-left: 5px;
 	/*background-color: #fff;*/
 }
 .slid_bt .prevB{
 	position: absolute;
-	right: 10%;
-	top: 0;
+	right: 0;
+	top: 5%;
 }
 .slid_bt .nextB{
 	position: absolute;
-	right: 10%;
-	bottom: 0;
+	right: 0;
+	bottom: 35%;
 }
 .slide p{
 	height: 50px;
@@ -152,7 +153,36 @@ header{
 	top: 50%;
 	transform: translate(0,-50%);
 }
-.slick-slide{
+
+.five_box{
+	width: 100%;
+	height: 70vh;
+	position: relative;
+}
+.five_box .f_box{
+	width: 100%;
+	background-color: #ccc;
+	position: relative;
+}
+.five_box .f_box ul{
+	position: absolute;
+	left: 10%;
+}
+.five_box .f_box li{
+	width: calc(33.33% - 20px);
+	float: left;
+}
+.five_box .f_box li:nth-child(5){
+	float: right;
+}
+.five_box .f_box li #main_box img{
+	width: 350px;
 	height: 300px;
 }
-.slick-track{width:1400% ! important;}
+
+
+#move_slide{
+	width: 100%;
+	height: 50vh;
+	background-color: pink;
+}

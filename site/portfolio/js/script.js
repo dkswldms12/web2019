@@ -1,6 +1,5 @@
 var n=new Date();
 var dal=n.getMonth()+1;
-
 document.getElementById("main").style.backgroundImage = "url(img/bg"+dal+".jpg)";
 document.getElementById("main").style.opacity = "0.3";
 
@@ -42,9 +41,7 @@ $(document).ready(function(){
 	});
 
 
-
-
-
+	/*
 	var $img_group = `
 	<img src="img/m_1.png" alt="m1">
 	<img src="img/m_2.png" alt="m2">
@@ -75,14 +72,8 @@ $(document).ready(function(){
 		});
 	}, 2000);
 
+	*/
 
-
-
-
-
-
-
-/*
 	$('.photo').slick({
 	 	slidesToShow: 1,
 		slidesToScroll: 1,
@@ -90,10 +81,14 @@ $(document).ready(function(){
 		autoplaySpeed: 2000,
 		speed:1000,
 		callbacks:function(){
-
-
 		}
 	});
-*/
+
+
+	// $("move_slid").vegas({
+	// 	slides: [
+	// 		{ src: "../img/kakao.mp4"}
+	// 	]
+	// });
 
 });

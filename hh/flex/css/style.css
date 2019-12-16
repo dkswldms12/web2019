@@ -229,3 +229,351 @@ a{
 	background-color: #aa00ff;
 	flex-shrink: 2;
 }
+
+#order .flex_container{
+	width: 80%;
+	height: 300px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+#order .flex_item{
+	width: auto;
+	height: auto;
+}
+#order .flex_item:nth-child(1){
+	background-color: #ffaaff;
+	flex-grow: 1;
+}
+#order .flex_item:nth-child(2){
+	background-color: #aaaaff;
+	flex-grow: 2;
+}
+#order .flex_item:nth-child(3){
+	background-color: #aaffff;
+	flex-grow: 3;
+}
+#order .flex_item:nth-child(4){
+	background-color: #ff00ff;
+	flex-grow: 2;
+}
+#order .flex_item:nth-child(5){
+	background-color: #00ffff;
+	flex-grow: 1;
+}
+
+#flex .flex_container{
+	width: 80%;
+	height: 300px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+#flex .flex_item{
+	width: auto;
+	height: auto;
+}
+#flex .flex_item:nth-child(1){
+	background-color: #ffaaff;
+	flex:1;
+}
+#flex .flex_item:nth-child(2){
+	background-color: #aaaaff;
+	flex:1;
+}
+#flex .flex_item:nth-child(3){
+	flex-color: #aaffff;
+	flex:1;
+}
+#flex .flex_item:nth-child(4){
+	background-color: #ff00ff;
+	flex:1;
+}
+#flex .flex_item:nth-child(5){
+	background-color: #00ffff;
+	flex:1;
+}
+
+#ex1 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row; /*rowverse는 오른쪽으로 하기*/
+}
+#ex1 .flex_item{
+	width: 120px;
+	height: 120px;
+}
+#ex1 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+}
+#ex1 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+}
+#ex1 .flex_item:nth-child(3){
+	background-color: #aaffff;
+}
+#ex1 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+}
+
+#ex2 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: column;
+}
+#ex2 .flex_item{
+	width: 120px;
+	height: 120px;
+}
+#ex2 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+}
+#ex2 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+}
+#ex2 .flex_item:nth-child(3){
+	background-color: #aaffff;
+}
+#ex2 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+}
+
+#ex3 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#ex3 .flex_item{
+	width: 120px;
+	height: 120px;
+}
+#ex3 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+}
+#ex3 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+}
+#ex3 .flex_item:nth-child(3){
+	background-color: #aaffff;
+}
+#ex3 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+}
+#ex3 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+}
+
+#ex4 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;/*nowrap는 가로길이 무시하고 wrap는 가로길이로 정렬 */
+}
+#ex4 .flex_item{
+	width: 200px;
+	height: 120px;
+}
+#ex4 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+}
+#ex4 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+}
+#ex4 .flex_item:nth-child(3){
+	background-color: #aaffff;
+}
+#ex4 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+}
+#ex4 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+}
+
+#ex5 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+#ex5 .flex_item{
+	width: 80px;
+	height: 120px;
+}
+#ex5 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+}
+#ex5 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+}
+#ex5 .flex_item:nth-child(3){
+	background-color: #aaffff;
+}
+#ex5 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+}
+#ex5 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+}
+
+#ex6 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+#ex6 .flex_item{
+	width: 80px;
+	height: 120px;
+}
+#ex6 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+}
+#ex6 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+}
+#ex6 .flex_item:nth-child(3){
+	background-color: #aaffff;
+}
+#ex6 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+}
+#ex6 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+}
+
+#ex7 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-end;/*flex-end 아래로 붙이기 stretch 위로 붙이기 center baseline */
+}
+#ex7 .flex_item{
+	width: 240px;
+	height: auto;
+}
+#ex7 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+	height: 120px;
+}
+#ex7 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+	height: 80px;
+}
+#ex7 .flex_item:nth-child(3){
+	background-color: #aaffff;
+	height: 40px;
+}
+#ex7 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+	height: 160px;
+}
+#ex7 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+	height: 180px;
+}
+
+#ex8 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-between;
+}
+#ex8 .flex_item{
+	width: 33.33%;
+	height: 240px;
+}
+#ex8 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+	height: 120px;
+
+}
+#ex8 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+	height: 160px;
+	
+}
+#ex8 .flex_item:nth-child(3){
+	background-color: #aaffff;
+	height: 180px;
+
+}
+#ex8 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+	height: 40px;
+
+}
+#ex8 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+	height: 120px;
+
+}
+#ex9 .flex_container{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+#ex9 .flex_item{
+	width: auto;
+	height: auto;
+}
+#ex9 .flex_item:nth-child(1){
+	background-color: #ffaaff;
+	flex-grow: 1;
+
+}
+#ex9 .flex_item:nth-child(2){
+	background-color: #aaaaff;
+	flex-grow: 3;
+}
+#ex9 .flex_item:nth-child(3){
+	background-color: #aaffff;
+	flex-grow: 1;
+}
+#ex9 .flex_item:nth-child(4){
+	background-color: #aaffaa;
+	flex-grow: 1;
+}
+#ex9 .flex_item:nth-child(5){
+	background-color: #aa00aa;
+	flex-grow: 1;
+}
