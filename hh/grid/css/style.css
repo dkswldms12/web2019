@@ -115,3 +115,176 @@ a{
 	grid-row: 3/4;
 	grid-column: 1/3;
 }
+
+#ex_03 .wrapper{
+	width: 600px;
+	height: 600px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+#ex_03 .wrapper .item{
+	width: auto;
+	height: auto;
+	font-size: 36px;
+}
+#ex_03 .wrapper .item .t{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#ex_03 .wrapper .item .t p{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#ex_03 .wrapper .item:nth-child(1){
+	background-color: #aaaaff;
+	grid-row: 1/2;
+	grid-column: 1/3;
+}
+#ex_03 .wrapper .item:nth-child(1):hover{
+	background-color: #aaaaff;
+	grid-row: 1/2;
+	grid-column: 2/4;
+}
+#ex_03 .wrapper .item:nth-child(2){
+	background-color: #aaffaa;
+	grid-row: 1/3;
+	grid-column: 3/4;
+}
+#ex_03 .wrapper .item:nth-child(2):hover{
+	background-color: #aaffaa;
+	grid-row: 2/4;
+	grid-column: 3/4;
+}
+#ex_03 .wrapper .item:nth-child(3){
+	background-color: #ffaaaa;
+	grid-row: 3/4;
+	grid-column: 2/4;
+}
+#ex_03 .wrapper .item:nth-child(3):hover{
+	background-color: #ffaaaa;
+	grid-row: 3/4;
+	grid-column: 1/3;
+}
+#ex_03 .wrapper .item:nth-child(4){
+	background-color: #aa00aa;
+	grid-row: 2/4;
+	grid-column: 1/2;
+}
+#ex_03 .wrapper .item:nth-child(4):hover{
+	background-color: #aa00aa;
+	grid-row: 1/3;
+	grid-column: 1/2;
+}
+#ex_03 .wrapper .item:nth-child(5){
+	background-color: #aaaa00;
+}
+
+#ex_04 .wrapper{
+	width: 820px;
+	height: 820px;
+	border: 10px solid #000;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);/*이거 안주고 nth에 위드 하이트 줘도 됨*/
+}
+#ex_04 .wrapper .item{
+	width: auto;
+	height: auto;
+	font-size: 36px;
+}
+#ex_04 .wrapper .item:nth-child(1){
+	background-color: #fff;
+	grid-row: 1/11;
+	grid-column: 1/5;
+}
+/*
+	width: 160px;
+	height: 250px;
+	grid-row: 1/2;
+	grid-column: 1/2;
+	border: 10px solid #000;
+}
+*/
+#ex_04 .wrapper .item:nth-child(2){
+	background-color: red;
+	grid-row: 1/24;
+	grid-column: 5/17;
+}
+/*
+	width: 160px;
+	height: 300px;
+	grid-row: 2/3;
+	grid-column: 1/2;
+	border: 10px solid #000;
+}
+*/
+#ex_04 .wrapper .item:nth-child(3){
+	background-color: #fff;
+	grid-row: 11/24;
+	grid-column: 1/5;
+}
+/*
+	width: 640px;
+	height: 550px;
+	grid-row: 1/3;
+	grid-column: 2/4;
+	border: 10px solid #000;
+	color:red;
+}
+*/
+#ex_04 .wrapper .item:nth-child(4){
+	background-color: blue;
+	grid-row: 24/33;
+	grid-column: 1/5;
+}
+/*
+	width: 160px;
+	height: 250px;
+	grid-row: 3/5;
+	grid-column: 1/2;
+	border: 10px solid #000;
+	color:blue;
+}
+*/
+#ex_04 .wrapper .item:nth-child(5){
+	background-color: #fff;
+	grid-row: 24/33;
+	grid-column: 5/16;
+}
+/*
+	width: 600px;
+	height: 250px;
+	grid-row: 3/5;
+	grid-column: 2/3;
+	border: 10px solid #000;
+}
+*/
+#ex_04 .wrapper .item:nth-child(6){
+	background-color: #fff;
+	grid-row: 24/28;
+	grid-column: 16/17;
+}
+/*
+	width: 40px;
+	height: 125px;
+	grid-row: 3/4;
+	grid-column: 3/4;
+	border: 10px solid #000;
+}
+*/
+#ex_04 .wrapper .item:nth-child(7){
+	background-color: yellow;
+	grid-row: 28/33;
+	grid-column: 16/17;
+}
+/*
+	width: 40px;
+	height: 125px;
+	grid-row: 4/5;
+	grid-column: 3/4;
+	border: 10px solid #000;
+	color:yellow;
+}
+*/
+
