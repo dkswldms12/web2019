@@ -1,0 +1,69 @@
+@charset "utf-8";
+html, body{
+	margin: 0; padding: 0;
+}
+
+#box{
+	width: 400px;
+	height: 200px;
+	background-color: #aaa;
+	transition: background 0.5s;
+}
+#box.pc{
+	background: #ffaaff;
+}
+#box.tablet{
+	background: #aaffaa;
+}
+#box.mobile{
+	background: #ffffaa;
+}
+
+.banner{
+	width: 100%;
+	height: 72px;
+	background-color: #eeaa22;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #cfcfcf;
+}
+header .logo{
+	float: left;
+}
+header .logo a{
+	display: block;
+	text-decoration: none;
+	padding: 0 20px;
+	line-height: 100px;
+}
+header ul{
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header ul li{
+	float: left;
+	margin: 0 20px;
+}
+
+header ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 100px;
+	color: #555;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.kakao_bx{
+	width: 225px;
+	float: left;
+}

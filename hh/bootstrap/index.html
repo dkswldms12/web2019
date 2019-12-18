@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>bootstrap</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="box container">container siz(가운데 정렬)</div>
+	<!-- pc화면 가로사이즈 1200 이상일 경우 width 1140px로 조정->px화면 미만일 경우 해당화면에 맞춰 조정 => 모바일 세로 형태(576px 미만)일 경우 width 100%로 조정된다
+	중심 콘텐츠가 존재하는 웹사이트에서 적용한다(네이버 등...) -->
+	<hr>
+	<div class="box container-fluid">container fluid(풀화면)</div>
+	<!-- 처음부터 width 100%로 조정 (fullpage) -->
+<hr>
+
+	<div class="box container">
+		<div class="row"> <!-- row display:flex를 갖고 있기 때문에 반드시 작성해야할 클래스  							가로배치 할 수 있게 해줌 -->
+			<div class="box col-lg-3 col-md-4 col-sm-6">
+				<div class="y_box"></div>
+			</div>
+			<div class="box col-lg-3 col-md-4 col-sm-6">
+				<div class="y_box"></div>
+			</div>
+			<div class="box col-lg-3 col-md-4 col-sm-6">
+				<div class="y_box"></div>
+			</div>
+			<div class="box col-lg-3 col-md-4 col-sm-6">
+				<div class="y_box"></div>
+			</div>
+	
+		</div>
+	</div>
+</body>
+</html>

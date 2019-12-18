@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 header{
 	width: 250px;
 	height: 100%;
@@ -49,23 +50,92 @@ nav>ul>li>a i{
 	padding: 0 3px;
 }
 
-section{
+section#cont{
+	width: 100%;
+	height: 100%;
+}
+section#cont .main{
 	width: calc(100% - 250px;)
 	height: auto;
 	margin-left: 250px;
+	position: relative;
 }
-section .main{
-	width: 100%;
-	height: 100%;
-	display: grid;
-	grid-template-columns: repeat(5,1fr);
+section#cont .main .body_txt .title{
+	font-size: 20px;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 40px;
+	font-weight: bold;
 }
-section .main .main_body{
-	width: auto;
-	height: auto;
+section#cont .main .body_txt .txt{
+	font-size: 14px;
+	text-align: left;
+	padding-top: 40px;
+	padding-left: 40px;
 }
-section .main .main_body .grid_box:nth-child(1){
-	grid-row: 1/3;
-	grid-column: 1/4;
+section#cont .main li{
+	width: 20%;
+	height: 250px;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
 }
-
+section#cont .main li:nth-child(1){
+	width: 60%;
+	height: 500px;
+	background-image: url(../img/pic1.jpg);
+}
+section#cont .main li:nth-child(2){
+	width: 40%;
+	height: 250px;
+}
+section#cont .main li:nth-child(3){
+	background-color: #6ce2fb;
+	height: 250px;
+	position: relative;
+	color: #fff;
+	z-index: -1;
+}
+section#cont .main li:nth-child(3) img{
+	position: absolute;
+	right: -40px;
+	bottom: -60px;
+}
+section#cont .main li:nth-child(4){
+	background-image: url(../img/pic2.jpg);
+}
+section#cont .main li:nth-child(5){
+	background-image: url(../img/pic5.jpg);
+}
+section#cont .main li:nth-child(6){
+	width: 40%;
+}
+section#cont .main li:nth-child(7){
+	background-image: url(../img/pic13.jpg);
+	background-color: #6ce2fb;
+}
+section#cont .main li:nth-child(8){
+}
+section#cont .main li:nth-child(9){
+	background-color: #6ce2fb;
+	color: #fff;
+}
+section#cont .main li:nth-child(10){
+	background-color: #6ce2fb;
+	position: relative;
+	z-index: -1;
+}
+section#cont .main li:nth-child(10) img{
+	position: absolute;
+	right: -90px;
+	bottom: -30px;
+}
+section#cont .main li:nth-child(11){
+	background-image: url(../img/pic10.jpg);
+}
+section#cont .main li:nth-child(12){
+}
+section#cont .main li:nth-child(13){
+	background-image: url(../img/pic11.png);
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+@media all and (max-width: 1599px){
+	header{
+		width: 100%;
+		height: 50px;
+		position: relative;
+	}
+	.logo{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		left: 20px;
+	}
+	.logo img{
+		width: 40px;
+		height: 40px;
+	}
+	nav{
+		text-align: center;
+	}
+	nav>ul{
+		font-size: 0;
+	}
+	nav>ul>li{
+		display: inline-block;
+		padding: 0 18px;
+		border: none;
+	}
+	nav>ul>li>a{
+		font-size: 13px;
+		display: block;
+		line-height: 50px;
+	}
+	.sns{
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		text-align: right;
+	}
+	.sns li{
+		display: inline-block;
+	}
+
+} 

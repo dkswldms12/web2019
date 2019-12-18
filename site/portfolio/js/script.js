@@ -85,6 +85,42 @@ $(document).ready(function(){
 	});
 
 
+
+	function scrollEv(){
+		var $scrollTop = $(window).scrollTop();
+		console.log($scrollTop);
+
+		if($scrollTop > $(".five_box").offset().top - 120){
+			$(".line_box1 .in_color").addClass("active");
+			$(".line_box2 .in_color").addClass("active");
+		}else{
+
+
+		}	
+
+	}
+
+
+	$(window).scroll(function(){
+		scrollEv();
+
+
+	});
+
+/*
+	var $head_h = document.getElementsByTagName("header")[0].innerHeight;
+	console.log($head_h);
+
+	var $scrollY=window.scrollY;
+	console.log($scrollY);
+*/	
+/*
+	if($scrollY>=){
+
+	}
+
+*/
+
 	// $("move_slid").vegas({
 	// 	slides: [
 	// 		{ src: "../img/kakao.mp4"}

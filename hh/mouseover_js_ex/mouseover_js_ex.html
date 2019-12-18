@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onresize="resizeEvt();" onscroll="scrollEvt();">
+
+	<div class="banner"></div>
+	<header id="head_part">
+		<div class="logo"><a href="#">로고</a></div>
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+		</ul>
+	</header>
+
+
+	<img id="import" src="img/dog.png">
+	<button onclick="importImg();" onmouseover="overImg();" onmouseout="outImg();">이미지 변경하기</button>
+
+
+	<p id="writeSize">구간</p>
+	<div id="box"></div>
+
+	<section id="sec"></section>
+
+	<div id="result_01"></div>
+	<div id="result_02"></div>
+	<div id="result_03"></div>
+
+	<div id="result_04">
+		<div class="kakao_bx"></div>
+	</div>
+
+	<div id="result_05">
+		<button onclick="img()">다음이미지</button>
+		<img id="slide" src="" alt="">
+	</div>
+
+	<div id="result_05">
+		<button onclick="next();">다음이미지2</button>
+		<img id="res_06" src="" alt="">
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
