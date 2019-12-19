@@ -93,6 +93,9 @@ $(document).ready(function(){
 		if($scrollTop > $(".five_box").offset().top - 120){
 			$(".line_box1 .in_color").addClass("active");
 			$(".line_box2 .in_color").addClass("active");
+			$(".line_box3 .in_color").addClass("active");
+			$(".line_box4 .in_color").addClass("active");
+			$(".line_box5 .in_color").addClass("active");
 		}else{
 
 
