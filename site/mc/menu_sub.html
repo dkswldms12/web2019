@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/all.css">
 <script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/script.js"></script>
 <body>
 	<div class="line"></div>
 	<header id="header">
@@ -65,34 +66,7 @@
 			</div>
 		</div>
 	</header>
-<script>
-	$(document).ready(function(){
-		$(".icon").click(function(){
-			$(".icon").hide();
-			$(".iconx").show();
-			$(".fi").addClass("responsive");
-		});
-		$(".iconx").click(function(){
-			$(".iconx").hide();
-			$(".icon").show();
-			$(".fi").removeClass("responsive");
-		});
 
-	});
-	$(document).ready(function(){
-		$(".icon1").click(function(){
-			$(".icon1").hide();
-			$(".iconx1").show();
-			$(".allergy_sub").addClass("responsive");
-		});
-		$(".iconx1").click(function(){
-			$(".iconx1").hide();
-			$(".icon1").show();
-			$(".allergy_sub").removeClass("responsive");
-		});
-
-	});
-</script>
 	<section id="m_sub">
 		<div class="menu_top_bg">
 		</div>
@@ -108,94 +82,111 @@
 				</div>
 			</div>
 		</div>
-		<div class="food_in">
-			<div class="fi clearfix">
-				<h3>영양정보</h3>
-				<table class="food_t">
-					<thead>
-				        <tr>
-				          <th class="f">영양소</th>
-				          <th>중량(g)</th>
-				          <th>영양소</th>
-				          <th>중량(g)</th>
-				          <th>영양소</th>
-				          <th>중량(g)</th>
-				          <th>영양소</th>
-				          <th>중량(g)</th>
-				        </tr>
-				      </thead>
-					<tbody>
-				        <tr>
-				          <th class="f">함량</th>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				        </tr>
-				        <tr>
-				          <th class="f">기준치</th>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				        </tr>
-				      </tbody>
-				</table>
-				<a href="#" class="icon"><i class="fas fa-plus"></i></a>
-				<a href="#" class="iconx"><i class="fas fa-minus"></i></a>
+		<div class="bottom_info">
+			<div class="food_in">
+				<div class="fi clearfix">
+					<div class="info_title">
+						<h3>영양정보</h3>
+						<div class="right_part">
+							<a href="#" class="icon"><i class="fas fa-plus"></i></a>
+						<!--<a href="#" class="iconx"><i class="fas fa-minus"></i></a>-->
+						</div>
+					</div>
+					<div class="table_res">
+						<table class="food_t">
+							<thead>
+						        <tr>
+						        	<th>구분</th>
+									<th class="f">영양소</th>
+									<th>중량(g)</th>
+									<th>영양소</th>
+									<th>중량(g)</th>
+									<th>영양소</th>
+									<th>중량(g)</th>
+									<th>영양소</th>
+									<th>중량(g)</th>
+						        </tr>
+						    </thead>
+							<tbody>
+						        <tr>
+									<th class="f">함량</th>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+						        </tr>
+						        <tr>
+									<th class="f">기준치</th>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+						        </tr>
+						     </tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="allergy">
-			<div class="allergy_sub clearfix">
-				<h3>알레르기 정보</h3>
-				<table class="allergy_t">
-					<thead>
-				        <tr>
-				          <th class="f">영양소</th>
-				          <th>중량(g)</th>
-				          <th>영양소</th>
-				          <th>중량(g)</th>
-				          <th>영양소</th>
-				          <th>중량(g)</th>
-				          <th>영양소</th>
-				          <th>중량(g)</th>
-				        </tr>
-				      </thead>
-					<tbody>
-				        <tr>
-				          <th class="f">함량</th>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				        </tr>
-				        <tr>
-				          <th class="f">기준치</th>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				          <td>300</td>
-				        </tr>
-				      </tbody>
-				</table>
-				<a href="#" class="icon1"><i class="fas fa-plus"></i></a>
-				<a href="#" class="iconx1"><i class="fas fa-minus"></i></a>
+
+			<div class="food_in">
+				<div class="fi clearfix">
+					<div class="info_title">
+						<h3>알레르기 정보</h3>
+						<div class="right_part">
+							<a href="#" class="icon"><i class="fas fa-plus"></i></a>
+						<!--<a href="#" class="iconx"><i class="fas fa-minus"></i></a>-->
+						</div>
+					</div>
+					<div class="table_res">
+						<table class="food_t">
+							<thead>
+						        <tr>
+						        	<th>구분</th>
+									<th class="f">영양소</th>
+									<th>중량(g)</th>
+									<th>영양소</th>
+									<th>중량(g)</th>
+									<th>영양소</th>
+									<th>중량(g)</th>
+									<th>영양소</th>
+									<th>중량(g)</th>
+						        </tr>
+						    </thead>
+							<tbody>
+						        <tr>
+									<th class="f">함량</th>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+						        </tr>
+						        <tr>
+									<th class="f">기준치</th>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+									<td>300</td>
+						        </tr>
+						     </tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>	

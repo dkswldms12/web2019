@@ -145,7 +145,7 @@ section{
 .slid_bt .nextB{
 	position: absolute;
 	right: 0;
-	bottom: 27%;
+	bottom: 41%;
 }
 .slide p{
 	height: 50px;
@@ -161,6 +161,7 @@ section{
 	width: 100%;
 	height: 80vh;
 	position: relative;
+	margin-bottom: 100px;
 }
 .five_box .f_box{
 	width: 80%;
@@ -252,13 +253,6 @@ section{
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	margin-right: 200px;
-}
-
-
-#move_slide{
-	width: 100%;
-	height: 50vh;
-	background-color: pink;
 }
 
 /*179부터 제어*/
@@ -399,4 +393,26 @@ section{
 }
 .line_box5 .in_color.active{
 	left: 0%;
+}
+
+#moveslide{
+	width: 100%;
+	height: 70vh;
+	background-color: yellow;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	position: relative;
+}
+#moveslide .tt{
+	width: 100%;
+	height: 70vh;
+	background-color: rgba(255,255,255,0.5);
+/*	padding-top: 30px;
+	position: absolute;
+	right: 0;
+	top: 50%;*/
+
+}
+#moveslide .tt h2{
+	text-align: right;
 }

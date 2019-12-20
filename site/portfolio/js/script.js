@@ -103,11 +103,8 @@ $(document).ready(function(){
 
 	}
 
-
 	$(window).scroll(function(){
 		scrollEv();
-
-
 	});
 
 /*
@@ -123,11 +120,35 @@ $(document).ready(function(){
 	}
 
 */
+	$("#moveslide,body").vegas({
+		slides:[
+			{src:'img/fall.jpg',
+			video:{
+				src:['img/bada.mp4'],
+				loop:false,
+				mute:true
+				}
+			},
+			{src:'img/fall.jpg',
+			video:{
+				src:['img/fall.mp4'],
+				loop:false,
+				mute:true
+				}
+			},
+			{src:'img/fall.jpg',
+			video:{
+				src:['img/yfall.mp4'],
+				loop:false,
+				mute:true
+				}
+			}
+		]
+	});
 
-	// $("move_slid").vegas({
-	// 	slides: [
-	// 		{ src: "../img/kakao.mp4"}
-	// 	]
-	// });
+
+
+
+
 
 });
