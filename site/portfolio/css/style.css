@@ -255,7 +255,6 @@ section{
 	margin-right: 200px;
 }
 
-/*179부터 제어*/
 .line_box1{
 	height: 30px;
 	width: 360px;
@@ -397,22 +396,13 @@ section{
 
 #moveslide{
 	width: 100%;
-	height: 70vh;
+	height: 100vh;
 	background-color: yellow;
 	margin: 0 auto;
-	margin-bottom: 50px;
 	position: relative;
 }
-#moveslide .tt{
+#moveslide .opcity_box{
 	width: 100%;
-	height: 70vh;
+	height: 100%;
 	background-color: rgba(255,255,255,0.5);
-/*	padding-top: 30px;
-	position: absolute;
-	right: 0;
-	top: 50%;*/
-
-}
-#moveslide .tt h2{
-	text-align: right;
 }

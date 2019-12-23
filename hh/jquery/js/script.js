@@ -189,5 +189,87 @@ $(document).ready(function(){
 		//현제위치에서 꼭대기로 올려주겠다
 	});
 
+	//템플릿 리터럴 : 자바스트립트 코딩상 한글을 저장할 수는 있지만 여러줄(엔터값 포함)을 지정하고자 할때 (`html문서`) 사용
+	var $item=`
+		<li>
+			<a href="#">경영소개</a>
+		</li>
+		<li>
+			<a href="#">프로젝트</a>
+		</li>`;
+
+	//before() 메서드 : 선택한 요소의 이전 형제로 새로운 요소(들)을 추가
+	$(".before_after_add li").eq(1).before($item);
+	//after() 메서드 : 선택한 요소의 다음 형제로 새로운 요소(들)을 추가
+	$(".before_after_add li").last().after("<li><a href='#'>공지사항</a></li>");
+	$("<h5>이벤트 기간 : 2019.12.23~2019.12.31</h5>").insertBefore(".insert_before_after h4")
+	$("<p>엄마는 외계인</p>").insertAfter(".insert_before_after p:eq(2)");
+
+
+//append() 메서드
+// $(".append ul").append("<li><a href='Portfolio'></a></li>")
+
+
+//1. 배열값으로 메뉴에 대한 항목을 저장
+//2. for문을 이요하여 구조를 .add.menu의 자식으로 반복하여 넣겠다
+//3. each 문을 활용하여 배열 값을 각각의 분기점 항목의 내부에 넣겠다
+
+// <2차 배열을 활용한 항목 넣기 (메뉴명, 링크주소)>
+
+
+var $menu_add=[
+	["About", "about.html"],//0
+	["Dishes", "dishes.html"],//1
+	["Event", "event.html"],//2
+	["Notice", "notice.html"]//3
+ ];
+for(i=0; i<$menu_add.length; i++){
+	$(".add_menu").append("<li><a href=''>"+i+"</a></li>")
+}
+$(".add_menu li").each(function(index){
+	console.log(index);
+	$(this).find("a").text($menu_add[index][0]);
+	$(this).find("a").attr("href",$menu_add[index][1])
+});
+
+
+
+	setInterval(function(){
+		//var $f_img="<li><img src='../img/tree-1.jpg'></li>"//실제 문서를 데이터 형태로 저장
+		var $f_img=$(".slide li").eq(0);//eq(0)번째 <li>를 가져오게 하는거  
+		//선택자를 저장(내부의 항목 뿐만 아니라 내부의 dom요소들을 포함한 모든 노드값을 모두 가져온다)
+		var $f_img=$(".slide li").eq(0).html();
+		$(".slide").append($f_img);//저장된 첫번째 <li> 이하를 부모영역인 .slide의 마지막 자식으로 넣어주겠다.
+	}, 1000);
+
+
+	var $c_img=$(".card_img");//객체로 접근하여 저장 - 객체 데이터
+	console.log($c_img);
+
+	$(".in_card p").after($c_img);
+
+
+
+	var $color_clone=$(".clone p:eq(0)").clone(true);
+	console.log($color_clone);
+	$(".clone").append($color_clone);
+	//clone(true) : 선택한 항목의 하위요소를 모두 복제하겠다는 의미
+
+
+
+	$(".empty p").empty();//비우고
+	$(".remove").remove();//제거
+	$(".replaceWith p").replaceWith("<p>오렌지</p>");//바꾸는거 사과->오렌지
+
+
+	$(".unwrap p").unwrap();//선택자의 부모영역 제거 p위에 div class outer가 부모니까 얘가 삭제됨
+	//$(".unwrap p").wrap("<div />");//p태그를 div로 각각 감싸준다
+	$(".unwrap p").wrapAll("<div />");//p태그들을 한번에 div로 감싸겠다
+	$(".unwrap p").wrapInner("<a />");
+
+
+$("#myList li").not(":first").css("background","blue");
+$("#myList li").eq(2).css("background","green");
+
 
 });
