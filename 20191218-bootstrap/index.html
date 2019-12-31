@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		<script src="js/script.js"></script>
+
+	</head>
+	<body>
+		<div class="box container">container size</div>
+		<!--PC 화면(가로 사이즈 : 1200px 이상)일 경우 width:1140px로 조정 => PC 화면 미만일 경우 해당화면에 맞춰 조정 => 모바일 세로 형태(576px 미만) 일 경우 width:100%로 조정    :    중심 콘텐츠가 존재하는 웹사이트에서 적용-->
+		<hr>
+		<div class="box container-fluid">container-fluid size</div>
+		<!--처음부터 width:100% 고정 (full page)-->
+		
+		<hr>
+
+		<div class="box container-fluid">
+			<div class="row">	<!--display:flex를 갖고 있기 때문에 반드시 작성해야할 클래스명-->
+				<div class="box col-lg-3 col-md-4 col-6">
+					<div class="y_box"></div>
+				</div>
+				<div class="box col-lg-3 col-md-4 col-6">
+					<div class="y_box"></div>
+				</div>
+				<div class="box col-lg-3 col-md-4 col-6">
+					<div class="y_box"></div>
+				</div>
+				<div class="box col-lg-3 col-md-4 col-6">
+					<div class="y_box"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+			</div>
+		</div>
+
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="g_box">1</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="g_box">2</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="g_box">3</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 d-block d-lg-none d-xl-block">
+					<div class="g_box">4</div>
+				</div>
+			</div>
+		</div>
+		<!--
+		.d-block : 전 구간에서 보여주어라
+		.d-lg-none : 992px 이상의 구간에서 감춰라
+		.d-xl-block : 1200px 이상의 구간에서 보여주어라
+		-->
+
+
+		<div class="container">
+			<p class="text-primary">text - 파란색 계열 (primary)</p>
+			<p class="text-info">text - 청록색 계열 (info)</p>
+			<p class="text-success">text - 녹색 계열 (success)</p>
+			<p class="text-warning">text - 노란색 계열 (warning)</p>
+			<p class="text-danger">text - 빨간색 계열 (danger)</p>
+			<p class="text-black-50">text - 검정색 계열 + opacity 50% </p>
+		</div>
+
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th style="min-width:100px;">구분</th>
+							<th style="min-width:400px;">제목</th>
+							<th style="min-width:200px;">날짜</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>게시글 제목1 게시글 제목1 게시글 제목1 게시글 제목1</td>
+							<td>게시글 날짜1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>게시글 제목2 게시글 제목2 게시글 제목2 게시글 제목2 </td>
+							<td>게시글 날짜2</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>게시글 제목3 게시글 제목3 게시글 제목3 게시글 제목3 게시글 제목3</td>
+							<td>게시글 날짜3</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="container">
+			<img class="rounded" src="img/img_01.jpg" alt="" style="width:360px;">
+		</div>
+		<div class="container">
+			<img class="rounded-circle" src="img/img_01.jpg" alt="" style="width:360px;">
+		</div>
+
+		<div class="container">
+			<img class="rounded img-thumbnail" src="img/img_01.jpg" alt="" style="width:360px;">
+		</div>
+
+		<div class="container">
+			<div class="alert alert-danger">alert-danger</div>
+			<div class="alert alert-warning">alert-warning</div>
+		</div>
+
+		<div class="container">
+			<div class="alert alert-danger alert-dismiss fade show">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				<!--data-dismiss="alert" 부모영역의 .alert 창을 사라지도록 하는 역할을 담당-->
+				<span>alert-danger</span>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>버튼 색상 조정</h3>
+			<button class="btn">btn</button>
+			<button class="btn btn-primary">btn-primary</button>
+			<button class="btn btn-info">btn-info</button>
+		</div>
+
+		<div class="container">
+			<h3>버튼 아웃라인 색상 조정</h3>
+			<button class="btn">btn</button>
+			<button class="btn btn-outline-primary">btn-primary</button>
+			<button class="btn btn-outline-info">btn-info</button>
+		</div>
+
+		<div class="container">
+			<h3>버튼의 그룹화 - 가로방향</h3>
+			<div class="btn-group btn-group-md">
+				<button class="btn btn-outline-primary">btn-primary</button>
+				<button class="btn btn-outline-info">btn-info</button>
+				<button class="btn btn-outline-success">btn-success</button>
+			</div>
+		</div>		
+
+		<div class="container">
+			<h3>버튼의 그룹화 - 세로방향</h3>
+			<div class="btn-group-vertical">
+				<button class="btn btn-outline-primary">btn-primary</button>
+				<button class="btn btn-outline-info">btn-info</button>
+				<button class="btn btn-outline-success">btn-success</button>
+			</div>
+		</div>	
+
+		
+		<div class="container" style="height:300px;">
+			<h3>버튼의 그룹화 - 가로방향 + 드롭다운 메뉴</h3>
+			<div class="btn-group btn-group-md">
+				<button class="btn btn-info">About</button>
+				<button class="btn btn-info">Project</button>
+				<div class="btn-group">
+					<!--data-toggle="dropdown" 클릭시 현재 보이지 않는 하단 메뉴를 보여준다. -->
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Portfolio</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">디자인</a>
+						<a class="dropdown-item" href="">퍼블리싱</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="height:300px;">
+			<div class="row">
+				<div class="col-sm-3 card" style="padding-left:0; padding-right:0;">
+					<img src="img/img_01.jpg" alt="라푼젤" class="card-img-top"><!--.card-img-top : 카드박스라는 공간 내부의 상단에 구성하겠다는 선언-->
+					<div class="card-body">
+						<h4 class="card-title">라푼젤</h4>
+						<h5 class="card-subtitle">세상밖으로의 탐험</h5>
+						<p class="card-text">18년 동안 나무집 위에서 갇혀 지내던 라푼젤이 세상 밖으로의 탐험이 시작된다.</p>
+						<a href="#" class="btn btn-primary">영화 사이트 바로가기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid" style="padding:0;">
+			<div class="header">
+				<nav class="navbar bg-dark navbar-expand-sm navbar-dark"><!--.navbar : 네베게이션 메뉴를 구성 선언-->
+					<a href="#" class="navbar-brand">Brand</a>
+<!--					data-toggle="collapse" : 지정한 반응형 공간 이하로 화면이 적용되었을 때 기존 메뉴를 숨기처리하겠다는 선언
+					data-target="#collapseNav" : 하단에 나오게 될 메뉴를 대상으로 지정-->
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="collapseNav">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a href="" class="nav-link">알라딘</a></li>
+							<li class="nav-item"><a href="" class="nav-link">라푼젤</a></li>
+							<li class="nav-item"><a href="" class="nav-link">미녀와 야수</a></li>
+						</ul>
+					
+					</div>
+
+				</nav>
+			
+			</div>
+		</div>
+
+
+		<div style="clear: both;"></div>
+
+
+		<div class="carousel slide" data-ride="carousel" id="slideShow">
+			<!--페이저 파트-->
+			<!--data-target="#slideShow" : 클릭 또는 슬라이드 쇼가 작동되는 과정에서 해당하는 영역 지정-->
+			<!--data-slide-to="0" : 클릭 또는 슬라이드 쇼가 작동되는 과정에서 해당하는 인덱스 번호(페이저, 이미지)를 지정-->
+			<ul class="carousel-indicators">
+				<li data-target="#slideShow" data-slide-to="0" class="active"></li>
+				<li data-target="#slideShow" data-slide-to="1"></li>
+				<li data-target="#slideShow" data-slide-to="2"></li>
+			</ul>
+			<!--이미지 파트-->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/slide_01.jpg" alt="슬라이드-01">
+
+					<div class="carousel-caption">
+						<h3>판타스틱 이미지-01</h3>
+						<p>자연과 인간이 공조하는 새로운 패러다임-01</p>
+					</div>
+
+				</div>
+				<div class="carousel-item">
+					<img src="img/slide_02.jpg" alt="슬라이드-02">
+					<div class="carousel-caption">
+						<h3>판타스틱 이미지-02</h3>
+						<p>자연과 인간이 공조하는 새로운 패러다임-02</p>
+					</div>
+
+				</div>
+				<div class="carousel-item">
+					<img src="img/slide_03.jpg" alt="슬라이드-03">
+					<div class="carousel-caption">
+						<h3>판타스틱 이미지-03</h3>
+						<p>자연과 인간이 공조하는 새로운 패러다임-03</p>
+					</div> 
+				</div>
+			</div>
+			<!--방향 아이콘 파트-->
+			<a href="#slideShow" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#slideShow" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		
+		</div>
+
+		<hr>
+
+		<div class="container">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">팝업 열기</button>
+			<!--modal popup-->
+			<div class="modal fade" id="myModal"><!--모달(레이어) 팝업의 구성박스를 형성-->
+				<div class="modal-dialog modal-lg modal-dialog-centered"><!--.modal-lg, .modal-md, .modal-sm : 팝업창의 사이즈를 조정 / .modal-dialog-centered : 팝업창의 위치를 지정-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">팝업 타이틀</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<!--data-dismiss="modal" : 현재 열려있는 모달 팝업창을 제거한다.-->
+						</div>
+						<div class="modal-body">
+							<p>모달 콘텐츠 영역</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-info">확인하기</button>
+							<button type="button" class="btn btn-secondary">취소하기</button>
+						</div>
+					</div>				
+				</div>
+			</div>	
+		</div>
+
+
+		<hr>
+
+
+		<div class="container">
+			<a href="#" data-toggle="tooltip" title="툴팁 박스 생성">Tooltip</a>
+			<a href="#" data-toggle="tooltip" data-placement="top" title="네이버 링크로 이동">네이버 바로가기</a>
+			<a href="#" data-toggle="tooltip" data-placement="bottom" title="네이트 링크로 이동">네이트 바로가기</a>
+			<a href="#" data-toggle="tooltip" data-placement="left" title="구글 링크로 이동">구글 바로가기</a>
+			<a href="#" data-toggle="tooltip" data-placement="right" title="다음 링크로 이동">다음 바로가기</a>
+
+		</div>
+
+		<br><br><br><br><br>
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

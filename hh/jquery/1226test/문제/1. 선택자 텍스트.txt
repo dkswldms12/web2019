@@ -1,0 +1,110 @@
+﻿[선택자]
+예제1)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (클래스 선택자)
+조건1. 아래 중 클래스명이 txt3인 것을 선택하여 문자의 색상을 red로 변경하고 폰트의 가중치(normal 또는 bold)를 bold로 스타일을 조정하세요.
+
+				<div class="test_01">
+					<p class="txt1">파리</p>
+					<p class="txt2">로마</p>
+					<p class="txt3">런던</p>
+					<p class="txt4">베를린</p>
+				</div>
+			
+
+
+예제2)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (아이디 선택자)
+조건1. 아래 중 아이디명이 select인 것을 선택하여 문자의 크기를 28px로 변경하고 배경색상을 #ffff00으로 스타일을 조정하세요.
+
+				<div class="test_02">
+					<a href="">베스트셀러</a>
+					<a href="" id="select">E북 베스트</a>
+					<a href="">지식백과</a>
+					<a href="">오디오북</a>
+				</div>
+			
+
+예제3)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (그룹 선택자)
+조건1. 아래의 p 태그 중 첫번째와 세번째를 함께 선택하여 글자색상을 #00dd00으로 스타일을 조정하세요.
+
+				<div class="test_03">
+					<h4>사이언스 트렌드</h4>
+					<p class="sience_01">구글의 양자컴퓨터, 슈퍼컴 능가했나</p>
+					<p class="sience_02">실패의 과학적 정의</p>
+					<p class="sience_03">달 지명 속에는 ‘사람’이 있다</p>
+				</div>
+			
+
+
+예제4)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (탐색 선택자)
+조건1. 아래 p 태그 중 2번째와 4번째를 함께 선택하여 배경색상을 #aaffff로 스타일을 조정하세요. (eq() 메서드 이용)
+
+				<div class="test_04">
+					<h4>비지니스 트렌드</h4>
+					<p class="trend">당신의 비즈니스를 업그레이드하는 가장 손쉬운 방법</p>
+					<p class="trend">프랑크푸르트 모터쇼를 통해 본 글로벌 자동차 트렌드</p>
+					<p class="trend">에어비앤비처럼 사유지를 캠핑장으로 빌려주는 '힙캠프'</p>
+					<p class="trend">디지털 마케팅에 펀테크(Fun Tech)를 더하다!</p>
+				</div>
+			
+
+
+예제5)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (인접관계 선택자)
+조건1. 아래 p 태그 중 가운데를 기준으로 형제 요소를 모두 선택하여 글자 색상을 #0000ff로 스타일을 조정하세요. (eq() 메서드 이용+형제 탐색)
+
+				<div class="test_05">
+					<h4>내 마음에 쏙 드는 걷기 여행지 7</h4>
+					<p class="walk">양평 두물머리 물래길</p>
+					<p class="walk">전주 한옥마을 길</p>
+					<p class="walk">대전 장태산자연휴양림</p>
+					<p class="walk">천안 독립기념관 단풍나무 숲길</p>
+					<p class="walk">서울 안산자락길</p>
+					<p class="walk">대구 김광석 다시그리기길</p>
+					<p class="walk">영동 금강 둘레길</p>
+				</div>
+			
+
+
+예제6)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (인접관계 선택자)
+조건1. 아래 중 "미디어센터" 텍스트를 선택(기준)하여 부모의 영역인 menu 클래스명의 모든 영역의 배경색상을 #ffff77로 스타일을 조정하세요. (eq() 메서드 이용+상위 선택자(closest))
+
+				<div class="test_06">
+					<ul class="menu">
+						<li><a href="">회사소개</a></li>
+						<li><a href="">사회공헌</a></li>
+						<li><a href="">미디어센터</a></li>
+						<li><a href="">채용</a></li>
+					</ul>
+				</div>
+			
+
+예제7)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (인접관계 선택자)
+조건1. 아래 중 "portfolio" 텍스트를 선택(기준)하여 부모의 영역인 main_menu 클래스명으로 올라가서 형제 요소인 side_menu 아이디명을 찾아 배경색상을 #aaffff로 스타일을 조정하세요. (eq() 메서드 이용+상위 선택자(closest)+형제 탐색)
+
+조건2. 하위에 존재하는 "-판매자"의 글자 색상을 #ff0000 으로 스타일을 조정하세요. (eq() 메서드 이용+상위 선택자(closest)+형제 탐색+후손 선택자(find))
+
+				<div class="test_07">
+					<ul class="main_menu">
+						<li><a href="">About Us</a></li>
+						<li><a href="" class="port">Portfolio</a></li>
+						<li><a href="">Project</a></li>
+					</ul>
+					<ul id="side_menu">
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">마이페이지 <span>-판매자</span></a></li>
+					</ul>
+				</div>
+			
+
+예제8)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (속성 선택자)
+조건1. 아래 중 type이 'text'인 입력 박스에 배경색상을 #ffffaa로 스타일을 조정하세요.
+
+				<div class="test_08">
+					<form>
+						<label>Name: <input type="text"></label>
+						<label>Password: <input type="password"></label>
+						<input type="submit" value="LOGIN">
+					</form>
+				</div>
+			
+
+ 

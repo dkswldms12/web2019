@@ -1,0 +1,74 @@
+﻿예제9)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 브라우저가 로딩되면서 아래 p 태그 내부의 글자를 "텍스트 변경 완료"로 새롭게 넣고 배경색상을 #aaffaa로 스타일을 조정하세요. (text() 메서드 이용)
+
+		<div class="test_09">
+			<p></p>
+		</div>
+	
+
+예제10)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 각 개별 박스를 클릭하면 박스가 사라지도록 조정하세요.(click() 이벤트와 slideUp() 효과 메서드 이용)
+
+		<style>
+			.test_10 p{padding: 20px; font-size: 16px; background: #ffbb55; margin-bottom:4px;}
+		</style>
+		<div class="test_10">
+			<p>클릭시 개별 박스 없애기</p>
+			<p>클릭시 개별 박스 없애기</p>
+			<p>클릭시 개별 박스 없애기</p>
+		</div>
+	
+
+예제11)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 각 개별 박스를 마우스오버하면 박스의 배경색상이 변경(#f2f2f2 → yellow) 되도록 클래스(highlight)를 추가하고, 반대로 마우스가 빠져나오면 색상이 원래상태로 돌아올 수 있도록 클래스명을 제거하세요.(hover() 이벤트 및 addClass()와 removeClass() 메서드 이용)
+
+		<style>
+			.test_11 p{padding: 20px; font-size: 16px; background: #f2f2f2; margin-bottom:4px;}
+			.test_11 p.highlight{background: yellow;}
+		</style>
+		<div class="test_11">
+			<p>hover시 개별 박스 색상 변경</p>
+			<p>hover시 개별 박스 색상 변경</p>
+			<p>hover시 개별 박스 색상 변경</p>
+		</div>
+
+
+예제12)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 셀렉트 박스의 옵션을 변경할 때 그 내부 내용을 하단에 위치한 클래스명 result를 가진 요소에 나타나도록 구성하세요. (change() 이벤트 및 val()와 text() 메서드 이용)
+
+		<div class="test_12">
+			<form>
+				<label>여행가고 싶은 장소 : </label>
+				<select>
+					<option>London</option>
+					<option>Paris</option>
+					<option>New York</option>
+				</select>
+			</form>
+			<p class="result"></p>
+		</div>
+	
+
+예제13)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 브라우저의 크기를 가로 또는 세로를 변경할 때마다 클래스명 size_change를 가진 요소 하위에 "가로 : 000px", "세로 : 000px;"로 나타나도록 구성하세요. (resize() 이벤트 및 가로와 세로를 받을 수 있는 식 이용 : $(window).width();)
+
+		<div class="test_13">
+			<p class="size_change">
+				<span>가로 : </span>
+				<span class="widthTxt"></span>
+				<span>, 세로 : </span>
+				<span class="heightTxt"></span>
+			</p>
+		</div>
+	
+
+예제14)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 브라우저에서 스크롤 바를 움직일 때마다 스크롤바의 상단 높이 위치를 저장하여 클래스명 scroll_top을 가진 요소 하위에 "현재 스크롤바 상단 위치 : 000px"로 나타나도록 구성하세요. (scroll() 이벤트 및 스크롤바의 위치를 받을 수 있는 식 이용 : $(window).scrollTop();)
+
+		<div class="test_14">
+			<p class="scroll_top">
+				<span>현재 스크롤바 상단 위치 : </span>
+				<span class="scroll_location"></span>
+			</p>
+		</div>
+	

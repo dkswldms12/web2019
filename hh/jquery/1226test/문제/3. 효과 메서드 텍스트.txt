@@ -1,0 +1,94 @@
+﻿[효과 메서드]
+예제15)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+
+조건1. 먼저 브라우저가 로딩되면서 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)
+
+조건2. 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 p 태그의 문단을 "보여주고", "감추기"를 구현하세요.(show(), hide() 효과 메서드를 이용)
+
+		<style>
+			.test_15 h4{padding:15px; background:#ffaaff;}
+			.test_15 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		</style>
+		<div class="test_15">
+			<button type="button" class="hide-btn">이벤트 감추기</button> 
+			<button type="button" class="show-btn">이벤트 자세히 보기</button>
+			<h4>최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)</h4>
+			<p>주말 특가! 40% 파격 세일</p>
+		</div>
+	
+
+
+예제16)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+
+조건1. 먼저 브라우저가 로딩되면서 모든 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)
+
+조건1. 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 두개의 문단을 "보여주고", "감추기"를 구현하세요.(show(), hide() 효과 메서드를 이용)
+
+조건3. 각각의 p 태그의 박스에는 클래스명별로 시간을 다르게 부여하세요.(".normal : 시간부여 없음 / .very-fast : 50 / .fast : 'fast' / .slow : 'slow' / very-slow : 2000 )
+
+		<style>
+			.test_16 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		</style>
+		<div class="test_16">
+			<button type="button" class="hide-btn">Hide Paragraphs</button> 
+			<button type="button" class="show-btn">Show Paragraphs</button>
+			<p class="normal">기본 속도 박스 보여주기/감추기</p>
+			<p class="very-fast">0.05초만에 박스 보여주기/감추기</p>
+			<p class="fast">문자 'fast'로 박스 보여주기/감추기</p>
+			<p class="slow">문자 'slow'로 박스 보여주기/감추기</p>
+			<p class="very-slow">2초만에 박스 보여주기/감추기</p>
+		</div>
+	
+
+
+예제17)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+
+조건1. 먼저 브라우저가 로딩되면서 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)
+
+조건2. 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 p 태그의 문단을 fade를 진행하면서 "보여주고", "감추기"를 구현하세요.(fadeIn(), fadeOut() 효과 메서드를 이용)
+
+		<style>
+			.test_17 h4{padding:15px; background:#ffaaff;}
+			.test_17 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		</style>
+		<div class="test_17">
+			<button type="button" class="out-btn">fadeOut 효과주기</button> 
+			<button type="button" class="in-btn">fadeIn 효과주기</button>
+			<h4>최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)</h4>
+			<p>주말 특가! 40% 파격 세일</p>
+		</div>
+	
+
+
+예제18)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+
+조건1. 먼저 브라우저가 로딩되면서 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)
+
+조건2. 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 p 태그의 문단을 slide를 진행하면서 "보여주고", "감추기"를 구현하세요.(slideDown(), slideUp() 효과 메서드를 이용)
+
+		<style>
+			.test_18 h4{padding:15px; background:#ffaaff;}
+			.test_18 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		</style>
+		<div class="test_18">
+			<button type="button" class="up-btn">slideUp 효과주기</button> 
+			<button type="button" class="down-btn">slideDown 효과주기</button>
+			<h4>최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)</h4>
+			<p>주말 특가! 40% 파격 세일</p>
+		</div>
+	
+
+예제19)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+
+조건1. '오른쪽으로 이동시키기'라는 버튼을 클릭하면 이미지를 오른쪽으로 200px 이동하도록 설정하세요.(animate() 효과 메서드를 이용, 이동시간은 1초 부여할 것)
+
+		<style>
+			.test_19 img{position: relative;}
+		</style>
+		<div class="test_19">
+			<button type="button">오른쪽으로 이동시키기</button>
+			<p>
+				<img src="img/mushroom.jpg" alt="Mushroom">
+			</p>
+		</div>
+	

@@ -1,0 +1,23 @@
+﻿[콜백함수]
+예제26)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.
+조건1. 첫번째 이미지를 제외한 나머지 이니지를 모두 감추세요.(not(특정 선택자) 메서드, eq() 메서드와 hide() 메서드 이용)
+
+조건2. 하단의 버튼을 클릭했을 때 우측으로 페이드인 효과를 적용하여 시간간격(1초) 각 이미지가 순차적으로 나올 수 있도록 구성하세요.
+(click() 이벤트와 콜백함수, fadeIn() 메서드를 이용)
+
+		<style>
+			.test_26 .img_frame{font-size:0;}
+			.test_26 img{width: 200px;}
+		</style>
+		<div class="test_26">
+			<div class="btn_frame">
+				<button class="fadein_img">차례대로 보여주기</button>
+			</div>
+			<div class="img_frame">
+				<img src="img/kakao_bg1.jpg" alt="카카오 배경1">
+				<img src="img/kakao_bg2.jpg" alt="카카오 배경2">
+				<img src="img/kakao_bg3.jpg" alt="카카오 배경3">
+				<img src="img/kakao_bg4.jpg" alt="카카오 배경4">
+				<img src="img/kakao_bg5.jpg" alt="카카오 배경5">
+			</div>
+		</div>

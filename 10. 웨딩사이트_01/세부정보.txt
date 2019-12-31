@@ -1,0 +1,10 @@
+﻿[웨딩 사이트 제작]
+
+주요폰트 (Google Font로 가져올 것!!)
+font-family: 'Great Vibes', handwriting;
+font-family: 'Josefin Slab', serif;
+font-family: Poppins, sans-serif;
+
+
+
+상단의 메뉴 구성은 CONCEPT / GALLERY / REVIEW / BLOG

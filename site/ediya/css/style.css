@@ -137,21 +137,46 @@ body{
 }
 #mid_con .ediya{
 	width: 100%;
-	height: 230px;
+	height: auto;
 	background-image: url(../images/EDIYA.jpg);
+	color: #fff;
 }
-#mid_con .ediya a{
-	display: block;
-	/*text-align: center;*/
-	line-height: 30px;
-	padding-top: 120px;
-	padding-left: 705px;
+#mid_con .ediya .ediya_txt{
+	width: 60%;
+	height: 230px;
+	margin: 0 auto;
+	position: relative;
+
+}
+#mid_con .ediya .ediya_txt h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+#mid_con .ediya .ediya_txt h2{
+	font-family: 'Hind', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	top: 120px;
+	left: 20px;
+}
+#mid_con .ediya .ediya_txt h4{
+	position: absolute;
+	top: 70px;
+	left: 370px;
+}
+#mid_con .ediya .ediya_txt a{
+	position: absolute;
+	top: 130px;
+	left: 370px;
 	color: #fff;
 	font-weight: bold;
 }
 #mid_con .ediya_menu{
 	width: 100%;
-	height: 500px;
+	height: 70vh;
 	background-color: #ccc;
 	position: relative;
 }
@@ -176,10 +201,18 @@ body{
 
 #mid_con .ediya_animation{
 	width: 100%;
-	height: 800px;
+	height: 100vh;
 	background-color: #000;
-	margin:0 auto;
 	position: relative;
+}
+#mid_con .ediya_animation .ball{
+	width: 70%;
+	height: 600px;
+	background-color: #ccc;
+	position: relative;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
 }
 #mid_con .ediya_animation .bt1{
 	width: 170px;
@@ -188,8 +221,8 @@ body{
 	background-color: #fff;
 	border-radius: 150px;
 	position: absolute;
-	top: 400px;
-	left: 350px;
+	top: 50%;
+	left: 5%;
 }
 #mid_con .ediya_animation .bt1:hover{
 	animation-name: bt1;
@@ -201,12 +234,12 @@ body{
 	from{
 		width: 170px;
 		height: 170px;
-		top: 400px;
+		top: 50%;
 	}
 	to{
 		width: 170px;
 		height: 170px;
-		top: 430px;
+		top: 53%;
 	}
 }
 
@@ -217,8 +250,8 @@ body{
 	background-color: #fff;
 	border-radius: 150px;
 	position: absolute;
-	top: 250px;
-	left: 860px;
+	top: 20%;
+	left: 45%;
 }
 #mid_con .ediya_animation .bt2:hover{
 	animation-name: bt2;
@@ -230,12 +263,12 @@ body{
 	from{
 		width: 170px;
 		height: 170px;
-		top: 250px;
+		top: 20%
 	}
 	to{
 		width: 170px;
 		height: 170px;
-		top: 280px;
+		top: 23%;
 	}
 }
 
@@ -246,8 +279,8 @@ body{
 	background-color: #fff;
 	border-radius: 150px;
 	position: absolute;
-	top: 400px;
-	left: 1350px;
+	top: 50%;
+	right: 5%;
 }
 #mid_con .ediya_animation .bt3:hover{
 	animation-name: bt3;
@@ -259,12 +292,12 @@ body{
 	from{
 		width: 170px;
 		height: 170px;
-		top: 400px;
+		top: 50%;
 	}
 	to{
 		width: 170px;
 		height: 170px;
-		top: 430px;
+		top: 53%;
 	}
 }
 #mid_con .ediya_animation p{
@@ -286,53 +319,51 @@ body{
 	line-height: 30px;
 	}
 
+#mid_con .lab_title{
+	width: 100%;
+	height: 30vh;
+	margin-bottom: 60px;
+}
+#mid_con .lab_title .lab{
+	width: 40%;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
 #mid_con .ediya_lab{
 	width: 100%;
-	height: 860px;
+	height: 100vh;
 	background-color: #fff;
 	position: relative;
 	z-index: 1;
 }
-#mid_con .ediya_lab .lab img{
-	display: block;
-	position: absolute;
-	right: 650px;
-	top: 100px;
-}
-#mid_con .ediya_lab .lab:after{
-	content: "";
-	display: block;
-	width: 130px;
-	height: 1px;
-	background-color: blue;
-	position: absolute;
-	right: 880px;
-	top: 270px;
-}
-#mid_con .ediya_lab{
-	position: relative;
-	width: 100%;
+#mid_con .ediya_lab .lab_tab{
+	width: 40%;
+	height: 100vh;
 	margin: 0 auto;
+	position: relative;
 }
-#mid_con .ediya_lab .img1{
-	width: 630px;
-	height: 640px;
+#mid_con .ediya_lab .lab_tab img{
+	width: 450px;
+	height: 550px;
+}
+#mid_con .ediya_lab .lab_tab .img1{
 	position: absolute;
+	left:-5%;
+	top: 0%;
 	overflow: hidden;
-	right: 350px;
-	top: 400px;
 }
-#mid_con .ediya_lab .bar{
+#mid_con .ediya_lab .lab_tab .bar{
 	width: 135px;
 	height: 5px;
 	background-color: #fff;
 	position: absolute;
-	bottom: 50px;
-	left: 260px;
+	bottom: 5%;
+	left: 35%;
 	transform: scaleX(0);
 	transition: 0.3s;
 }
-#mid_con .ediya_lab .img1 .txt{
+#mid_con .ediya_lab .lab_tab .img1 .txt{
 	display: block;
 	text-align: center;
 	line-height: 30px;
@@ -340,27 +371,27 @@ body{
 	font-size: 17px;
 	font-weight: bold;
 	position: absolute;
-	bottom: 75px;
-	left: 283px;
+	bottom: 10%;
+	left: 40%;
 }
-#mid_con .ediya_lab .img1:hover img{
-	width: 630px;
-	height: 640px;
+#mid_con .ediya_lab .lab_tab .img1:hover img{
 	transform: scale(1.1,1.1);
 	transition: 0.3s;
 }
-#mid_con .ediya_lab .img1:hover .bar{
+#mid_con .ediya_lab .lab_tab .img1:hover .bar{
 	transform: scaleX(1);
 }
-#mid_con .ediya_lab .img2{
-	width: 630px;
-	height: 640px;
+
+
+
+
+#mid_con .ediya_lab .lab_tab .img2{
 	position: absolute;
-	left: 350px;
-	top: 350px;
+	right: 0%;
+	top: 5%;
 	overflow: hidden;
 }
-#mid_con .ediya_lab .img2 .txt{
+#mid_con .ediya_lab .lab_tab .img2 .txt{
 	display: block;
 	text-align: center;
 	line-height: 30px;
@@ -368,18 +399,19 @@ body{
 	font-size: 17px;
 	font-weight: bold;
 	position: absolute;
-	bottom: 75px;
-	left: 274px;
+	bottom: 10%;
+	left: 40%;
 }
-#mid_con .ediya_lab .img2:hover img{
-	width: 630px;
-	height: 640px;
+#mid_con .ediya_lab .lab_tab .img2:hover img{
 	transform: scale(1.1,1.1);
 	transition: 0.3s;
 }
-#mid_con .ediya_lab .img2:hover .bar{
+#mid_con .ediya_lab .lab_tab .img2:hover .bar{
 	transform: scaleX(1);
 }
+
+
+
 
 #mid_con .ediya_f{
 	width: 100%;

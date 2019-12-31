@@ -1,0 +1,148 @@
+@charset "utf-8";
+@media all and (max-width: 1620px){
+#mid_con .ediya{
+		background-image: url(../images/EDIYA_1600.jpg);
+	}
+#mid_con .ediya .ediya_txt h1{
+		position: absolute;
+		top: 50px;
+		left: 10px;
+	}
+#mid_con .ediya .ediya_txt h2{
+		position: absolute;
+		top: 120px;
+		left: 10px;
+	}
+#mid_con .ediya .ediya_txt h4{
+		position: absolute;
+		top: 70px;
+		left: 330px;
+	}
+#mid_con .ediya .ediya_txt a{
+		position: absolute;
+		top: 130px;
+		left: 330px;
+	}
+}
+/*
+width: 100%;
+height: 560px;
+background-image:url(../img), url(../img);
+background-size: 120px auto, 120px auto;
+background-position: -15% top, 110% bottom;
+background-attachment:fixed, fixed;
+background-repeat:no-repeat, no-repeat;
+
+*/
+@media all and (max-width: 1200px){
+#mid_con .ediya{
+		background: url(../images/EDIYA_1200.jpg) no-repeat;
+	}
+#mid_con .ediya .ediya_txt h1{
+		position: absolute;
+		top: 50px;
+		left: 60px;
+	}
+#mid_con .ediya .ediya_txt h2{
+		position: absolute;
+		top: 120px;
+		left: 60px;
+	}
+#mid_con .ediya .ediya_txt h4{
+		position: absolute;
+		top: 70px;
+		left: 390px;
+	}
+#mid_con .ediya .ediya_txt a{
+		position: absolute;
+		top: 130px;
+		left: 390px;
+	}
+}
+@media all and (max-width: 1100px){
+#mid_con .ediya{
+		background: url(../images/EDIYA_1100.jpg) no-repeat;
+	}
+#mid_con .ediya .ediya_txt{
+	width: 80%;
+}
+#mid_con .ediya .ediya_txt h1{
+		position: absolute;
+		top: 50px;
+		left: 30px;
+	}
+#mid_con .ediya .ediya_txt h2{
+		position: absolute;
+		top: 120px;
+		left: 30px;
+	}
+#mid_con .ediya .ediya_txt h4{
+		position: absolute;
+		top: 70px;
+		left: 350px;
+	}
+#mid_con .ediya .ediya_txt a{
+		position: absolute;
+		top: 130px;
+		left: 350px;
+	}
+
+}
+@media all and (max-width: 767px){
+#mid_con .ediya{
+		background: url(../images/EDIYA_m_767.jpg) no-repeat;
+	}
+#mid_con .ediya .ediya_txt{
+	width: 100%;
+}
+#mid_con .ediya .ediya_txt h1{
+		position: absolute;
+		top: 20px;
+		left: 30px;
+	}
+#mid_con .ediya .ediya_txt h2{
+		position: absolute;
+		top: 100px;
+		left: 30px;
+	}
+#mid_con .ediya .ediya_txt h4{
+		position: absolute;
+		top: 160px;
+		left: 30px;
+	}
+#mid_con .ediya .ediya_txt a{
+		position: absolute;
+		top: 200px;
+		left: 290px;
+	}
+}
+@media all and (max-width: 600px){
+#mid_con .ediya .ediya_txt{
+	width: 100%;
+}
+#mid_con .ediya{
+		background: url(../images/EDIYA_m_600.jpg) no-repeat;
+	}
+#mid_con .ediya .ediya_txt h1{
+		font-size: 35px;
+		position: absolute;
+		top: 20px;
+		left: 10px;
+	}
+#mid_con .ediya .ediya_txt h2{
+		font-size: 25px;
+		position: absolute;
+		top: 75px;
+		left: 10px;
+	}
+#mid_con .ediya .ediya_txt h4{
+		position: absolute;
+		top: 130px;
+		left: 10px;
+	}
+#mid_con .ediya .ediya_txt a{
+		position: absolute;
+		top: 190px;
+		left: 10px;
+	}
+}
