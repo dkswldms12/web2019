@@ -76,10 +76,27 @@ $(document).ready(function(){
 	  });
 
 
-	$("#ex_07 p").hide();
+	$(".q_box p").hide();
 	$(".q_box").click(function(){
-		$(".q_box p").not($(this).next(".q_box p").slideToggle(500)).slideUp();
+		var $cur=$(this).children("p").hasClass("open");//가상의 클래스가 본인을 체크 할 수 있는 열쇠
+		if($cur==true){//본인을 클릭시, 현재 열려있는지 또는 닫혀 있는지를 체크, 열려있다면
+			$(this).children("p").removeClass("open");//제거해주고
+			$(this).children("p").slideUp();
+		}else{//다른 곳을 클릭했을때
+			$(".q_box p").removeClass("open");//열려있는걸 강제로 닫고
+			$(".q_box p").slideUp();
+			$(this).children("p").addClass("open");//클릭한곳에 새로 클레스 부여 
+			$(this).children("p").slideDown();
+		}
 	});
+
+	$(".per_bar_frame").each(function(){
+		var $per=$(this).attr("data-percent");
+		console.log($per);
+		$(this).find(".per_bar").animate({"width":$per},1000);
+		$(this).find(".cur_per").text($per);
+	});
+
 
 
 
