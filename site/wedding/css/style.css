@@ -42,7 +42,11 @@ nav>ul>li>a{
 .middle1{
 	width: 100%;
 	height: 50vh;
-	background: url(../img/bg.png) 50% 50%;
+	background-image: url(../img/section_deco_left.png), url(../img/section_deco_right.png); 
+	background-repeat: no-repeat, no-repeat;
+	background-position:0% 0%, 100% 100%;
+	background-size: 160px, 160px;
+	/*background-attachment: fixed, fixed;*/
 }
 .middle1 .middle1_bg{
 	width: 100%;
