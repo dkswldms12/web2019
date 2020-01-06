@@ -92,11 +92,17 @@ section{
 .main .main_top .font{
 	width: 60%;
 	height: 100%;
-	position: absolute;
+	position: relative;
 	left: 20%;
 	vertical-align: middle;
 	border: 1px solid #000;
 	margin-bottom: 10px;
+}
+.main .main_top .font #texts{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	color: #000;
 }
 .main .main_slid{
 	width: 80%;
@@ -287,8 +293,8 @@ section{
 	width: 360px;
 	background-color: red;
 	position: absolute;
-	left: 210px;
-	bottom: 260px;
+	left: 225px;
+	bottom: 130px;
 	transform: rotate(60deg);
 	z-index: -1;
 }
@@ -316,7 +322,7 @@ section{
 	background-color: red;
 	position: absolute;
 	left: 570px;
-	bottom: 50px;
+	bottom: -34px;
 	z-index: -1;
 }
 .line_box3 .in_box{
@@ -343,8 +349,8 @@ section{
 	background-color: red;
 	position: absolute;
 	right: 230px;
-	bottom: 250px;
-	transform: rotate(-65deg);
+	bottom: 130px;
+	transform: rotate(-67deg);
 	z-index: -1;
 }
 .line_box4 .in_box{

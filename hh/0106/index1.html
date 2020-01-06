@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>객체데이터</title>
+		<link rel="stylesheet" href="css/style1.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script1.js"></script>
+</head>
+<body>
+	<div id="objData">
+		<!-- <p class="info">이름 : 000, 나이 : 00세, 지역 : 00</p> -->
+	</div>
+
+	<div id="ex_05">
+		<ul>
+<!--			<li>
+				<div class="img"></div>
+				<p class="title"></p>
+			</li>-->
+		</ul>
+	</div>
+
+	<h3>data() 메서드를 활용한 콘텐츠 넣기</h3>
+
+	<div class="data_method">
+		<span></span>
+	</div>
+
+	<h3>data()메서드 + removeData() : 기존데이터를 삭제</h3>
+
+	<div class="removeDate_method">
+		<span></span>
+	</div>
+
+	<div id="ex_02">
+		<ul class="logo">  
+			<li></li>   
+			<li></li>  
+		</ul>  
+		<div class="sub-box">   
+			<ul class="animation-p">    
+				<li></li>    
+				<li></li>    
+				<li></li>  
+			</ul>   
+			<ul class="animation-d">    
+				<li></li>    
+				<li></li>    
+				<li></li>   
+			</ul>  
+		</div>  
+		<p>당신이 선정한 영화는 <span class="brand">000 (브랜드)</span>사의 <span class="detail">000</span>입니다.</p> 
+	</div>
+ 
+
+ <div id="ex_08">
+		<div class="section_sel">
+			<div class="category_01">
+				<p class="title">여행지역</p>
+				<p class="input-box"><input type="radio" name="region" value="eu"/><span>유럽</span></p>
+				<p class="input-box"><input type="radio" name="region" value="as" /><span>아시아</span></p>
+				<p class="input-box"><input type="radio" name="region" value="lo"/><span>국내</span></p>
+			</div>
+			<div class="category_02">
+				<p class="title">여행타입</p>
+				<p class="input-box"><input type="radio" name="travel" value="fa"/><span>가족여행</span></p>
+				<p class="input-box"><input type="radio" name="travel" value="ho" /><span>신혼여행</span></p>
+				<p class="input-box"><input type="radio" name="travel" value="fr"/><span>자유여행</span></p>
+			</div>
+			<button class="sel_btn">선택</button>
+		</div>
+		<div class="img-txt" ></div>
+		<div class="img-box">
+			<div class="img-cont img-cont-01" data-region="lo" data-type="fa"><p>lo-fa</p></div>
+			<div class="img-cont img-cont-02" data-region="as" data-type="fr"><p>as-fr</p></div>
+			<div class="img-cont img-cont-03" data-region="eu" data-type="ho"><p>eu-ho</p></div>
+			<div class="img-cont img-cont-04" data-region="as" data-type="fr"><p>as-fr</p></div>
+			<div class="img-cont img-cont-05" data-region="eu" data-type="ho"><p>eu-ho</p></div>
+			<div class="img-cont img-cont-06" data-region="lo" data-type="fa"><p>lo-fa</p></div>
+			<div class="img-cont img-cont-07" data-region="eu" data-type="fr"><p>eu-fr</p></div>
+			<div class="img-cont img-cont-08" data-region="as" data-type="ho"><p>as-ho</p></div>
+			<div class="img-cont img-cont-09" data-region="eu" data-type="fr"><p>eu-fr</p></div>
+			<div class="img-cont img-cont-10" data-region="eu" data-type="fa"><p>eu-fa</p></div>
+			<div class="img-cont img-cont-11" data-region="as" data-type="fr"><p>as-fr</p></div>
+			<div class="img-cont img-cont-12" data-region="as" data-type="fr"><p>as-fr</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>

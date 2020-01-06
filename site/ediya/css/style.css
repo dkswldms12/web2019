@@ -208,7 +208,7 @@ body{
 #mid_con .ediya_animation .ball{
 	width: 70%;
 	height: 600px;
-	background-color: #ccc;
+/*	background-color: #ccc;*/
 	position: relative;
 	left:50%;
 	top:50%;
@@ -327,7 +327,7 @@ body{
 #mid_con .lab_title .lab{
 	width: 40%;
 	margin: 0 auto;
-	padding-top: 5%;
+	padding-top: 7%;
 }
 
 #mid_con .ediya_lab{
@@ -338,19 +338,19 @@ body{
 	z-index: 1;
 }
 #mid_con .ediya_lab .lab_tab{
-	width: 40%;
+	width: 45%;
 	height: 100vh;
 	margin: 0 auto;
 	position: relative;
 }
 #mid_con .ediya_lab .lab_tab img{
-	width: 450px;
-	height: 550px;
+	width: 500px;
+	height: 600px;
 }
 #mid_con .ediya_lab .lab_tab .img1{
 	position: absolute;
-	left:-5%;
-	top: 0%;
+	left:-3%;
+	top: 5%;
 	overflow: hidden;
 }
 #mid_con .ediya_lab .lab_tab .bar{
@@ -387,8 +387,8 @@ body{
 
 #mid_con .ediya_lab .lab_tab .img2{
 	position: absolute;
-	right: 0%;
-	top: 5%;
+	right: -3%;
+	top: 12%;
 	overflow: hidden;
 }
 #mid_con .ediya_lab .lab_tab .img2 .txt{
@@ -478,16 +478,18 @@ body{
 }
 #mid_con .botlogo{
 	width: 100%;
-	height: 400px;
+	height: 50vh;
 	background-color: #fff;
 	position: relative;
 }
 #mid_con .botlogo img{
 	display:block;
 	position: absolute;
-	top: 120px;
-	left: 750px;
+	top: 20%;
+	left: 40%;
 }
+
+
 section#coffee_menu{
 	width: 100%;
 	margin: 0 auto;
@@ -669,7 +671,13 @@ nav.menu_banner .menu_name:after{
 #coffee_menu .menu_all ul li img:hover{
 	transform: scale(1.1,1.1);
 }
-
+#coffee_menu .menu_all i{
+	width: 100%;
+	height: 30px;
+	font-size: 30px;
+	color: green;
+	text-align: center;
+}
 .foot{
 	width: 100%;
 	background-color: #262626;
@@ -697,18 +705,16 @@ nav.menu_banner .menu_name:after{
 }
 footer#footer{
 	width: 100%;
-	background-color: #262626;
+	margin: 0 auto;
 	border-bottom: 1px solid #535353;
-	position: relative;
+	background-color: #262626;
 }
 footer#footer .foot_img{
-	width: 1300px;
-	height: 200px;
-	background-color: #262626;
+	width: 60%;
+	height: 30vh;
+	background-image: url(../images/footer.jpg);
+	margin: 0 auto;
 }
 footer#footer .foot_img img{
 	display: block;
-	position: absolute;
-	top: 5px;
-	left: 460px;
 }

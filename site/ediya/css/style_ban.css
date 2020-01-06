@@ -23,6 +23,22 @@
 		top: 130px;
 		left: 330px;
 	}
+
+#mid_con .ediya_lab .lab_tab .img1{
+		position: absolute;
+		left:-12%;
+		top: 3%;
+		overflow: hidden;
+	}
+
+
+#mid_con .ediya_lab .lab_tab .img2{
+		position: absolute;
+		right: -12%;
+		top: 10%;
+		overflow: hidden;
+	}
+
 }
 /*
 width: 100%;
@@ -58,6 +74,31 @@ background-repeat:no-repeat, no-repeat;
 		top: 130px;
 		left: 390px;
 	}
+
+#mid_con .lab_title .lab{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 7%;
+}
+
+#mid_con .ediya_lab .lab_tab .img1{
+		position: absolute;
+		left:-34%;
+		top: 3%;
+		overflow: hidden;
+	}
+
+
+#mid_con .ediya_lab .lab_tab .img2{
+		position: absolute;
+		right: -34%;
+		top: 10%;
+		overflow: hidden;
+	}
+
+footer#footer .foot_img{
+	width: 100%;
+}
 }
 @media all and (max-width: 1100px){
 #mid_con .ediya{
@@ -88,6 +129,23 @@ background-repeat:no-repeat, no-repeat;
 	}
 
 }
+
+@media all and (max-width: 1074px){
+#mid_con .ediya_lab .lab_tab .img1{
+		position: absolute;
+		left:-47%;
+		top: 3%;
+		overflow: hidden;
+	}
+
+
+#mid_con .ediya_lab .lab_tab .img2{
+		position: absolute;
+		right: -47%;
+		top: 10%;
+		overflow: hidden;
+	}
+}
 @media all and (max-width: 767px){
 #mid_con .ediya{
 		background: url(../images/EDIYA_m_767.jpg) no-repeat;
@@ -115,6 +173,52 @@ background-repeat:no-repeat, no-repeat;
 		top: 200px;
 		left: 290px;
 	}
+
+#mid_con .lab_title .lab{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 7%;
+}
+#mid_con .ediya_lab .lab_tab img{
+	width: 300px;
+	height: 400px;
+}
+
+#mid_con .ediya_lab .lab_tab .img1{
+	position: absolute;
+	left:-10%;
+	top: 3%;
+	overflow: hidden;
+}
+
+
+#mid_con .ediya_lab .lab_tab .img2{
+	position: absolute;
+	right: -40%;
+	top: 13%;
+	overflow: hidden;
+		
+}
+#mid_con .ediya_lab .lab_tab .bar{
+	width: 100px;
+	height: 3px;
+	position: absolute;
+	top: 5%;
+	left: 35%;
+}
+#mid_con .ediya_lab .lab_tab .img1 .txt{
+	font-size: 13px;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+#mid_con .ediya_lab .lab_tab .img2 .txt{
+	font-size: 13px;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+
 }
 @media all and (max-width: 600px){
 #mid_con .ediya .ediya_txt{
@@ -145,4 +249,58 @@ background-repeat:no-repeat, no-repeat;
 		top: 190px;
 		left: 10px;
 	}
+
+#mid_con .lab_title .lab{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 7%;
+}
+#mid_con .ediya_lab .lab_tab img{
+	width: 300px;
+	height: 400px;
+}
+
+#mid_con .ediya_lab .lab_tab .img1{
+	position: absolute;
+	left:-40%;
+	top: 3%;
+	overflow: hidden;
+}
+
+
+#mid_con .ediya_lab .lab_tab .img2{
+	position: absolute;
+	right: -40%;
+	top: 15%;
+	overflow: hidden;
+		
+}
+#mid_con .ediya_lab .lab_tab .bar{
+	width: 100px;
+	height: 3px;
+	position: absolute;
+	top: 5%;
+	left: 35%;
+}
+#mid_con .ediya_lab .lab_tab .img1 .txt{
+	font-size: 13px;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+#mid_con .ediya_lab .lab_tab .img2 .txt{
+	font-size: 13px;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+
+#mid_con .botlogo img{
+	display:block;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+
 }

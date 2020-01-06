@@ -10,10 +10,10 @@ for(i=1; i<=12; i++){
 	}
 }
 */
-/*
-var text = "가나다라마바사<br><br>가나다라마바사";
+
+var text = "배운 사람은 항상 자기 속에 재산이 있다. - 필래드라스 -";
 var cnt = 0;
-var speed = 100;//글자가 찍히는 속도
+var speed = 150;//글자가 찍히는 속도
 var timer1 = null;
 
 	function gogo(){
@@ -29,7 +29,7 @@ var timer1 = null;
 	}
 }
 gogo();
-*/
+
 
 $(document).ready(function(){
 	var slide = $(".slide").bxSlider({mode:'vertical',auto:true,controls:false,pager:false});
