@@ -31,6 +31,9 @@ header{
 	height:calc(100% - 16px);
 	margin-top:8px;
 }
+.res_btn{
+	display: none;
+}
 .sub_m{
 	display: none;
 }
@@ -42,6 +45,8 @@ header{
 .menu>ul{}
 .menu>ul>li{
 	float:left;
+	 position: relative;
+    z-index: 9;
 	/*
 	vertical-align: top; 공란이 있을때 매꿔주는
 	width: 100px;
@@ -58,11 +63,11 @@ header{
 .menu>ul>li>a:hover{
 	cursor: pointer;
 }
-
+/*
 .menu:hover>ul>li .sub_m{
 	display: block;
 }
-
+*/
 .menu ul.sub_m{}
 .menu ul.sub_m>li{}
 .menu ul.sub_m>li>a{
@@ -70,6 +75,7 @@ header{
 	text-align: center;
 	font-size: 1.5em;
 	color: #ffd000;
+	line-height:28px;
 }
 .menu ul.sub_m>li>a:hover{
 	cursor: pointer;
@@ -95,7 +101,7 @@ section{
 	position: relative;
 	left: 20%;
 	vertical-align: middle;
-	border: 1px solid #000;
+/*	border: 1px solid #000;*/
 	margin-bottom: 10px;
 }
 .main .main_top .font #texts{

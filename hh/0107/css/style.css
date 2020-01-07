@@ -1,0 +1,164 @@
+@charset "utf-8";
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body{margin: 0; padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block; clear:both;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear:both;}
+
+#text_01{
+	width: 600px;
+	height: 60px;
+}
+#text_01 ul{
+	width: 600px;
+	height: 60px;
+}	
+	
+#text_01 ul li{
+	width: 150px;
+	height: 60px;
+	float: left;
+	background-size: cover;
+}
+#text_01 ul li .img{
+	background-color: rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+#text_01 ul li:hover .img{
+	background-color: rgba(150,150,0,0.75);
+}
+#text_01 ul li a{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+}
+
+#test_02{
+	width: 1200px;
+	height: 380px;
+	margin: 0 auto;
+}
+#test_02 .tab_btn{
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+#test_02 .tab_btn div{
+	width: 33.33%;
+	height: 100%;
+	color: #000;
+	text-align: center;
+	line-height: 60px;
+	float: left;
+}
+#test_02 .tab_btn div.activeBtn{
+	color: #fff;
+}
+#test_02 .tab_btn .bg-bk{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 33.33%;
+	height: 100%;
+	background-color: #000;
+	z-index: -1;
+}
+#test_02 .tab_box{
+	height: 320px;
+	width: 100%;
+	border: 1px solid #000;
+}
+#test_02 .tab_box>div{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#test_02 .tab_box>div.activeBox{
+	display: block;
+}
+#test_02 .tab_box>div .img{
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-size: cover;
+	background-position: 50% 0;
+}
+#test_02 .tab_box>div .context{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: table;
+}
+#test_02 .tab_box>div .table_center{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 20px;
+}
+
+
+#test_03{
+	width: 1000px;
+	height: 600px;
+	margin:0 auto;
+	position: relative;
+}
+#test_03 .slider{
+	width: 100%;
+	height: 100%;
+}
+#test_03 .slider li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-size: cover;
+}
+#test_03 .slider li.act_img{
+	z-index: 1;
+}
+#test_03 .slider li:nth-child(1){
+	background-image: url(../img/slide_01.jpg);
+}
+#test_03 .slider li:nth-child(2){
+	background-image: url(../img/slide_02.jpg);
+}
+#test_03 .slider li:nth-child(3){
+	background-image: url(../img/slide_03.jpg);
+}
+#test_03 .slider li:nth-child(4){
+	background-image: url(../img/slide_04.jpg);
+}
+#test_03 .pager{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	z-index: 3;
+}
+#test_03 .pager ol{
+	text-align: center;
+	font-size: 0;
+}
+#test_03 .pager ol li{
+	display: inline-block;
+	margin: 0 4px;
+	width: 30px;
+	height: 8px;
+	background: #aaa;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: width 0.5s, background 0.5s;
+}
+#test_03 .pager ol li.act_btn{
+	width: 50px;
+	background-color: #ffaaff;
+}
